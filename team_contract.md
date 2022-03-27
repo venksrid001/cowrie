@@ -1,5 +1,5 @@
-Project Name: Supercharged Cowrie
-Project Members: Lucy, Selby, Shruti, Sridhar, Thomas, Deepika
+Project Name: Supercharged Cowrie <br>
+Project Members: Lucy, Selby, Shruti, Sridhar, Thomas, Deepika <br>
 Project Manager: Fortnightly rotation
 
 **Project Vision**:
