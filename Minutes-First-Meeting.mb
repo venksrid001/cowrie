@@ -1,0 +1,36 @@
+Project 3: First meeting
+
+Date: 16/03/2022
+Time: 13:00
+
+Attendees:
+    Selby Dasent
+    Jesse Wood
+    Lucy Carver
+    Sridhar VenKatesh
+    Shututi Raja
+    Thomas Yang
+
+
+Meetings will be recorded for marking purposes.
+Need to arrange for someone to take minutes – Selby to take minutes for this meeting. 
+During meetings it is important to have some contribution. Communication is important throughout this course.
+Gitlab to be set up, possible refresher around how to use it. 
+All the work that is related to the project needs to be documented through Gitlab. If it’s not on Gitlab it does not exist. 
+Can have multiple authors on commits but marking is done primarily on who makes each commit. If there are multiple authors, it needs to be documented in the commit and document. An example is a table of contributions at the bottom of document. 
+
+Advisable to get a basic understanding of what Cowrie is for the first meeting with the client. The gitlab for Cowrie is - https://github.com/cowrie/cowrie
+What is Cowrie?
+Cowrie is a medium to high interaction SSH and Telnet honeypot designed to log brute force attacks and the shell interaction performed by the attacker. In medium interaction mode (shell) it emulates a UNIX system in Python, in high interaction mode (proxy) it functions as an SSH and telnet proxy to observe attacker behaviour to another system.
+
+Main documents that need to be completed through the term are: 
+ - Requirements document – Specifications of the product to be produced (What the product needs to do, not how to do it.)
+ - Architecture diagram – UML diagram of the software layout
+
+Lecturer is Kevin Shedlock, a great source of knowledge to bounce ideas off. 
+Client is Client: Masood Mansoori.
+
+Action Points:
+ - Lab times, need to sort out what lab times everyone can accommodate. The group needs 2 lab slots. 
+ - Schedule weekly 1 hour meeting with tutor: best to have during the lab time.
+ - Organise first meeting with the client and lecturer.
