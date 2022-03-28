@@ -22,7 +22,7 @@ Project Manager: Fortnightly rotation
     
 **Participation:**
 
-    - If you can't attend meetings in person, at least try to make yourself available on zoom
+    - If you can't attend meetings in person, make sure you attend the lab or meeting by zoom, unless there's a genuinely valid reason to not attend. 
     - Try to contribute and add insight to the group when you possibly can
 
 **Meeting Guidelines:**
@@ -30,6 +30,10 @@ Project Manager: Fortnightly rotation
     - Meet deadlines to the best of our ability, if a person can't commit themselves to specific task at a certain time. 
     - Then it's preferable to have someone else in the team to take initiative
     - Put it short - next member up mentality
+
+**Meeting Expectation for Team Members**:
+
+Members must be able to attend at least 6 hours worth of Labs/Meetings with client, tutor and lecturer every week. Early notice and a good reason must be provided to not attend certain meetings.  
 
 <details><summary>Roles (More to be assigned later)</summary>
 
