@@ -49,7 +49,7 @@ Project Manager: Fortnightly rotation
 | Selby | Selby |
 | Shruti | Shruti |
 | Thomas | Thomas |
-| Deepika | cell |
+| Deepika | Deepika |
 
 </details>
 
