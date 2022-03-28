@@ -32,7 +32,7 @@ Thomas - 0210 299 4898 <br>
 Lucy - 027 311 5725 <br>
 Shruti - 027 417 9415 <br>
 Selby - 021 182 8586 <br>
-Deepika - 
+Deepika - 0221 257 657 <br>
 
 ## Signatures
 
