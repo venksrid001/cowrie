@@ -49,7 +49,7 @@ Members must be able to attend at least 6 hours worth of Labs/Meetings with clie
 | Name | Signature |
 | ------ | ------ |
 | Sridhar | Sridhar |
-| Lucy | cell |
+| Lucy | Lucy A |
 | Selby | Selby |
 | Shruti | Shruti |
 | Thomas | Thomas |
