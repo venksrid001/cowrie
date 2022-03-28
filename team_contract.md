@@ -48,7 +48,7 @@ Project Manager: Fortnightly rotation
 | Lucy | cell |
 | Selby | cell |
 | Shruti | cell |
-| Thomas | cell |
+| Thomas | Thomas |
 | Deepika | cell |
 
 </details>
