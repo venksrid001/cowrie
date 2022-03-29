@@ -22,7 +22,8 @@ Extending the functionality of the Cowrie to further emulate an operating system
 
 ## Milestone Summary (more to be added later)
 
-Some milestones to be added here
+- [ ] Implement whoami command, ensuring theres dynamic output based on who the attacker is logged in as. 
+- [ ] Emulate a text editor nano. Text editor implemented needs to rely on it's own script and not have any library dependancies.
 
 ## Contact Information of Team Members
 
