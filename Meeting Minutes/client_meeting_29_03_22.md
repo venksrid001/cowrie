@@ -1,6 +1,6 @@
 Meeting Minutes
 
-Attendees:
+**Attendees:**
 
 Sridhar
 Selby
