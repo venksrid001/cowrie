@@ -13,7 +13,8 @@ Script of instructions provided by client
 
 ## Project Requirements Listed by Client
 
-Summary of what the client expects from our implementation of extending the cowrie, eg. Dynamic output is provided when a logged in attacker is checking permissions of a file using 'ls -l'. 
+- Implement a whoami command that produces the expected results depending on who the attacker is loged in as.
+- Create a script to emulate the text editor nano within the Cowrie enviroment, it must be able to save a file with the correct umask details.
 
 ## Project Objective
 
