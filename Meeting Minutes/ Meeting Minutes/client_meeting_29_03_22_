@@ -1,0 +1,29 @@
+Meeting Minutes
+
+Attendees:
+
+Sridhar
+Selby
+Shruti
+Deepika
+Lucy 
+Thomas
+
+- Dynamic output with commands specifically whoami, also providing some editor for files within the honeypot.
+
+- Don't want a full fledged editor that relies on other libraries, just need to provide an editor that runs on a basic script and fulfil basic editing functionalities (support for commands such as nano)
+
+- Creating a new file, the umask should properly represent the creators rights for the file.
+
+- Identify a set of commands to simulate, these commands will be discussed with the client. These commands will provide dynamic output, which will help fool the attacker.
+
+- Demonstration of the output of the commands, send it to the client and client will test it.
+
+- Documentation for code added. Get familiar with cowrie for now.
+
+- Client will send the cowrie documentation.
+
+Commands that have been prioritised by Client
+
+- whoami
+- editor
