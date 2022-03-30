@@ -1,9 +1,12 @@
 Date: 30/03/2022
 Time: 12:00
+
 ---
 **Attendance:**	Jesse, Selby, Shruti, Sridhar, Lucy, Thomas
+
 ---
 **Things covered:**
+ 
 Things people have been working on:
 	Lucy - Getting Cowrie working.
 	Selby - Playing around with Cowrie and getting familiar with it, looking at the requirements document.
@@ -11,7 +14,7 @@ Things people have been working on:
 	Shuriti - Installing cowrie and looking at the introduction of the requirements document. 
 	Thomas - Getting use to cowrie operations. 
 	
-#Team contract:#
+Team contract:
  Main concern with the group is attendance of lab/meetings. 
  Who the team manager, what the project manager in charge of?
  The team lead should lead the meetings. 
