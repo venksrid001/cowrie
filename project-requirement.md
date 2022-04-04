@@ -39,7 +39,12 @@ One page defining the system's relationship to other related products
 
 > **9.5.3 Product perspective** <br>
 > Define the system's relationship to other related products. 
-> 
+
+Cowrie is a medium level interaction honeypot server, derived from Kippo. Kippo was another medium level interaction server developed with Python, which was primarily used to log brute force attacks and any sort of shell interaction performed by the attacker. Similar to Cowrie, Kippo also presents a fake file system for the attacker to work with. Along with a fake file system, Kippo also provides a file named userdb.txt, which allows the user of Kippo to edit any possible password and username combinations for the attacker to work with. This file can be overwritten and added to when necessary. The commands performed by an attacker when logged into Kippo, are immediately captured an saved into a log file. Kippo also presents the utility to replay these log files at the live speed in which they were performed by the attacker.  
+
+Kippo currently is no longer under active development, and most of it's file structure and library dependancies have been utilised for the creation of Cowrie. Cowrie is considered an extension of the functionalities of Kippo, as it is more capable of emulating the functionalities of an operating System and supports a wider range of commands. 
+
+
 > If the product is an element of a larger system, then relate the requirements of that larger system to the functionality of the product covered by the software requirements specification.
 > 
 > If the product is an element of a larger system, then identify the interfaces between the product covered by the software requirements specification and the larger system of which the product is an element. 
