@@ -21,15 +21,18 @@ One page overall introduction including sections 1.1 and 1.2.
 
 ### Client
 
-Identify the client and their contact details
+Client:  Masood Mansoori
+Contact Details: masood.mansoori@vuw.ac.nz
 
 ### 1.1 Purpose
 
 One sentence describing the purpose of the system (9.5.1)
+Purpose of this system is to simulate functions of an operating system to entice cyber attacks and log said incidences.
 
 ### 1.2 Scope
 
 One paragraph describing the scope of the system (9.5.2)
+The scope of this Cowrie system will be fairly elementary. In our meetings the Client has stated they do not wish for a full fledged editor with a reliance on external libraries; but rather an editor that runs on basic script and can fulfil basic editing functionalities. These functionalities include typical commands that come with simulating an operating system, for example: nano, pwd, mkdir etc. 
 
 ### 1.3 Product overview 
 #### 1.3.1 Product perspective
