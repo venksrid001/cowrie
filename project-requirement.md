@@ -34,38 +34,22 @@ One paragraph describing the scope of the system (9.5.2)
 ### 1.3 Product overview 
 #### 1.3.1 Product perspective
 
-One page defining the system's relationship to other related products
-(9.5.3. but not the subsections in the standard.)
-
-> **9.5.3 Product perspective** <br>
-> Define the system's relationship to other related products. 
-
 Cowrie is a medium level interaction honeypot server, derived from Kippo. Kippo was another medium level interaction server developed with Python, which was primarily used to log brute force attacks and any sort of shell interaction performed by the attacker. Similar to Cowrie, Kippo also presents a fake file system for the attacker to work with. Along with a fake file system, Kippo also provides a file named userdb.txt, which allows the user of Kippo to edit any possible password and username combinations for the attacker to work with. This file can be overwritten and added to when necessary. The commands performed by an attacker when logged into Kippo, are immediately captured an saved into a log file. Kippo also presents the utility to replay these log files at the live speed in which they were performed by the attacker.  
 
 Kippo currently is no longer under active development, and most of it's file structure, functionality and library dependancies have been utilised for the implementation of Cowrie. Cowrie is considered an extension of the functionalities of Kippo, as it is more capable of emulating the functionalities of an operating System and supports a wider range of commands. 
 
-
-> If the product is an element of a larger system, then relate the requirements of that larger system to the functionality of the product covered by the software requirements specification.
-
-Implement specific commands and ensure that the Cowrie is able to provide dynamic output for those possible commands that an attacker may perform. Specifically the whoami command and the ability to provide a command line text editor that runs from it's own script. Whoami command needs to produce expected results depending on whoever the attacker is logged in as. Along with support for a text editor that runs from no library dependancies and is able to emulate the functionality of the nano editor (currently in Linux CLIs), while running off it's own independant script. 
+We plan to implement specific commands and ensure that the Cowrie is able to provide dynamic output for those possible commands that an attacker may perform. Specifically the whoami command and the ability to provide a command line text editor that runs from it's own script. Whoami command needs to produce expected results depending on whoever the attacker is logged in as. Along with support for a text editor that runs from no library dependancies and is able to emulate the functionality of the nano editor (currently in Linux CLIs), while running off it's own independant script. 
 
 
-> If the product is an element of a larger system, then identify the interfaces between the product covered by the software requirements specification and the larger system of which the product is an element. 
+**User interfaces:** 
 
-(Not too sure what to add here)
+Operates within the command line interface. Should allow for editing files within the command line for Windows and Unix certified systems. 
+
+**CPU/Memory**
+
+Memory usage has not been documented as of yet. However there is an existence of a meminfo file, to allow the attacker to monitor how the memory is being used whilst logged into Cowrie. Cowrie simulates the internal storage of different IoT devices to further enhance it's simulation of the internal, configuration files and file structure. Hence when an attacker wants to read the meminfo file, they will be provided with memory storage/cpu/OS that the IoT devices that have been simulated for Cowrie. Memory should be persistent to the extent, that an attacker will be able to view a history of their previous commands performed whilst logged into Cowrie. There should also be at least metadata of the files that were created in the last session where the attacker previously logged on, there should be some trace of the data that was created by the attacker while logged into the honeypot. 
 
 
-> A block diagram showing the major elements of the larger system, interconnections, and external interfaces can be helpful.
-> 
-Describe how the software operates within the following constraints:  
-a) System interfaces;  
-b) User interfaces - Operates as Command Line Interace (CLI)  
-c) Hardware interfaces;  
-d) Software interfaces;  
-e) Communications interfaces;  
-f) Memory;  
-g) Operations;  
-h) Site adaptation requirements.
 
 #### 1.3.2 Product functions
 
