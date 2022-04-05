@@ -41,7 +41,7 @@ Deepika - 0221 257 657 <br>
 Sridhar Venkatesh - 28/03/2022 <br>
 Thomas Yang - 06/04/2022 <br>
 Selby Dasent - <br>
-Shruti Raja - <br>
+Shruti Raja - 06/04/2022<br>
 Lucy Carver - <br>
 Deepika Raheja - 28/03/2022 <br>
 
