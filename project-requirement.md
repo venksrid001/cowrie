@@ -68,7 +68,7 @@ One page identifying the main classes of users and their characteristics (9.5.5)
 
 Cowrie honeypot is a helpful tool for observing the attackers behavior, but it has some areas of impprovements, as listed below:
 
-**a) Lack of a persistent filesystem:** Cowrie honeypot has issues with the maintaining state of the changes into the file system for an individual. A good honeypot is the one where an attacker tries to make changes to the file system, such as adding and removing any folders, files, or directories and it should be able to maintain that information. So that the attacker should be able to see the same changes as before. Otherwise, attacker will be able to findout that is a honeypot. Cowrie honeypot has this limitation which needs to be improved so that attacker can be decevied and continue to interact for the longer time.
+**a) Lack of a persistent filesystem:** Cowrie honeypot has issues with the maintaining state of the changes into the file system for an individual. A good honeypot is the one where an attacker tries to make changes to the file system, such as adding and removing any folders, files, or directories and it should be able to maintain that information. So that the attacker should be able to see the same changes as before. Otherwise, attacker will be able to find out that is a honeypot. Metadata of the file system, like: last modified date, last modified by, owner of the file or directory should also remains same. Cowrie honeypot has this limitation which needs to be improved so that attacker can be decevied and continue to interact for the longer time.
 
 
 
