@@ -67,7 +67,7 @@ One page identifying the main classes of users and their characteristics (9.5.5)
 #### 1.3.4 Limitations
 
 Cowrie honeypot is a helpful tool for observing the attackers behavior, but it has some areas of impprovements, as listed below:
-** a) Lack of a persistent filesystem:** The lack of a persistent filesystem in Cowrie raises suspicion of its ability to deceive returning attackers and limits its ability to fool them. When an attacker tries to log in to the system and attempt to make changes to the file system, such as adding and removing any folders, files, or directories and In the case of a new login attempt, the attacker will not see the same changes as before, but instead, a new state of the system will be found. 
+**a) Lack of a persistent filesystem:** Cowrie honeypot has issues with the maintaining state of the changes into the file system for an individual. A good honeypot is the one where an attacker tries to make changes to the file system, such as adding and removing any folders, files, or directories and it should be able to maintain that information. So that the attacker should be able to see the same changes as before. Otherwise, attacker will be able to findout that is a honeypot. Cowrie honeypot has this limitation which needs to be improved so that attacker can be decevied and continue to interact for the longer time.
 
 
 
