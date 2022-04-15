@@ -47,11 +47,11 @@ The Supercharged Cowrie project plans to implement specific commands and ensure 
 
 **User interfaces:** 
 
-Operates within the command line interface. Should allow for editing files within the command line for Windows and Unix certified systems. 
+Operates within the command line interface. This Should allow for editing files within the command line for Windows and Unix certified systems. 
 
 **CPU/Memory**
 
-Memory usage has not been documented as of yet. However there is an existence of a meminfo file, to allow the attacker to monitor how the memory is being used whilst logged into Cowrie. Cowrie simulates the internal storage of different IoT devices to further enhance it's simulation of the internal, configuration files and file structure. Hence when an attacker wants to read the meminfo file, they will be provided with memory storage/cpu/OS that the IoT devices that have been simulated for Cowrie. Memory should be persistent to the extent, that an attacker will be able to view a history of their previous commands performed whilst logged into Cowrie. There should also be at least metadata of the files that were created in the last session where the attacker previously logged on, there should be some trace of the data that was created by the attacker while logged into the honeypot. 
+Memory usage has not been documented as of yet, however there is an existence of a meminfo file, to allow the attacker to monitor how the memory is being used whilst logged into Cowrie. Cowrie simulates the internal storage of different IoT devices to further enhance its simulation of the internal, configuration files and file structure. When an attacker wants to read the meminfo file, they will be provided with memory storage/CPU/OS from the IoT devices that have been simulated for Cowrie. Memory should be persistent to the extent that an attacker will be able to view a history of their previous commands performed whilst logged into Cowrie. There should also be (at least) metadata of the files that were created in the last session where the attacker previously logged on and there should be some trace of the data that was created by the attacker while logged into the honeypot. 
 
 
 
