@@ -21,8 +21,11 @@ The Supercharged Cowrie project is expected to expand the current capability of 
 
 ### Client
 
-Client:  Masood Mansoori
-Contact Details: masood.mansoori@vuw.ac.nz
+Client:  Masood Mansoori, PhD. M.Sc. B.Sc. <br>
+Contact Details: <br>
+Email: masood.mansoori@vuw.ac.nz <br>
+Work Phone: 04 886 5369 <br>
+University Office: CO 130, Cotton Building 
 
 ### 1.1 Purpose
 
