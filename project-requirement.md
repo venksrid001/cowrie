@@ -55,24 +55,24 @@ Memory usage has not been documented as of yet, however there is an existence of
 
 
 
-#### 1.3.2 Product functions
+#### 1.3.2 Product Functions
 
-Cowrie currently has a number of features that allow it to operate as a honeypot. This project will be expanding on these to improve its functionality. These functions will build off existing commands and utilities within a Unix system but be created to operate within Cowrie.
+Cowrie currently has a number of features that allow it to operate as a honeypot. The Supercharged Cowrie project will be expanding on these to improve its functionality. These functions will build off existing commands and utilities within a Unix system but be created to operate within Cowrie.
 
-The first function will be a dynamic whoami command. Whoami is a basic Unix command and Windows command that is used within the CLI to display the username of who is logged in. Cowrie does currently have a response to the whoami command; however, this command has a fixed response of root. To make this command dynamic it will need to produce a response based of the username of who is logged in. This will improve the deceptiveness of the Cowrie honeypot for those that log into it. 
+The first function will be a dynamic whoami command. This is a basic Unix and Windows command that is used within the CLI to display the username of who is logged in. Cowrie does currently have a response to the whoami command; however this command has a fixed response of root. To make this a dynamic response rather than a static response, the command will need to produce a response based off the username of who is logged in. This will improve the deceptiveness of the Cowrie honeypot for those that log into it. 
 
-The second function that will be added is that of a CLI text editor. A common tactic for attackers when accessing a system is to open a text editor and edit/save a file, if the system does not behave as expected then the attacker nay be tipped off that they are in a honeypot.  
+The second function that will be added is that of a CLI text editor. A common tactic for attackers when accessing a system is to open a text editor and edit/save a file, if the system does not behave as expected then the attacker may be tipped off that they are in a honeypot.  
 
 The text editor should provide an environment like that of Nano. A list of features within Nano are as follows:
--	**Exit** this will prompt the user to save the document and provide the option to change the name of the document and once saved it will exit nano.
--	**Write Out** save the file, the file must be saved with the correct permissions based of the user permissions. This also prompt the user the name the file that is being saved, the text box will have the current file name if there is one and ask the user to confirm if they change it from the original. 
--	**Read File** allow the user to open a file and load the text content into the editor.
--	**Where is** allow the user to find a string within the document.
--	**replace** find and replace a string with another string.
--	**Cut** copy a highlighted string and remove the text from the screen.
--	**Paste** paste a cut or copied string at the position of the curser.
+-	**Exit** This will prompt the user to save the document and provide the option to change the name of the document and once saved it will exit nano.
+-	**Write Out** This saves the file, the file must be saved with the correct permissions based off the user permissions. This also prompts the user to name the file that is being saved. The text box will have the current file name if there is one and ask the user to confirm if they want to change it from the original. 
+-	**Read File** This allows the user to open a file and load the text content into the editor.
+-	**Where is** This allows the user to find a string within the document.
+-	**Replace** This finds and replaces a string with another string.
+-	**Cut** This copies a highlighted string and remove the text from the screen.
+-	**Paste** This pastes a cut or copied string at the position of the curser.
 
-The user experience and interface within the text editor needs to mimic Nano, this includes a highlighted dynamic output at the bottom of the screen. This will need to provide information of how many lines in the document when it is opened. 
+The user experience and interface within the text editor needs to mimic Nano, this includes a highlighted dynamic output at the bottom of the screen. This will need to provide information of how many lines are in the document when it is opened. 
 
 #### 1.3.3 User characteristics   
 
