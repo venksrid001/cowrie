@@ -74,18 +74,12 @@ The text editor should provide an environment like that of Nano. A list of featu
 
 The user experience and interface within the text editor needs to mimic Nano, this includes a highlighted dynamic output at the bottom of the screen. This will need to provide information of how many lines are in the document when it is opened. 
 
-#### 1.3.3 User characteristics   
+#### 1.3.3 User Characteristics   
 
-The Cowrie honeypot system is designed to capture SSH and Telnet connections, as well as record the session information. 
-Cowrie is primarily used by researchers, however, is not limited to. For example,
-Cowrie can be used by individuals or companies that need to track real-time hacking attempts and it can provide some form of defense to the real system. The attacker may be diverted away from the actual system into the honeypot. 
-Hackers use Cowrie on other hackers, hoping adversaries will accidentally leak data that identifies them. 
-Law enforcement may use Cowrie honeypot to catch criminals.
-Government agencies and defense networks can use Cowrie to create a trap for hostile hackers and get them to reveal their techniques.
-The main users of Cowrie are researchers. Researchers are interested in Cowrie because it is seen as a valuable security technique that can be implemented to mitigate attacks and it also provides an opportunity to learn more detail about the nature of these attacks. Researchers can then examine these interactions to learn about new tools, tactics, and processes used by attackers. This resulting analysis then helps them create actionable cybersecurity intelligence and then remediate and secure the information security of the infrastructure. 
-Using honeypots such as Cowrie is increasingly common for studying how attackers penetrate into information security systems. From this, researchers can learn and analyze new threats and attack methodologies to counter and defend ourselves from cyber-attackers. 
+The Cowrie honeypot system is designed to capture SSH and Telnet connections, as well as record the session information. Cowrie is primarily used by researchers, however Cowrie can be used by individuals or companies that need to track real-time hacking attempts. Researchers are interested in Cowrie because it is seen as a valuable security technique that can be implemented to mitigate attacks and it also provides an opportunity to learn more detail about the nature of these attacks. Researchers can then examine these interactions to learn about new tools, tactics, and processes used by attackers. This resulting analysis then helps them create actionable cybersecurity intelligence and then remediate and secure the information security of the infrastructure. Hackers may also use Cowrie on other hackers, hoping adversaries will accidentally leak data that identifies them. Government agencies, law enforcement and defense networks can use Cowrie to create a trap for hostile hackers and get them to reveal their techniques.   
 Another use of Cowrie for researchers is a tool to gather data about attacks. For example, the lessons learned from the attacks can be used to build even better or stronger defense mechanisms to improve security.
 This knowledge can also be used to improve other honeypots or the system itself. In addition, new systems other than honeypots may be developed in future using this knowledge. Research helps to increase our understanding of deception techniques and can be used as a pivot for planning, configuring, and testing the default Cowrie configuration file to increase its deceptive capabilities when presented to attackers.
+The use of honeypots such as Cowrie is becoming increasingly more common in terms of studying how attackers penetrate into information security systems. From this, researchers can learn and analyze new threats and attack methodologies to counter and defend ourselves from cyber-attackers.
 
 #### 1.3.4 Limitations
 
