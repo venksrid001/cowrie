@@ -12,12 +12,12 @@ All team members are expected to contribute equally to the document and list the
 
 <div style="page-break-after: always;"></div>
 
-# ENGR 301 Project *NN* Project Proposal and Requirements Document
-#### Author list, a comma-separated list of the names of each member of the team.
+# ENGR 301 Project Supercharged Cowrie Project Proposal and Requirements Document
+#### Lucy Carver, Sridhar Venkatesh, Thomas Yang, Shruti Raja, Selby Dasent, Deepika Raheja
 
 ## 1. Introduction
 
-Our project is based off of expanding the current capability of the cowrie system. The cowrie system is a honeypot server. Rferring to the cybersecurity honeypot term which is utilised to bait cyber attacks. This is so that we can log attackers's behaviours and can be better prepared for future attacks when desiging other systems.
+The Supercharged Cowrie project is expected to expand the current capability of the Cowrie honeypot server, which is utilized to bait cyber attacks. The Cowrie system logs attackers' behaviour to help inform the user how to be better prepared for future attacks, when designing other systems. 
 
 ### Client
 
@@ -30,7 +30,7 @@ Purpose of this system is to simulate functions of an operating system to entice
 
 ### 1.2 Scope
 
-The scope of this Cowrie system will be fairly elementary. In our meetings the Client has stated they do not wish for a full fledged editor with a reliance on external libraries; but rather an editor that runs on basic script and can fulfil basic editing functionalities. These functionalities include typical commands that come with simulating an operating system, for example: nano, pwd, mkdir etc. 
+The scope of this Cowrie system will be fairly elementary. In our meetings the Client has stated they do not wish for a full fledged editor with a reliance on external libraries; but rather an editor that runs on basic script and can fulfil basic editing functionalities. These functionalities include typical commands that come with simulating an operating system, for example: nano, pwd, mkdir etc.  
 
 ### 1.3 Product overview 
 #### 1.3.1 Product perspective
