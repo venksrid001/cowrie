@@ -83,17 +83,17 @@ The use of honeypots such as Cowrie is becoming increasingly more common in term
 
 #### 1.3.4 Limitations
 
-Cowrie honeypot is a helpful tool for observing the attackers behavior, but it has some areas of impprovements, as listed below:
+The Cowrie honeypot is a helpful tool for observing the attackers behavior, but it has some areas that need improvement, which are listed below.
 
-**a) Lack of a persistent filesystem:** Cowrie honeypot has issues with the maintaining state of the changes into the file system for an individual. A good honeypot is the one where an attacker tries to make changes to the file system, such as adding and removing any folders, files, or directories and it should be able to maintain that information. So that the attacker should be able to see the same changes as before. Otherwise, attacker will be able to find out that is a honeypot. Metadata of the file system, like: last modified date, last modified by, owner of the file or directory should also remains same. Cowrie honeypot has this limitation which needs to be improved so that attacker can be decevied and continue to interact for the longer time.
+**a) Lack of a persistent filesystem:** The Cowrie honeypot has issues with the maintaining changes into the file system for an individual. When an attacker tries to make changes to the file system, such as adding and removing any folders, files, or directories a good honeypot should be able to maintain that information, so that the attacker will be able to see these changes. A lack of changes to this system will indicate to the attacker that they are in a honeypot. Cowrie should also maintain metadata of the file system such as: last modified date, last modified by, owner of the file or directory - this information should remain the same.
 
-**b) Default state of Cowrie honeypot is easily finger printable:** Out of the box cowrie honeypot is easily detectable by the attackers so it needs to be customised to make it smart solution so that attacker can be convenience that he is dealing with real system rather than a honeypot.
+**b) Default state of Cowrie honeypot is easily finger printable:** The Cowrie honeypot is currently unable to be easily customised by the user, meaning the attackers can discover the honeypot.
 
-**c) Cowrie has limited range of realistic IoT device profiles:** IoT devices are one of the favourite tools for the attackers as there are greater chances that these are not configured properly. But Cowrie has limited realistic profiles for the IoT devices, which makes it easily finger printable.
+**c) Cowrie has a limited range of realistic IoT device profiles:** IoT devices are favourable tools for the attackers as there are greater chances that these are not configured properly. Cowrie has limited realistic profiles for the IoT devices, which makes it easily finger printable.
 
-**d) Limited Documentation:** As it is an open source project and it is not maintained by dedicated team. Whenever anyone makes changes to its source code, there are highly chances that it may not be gone through the QA process, and it might have missed to reflect the latest changes into its documentation. Which makes life difficult for the new commers, those wanted to understand and do required changes for the enhancements.
+**d) Limited Documentation:** As it is an open source project and it is not maintained by a dedicated team, there is a lack of documentation. Whenever anyone makes changes to its source code, there is a high chance that it may not have gone through the quality assurance process. This makes it difficult for new developers to edit and contribute to the code, as there is a severe lack of documentation.
 
-**e) Source Code Complexity:** Since the start of the project more than 100 developers have contributed into this project. Over the time, due to lack of the co-ordination of these developers, unnecessary level of complexity has been introduced. 
+**e) Source Code Complexity:** Since the start of the project more than 100 developers have contributed to the original Cowrie project. Due to lack of the co-ordination of these developers, over time an unnecessary level of complexity has been introduced. 
 
 
 ## 2. References
