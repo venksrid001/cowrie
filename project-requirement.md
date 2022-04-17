@@ -106,8 +106,12 @@ This is typically the longest subsection in the document. List up to fifty use c
 
 See 9.5.12. for most systems this will be around one page.
 
-> **9.5.12 Usability requirements**<br>
-> Define usability (quality in use) requirements. Usability requirements and objectives for the software system include measurable effectiveness, efficiency, and satisfaction criteria in specific contexts of use.
+Requirements for the functionality of a text editor within the CLI are as follows. The makings of a satisfactory text editor should mimic efficiency levels to that of the nano command when editing files within the terminal. For example options such as Read File, Write File, Exit, Cut and Paste need to be displayed clearly on the screen to be visible for the user. These sort of functions within the text editor need to have support for keyboard shortcuts to ensure the efficiency levels provided by the nano text editor are also emulated by our newly implemented text editor. For example, if an attacker accidentally enters in the command to execute the text editor to edit a file, they should be provided with the option to quickly exit the file with CTRL+X and proceed upon their intentions.
+
+Permissions to edit files and save them should be properly reflected when an attacker tries to edit a file. For example, nano when editing a file can also let the user know whenever a file is read only or not. Henceforth we plan to implement a text editor that is reflective of permissions enabled on a file, to not permanent changes to be made to a file regardless of the permissions enabled on a specific file. Concrete and clear error messages should be displayed to the user when attempting to edit a read-only file for example, with Nano it cearly displays upon the bottom of the file that the user is editing a read-only file, and this message is highlighted in orange. Making sure the user is immediately aware of the permissions enabled on the file that they are editing. 
+
+
+Requirements that are in place to ensure satisfactory output for the whoami command for Cowrie are as follows. The Cowrie should keep a log of all commands executed by the attacker whether they are supported or not, this should also log the user that the attacker is currently logged in as at that point of time. The whoami command should accurately print out the username/alias that the attacker has decided to go by. There aren't many usages or functionalities to do with the whoami command, however it is imperative for our iteration of the Cowrie honeypot that the whoami can dynamically represent the current use state of the cowrie.
 
 ### 3.4 Performance requirements
 
