@@ -111,24 +111,20 @@ See 9.5.12. for most systems this will be around one page.
 
 ### 3.4 Performance requirements
 
-See 9.5.13. for most systems this will be around one page. Hardware projects also see section 9.4.6.
+•	The whoami command shall respond within 0.5 seconds.
+•	The whoami command shall support 0-10 users simultaneously.
+•	
+•	The Nano Software shall open a new file within 0.5 seconds.
+•	The Nano write out function shall write the file to memory within 0.5 seconds
+•	The Nano exit function shall exit the application within 0.5 seconds
+•	The Nano read file function shall read and open a file within 0.5 seconds
+•	The Nano where is function shall find a string within 0.5 seconds
+•	The Nano replace function shall replace a string within 0.5 seconds
+•	The Nano cut function shall remove the string within 0.5 seconds
+•	The Nano paste function shall write the string within 0.5 seconds
+•	The Nano software shall handle *kbs of data when loading
+•	The Nano software shall handle *kbs of data when saving
 
-> **9.5.13 Performance requirements** <br>
-> Specify both the static and the dynamic numerical requirements placed on the software or on human interaction with the software as a whole. 
-> 
-> Static numerical requirements may include the following:
-> 
-> a) The number of terminals to be supported;  
-> b) The number of simultaneous users to be supported;  
-> c) Amount and type of information to be handled.
-> 
-> Static numerical requirements are sometimes identified under a separate section entitled Capacity.
-> 
-> Dynamic numerical requirements may include, for example, the numbers of transactions and tasks and the amount of data to be processed within certain time periods for both normal and peak workload conditions. The performance requirements should be stated in measurable terms.
-> 
->  For example, "_95 % of the transactions shall be processed in less than 1 second._" rather than, "An operator shall not have to wait for the transaction to complete."
-> 
-> NOTE Numerical limits applied to one specific function are normally specified as part of the processing subparagraph description of that function.
 
 
 ### 3.5 Logical database requirements
