@@ -144,7 +144,21 @@ The Nano software shall handle *kbs of data when saving to a new file.
 
 ### 3.5 Logical database requirements
 
-See 9.5.14. for most systems, a focus on d) and e) is appropriate, such as an object-oriented domain analysis. You should provide an overview domain model (e.g.  a UML class diagram of approximately ten classes) and write a brief description of the responsibilities of each class in the model (3 pages).
+*See 9.5.14. for most systems, a focus on d) and e) is appropriate, such as an object-oriented domain analysis. You should provide an overview domain model (e.g.  a UML class diagram of approximately ten classes) and write a brief description of the responsibilities of each class in the model (3 pages).
+
+Specify the logical requirements for any information that is to be placed into a database, including:
+a) Types of information used by various functions;
+b) Frequency of use;
+c) Accessing capabilities;
+d) Data entities and their relationships;
+e) Integrity constraints;
+f) Data retention requirements*
+
+Data retention – each instance requires persistent data
+Log info and files need to be stored as files for later review
+Var – lib – cowrie – downloads. The location of downloaded files – written files can be stored here to?
+
+
 
 ### 3.6 Design constraints
 
