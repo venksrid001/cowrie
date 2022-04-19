@@ -110,7 +110,7 @@ The way user data will be formatted such as username and password, will be separ
 
 The screen size/format would follow that of a normal linux terminal window.
 
-End messages will only be delivered to the user if they somehow mistype one of the commands (whoami or nano/text editor). 
+End messages will only be delivered to the user if they somehow mistype one of the commands (whoami or nano/text editor). For example ' 'whoiam' is not a recognised command'
 
 
 
@@ -229,9 +229,17 @@ see 9.5.15 and 9.5.16. for most systems, this will be around one page.
 
 ### 3.7 Nonfunctional system attributes
 
-Present the systemic (aka nonfunctional) requirements of the product (see ISO/IEC 25010).
-List up to twenty systemic requirements / attributes.
-Write a short natural language description of the top nonfunctional requirements (approx. five pages).
+#### Security
+
+For the purpose of enhancing the Cowrie, by default the Cowrie already has mechanisms in place to log the commands performed by an attacker into log files following the CEF (Common Event Format). It already has designs in place to store newly created files by an attacker within the fake file system, considering the Cowrie designs the fake-file system from its own end, it is possible for us to search through the files an attacker creates, in case they create a malicious script.
+
+#### Availability
+
+The text editing environment should be available to the user regardless of the faults that may occur. For example a user may accidentally forget to add a filename to the end of their nano command to directly open a file in the text editor, we allow for such situations through the functionality of the read-file shortcut that can be done whilst in the editing environment. Also for recovering possible faults for the whoami command, this can only be managed by providing a possible end message if the command performed by the user is not correct, to ensure the user types in the command correctly. We will implement it this way as this tends to be how Linux systems respond to unrecognised commands. 
+
+#### Portability
+
+Our interation of the Cowrie provides support for a wider range of linux commands. Hence it is preferred that usage and testing of our enhancement of the Cowrie honeypot is done under a UNIX environment. 
 
 
 ### 3.8 Physical and Environmental Requirements 
