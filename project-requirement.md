@@ -144,21 +144,32 @@ The Nano software shall handle *kbs of data when saving to a new file.
 
 ### 3.5 Logical database requirements
 
-*See 9.5.14. for most systems, a focus on d) and e) is appropriate, such as an object-oriented domain analysis. You should provide an overview domain model (e.g.  a UML class diagram of approximately ten classes) and write a brief description of the responsibilities of each class in the model (3 pages).
+The data base for Cowrie is set to represent a standard file system. Any files the attacker saves through Nano are to be stored within cowires downloads folder. All executed commands are to be saved in the cowrie.json file and all system messages are to be saved in the cowrie.log file. 
 
-Specify the logical requirements for any information that is to be placed into a database, including:
-a) Types of information used by various functions;
-b) Frequency of use;
-c) Accessing capabilities;
-d) Data entities and their relationships;
-e) Integrity constraints;
-f) Data retention requirements*
-
-Data retention – each instance requires persistent data
-Log info and files need to be stored as files for later review
-Var – lib – cowrie – downloads. The location of downloaded files – written files can be stored here to?
+The attackers files are to be saved as a standard file in the location they executed nano. Any files the attacker will open with Nano are stored where the command is executed. 
 
 
+```plantuml
+@startuml
+    skinparam backgroundColor #EEEBDC
+    actor whoami
+    whoami -> "cowrie.json" : log all activity
+    whoami -> "cowrie.log" : log system messages
+@enduml
+```
+
+```plantuml
+@startuml
+    skinparam backgroundColor #EEEBDC
+    actor whoami
+    Nano -> "log" : run commmand
+    Nano -> "cowrie.json" : log all activity
+    Nano -> "cowrie.log" : log system messages
+    Nano -> "file" : save file at current location
+    "file" -> "downloads" : log saved files
+    "file" -> Nano : open file
+@enduml
+```
 
 ### 3.6 Design constraints
 
