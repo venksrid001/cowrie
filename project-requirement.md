@@ -146,7 +146,7 @@ The Nano software shall handle *kbs of data when saving to a new file.
 
 The data base for Cowrie is set to represent a standard file system. Any files the attacker saves through Nano are to be stored within cowires downloads folder. All executed commands are to be saved in the cowrie.json file and all system messages are to be saved in the cowrie.log file. 
 
-The attackers files are to be saved as a standard file in the location they executed nano. Any files the attacker will open with Nano are stored where the command is executed. 
+The attackers files are to be saved as a standard file in the location they executed nano. Any files the attacker will open with Nano are stored where the command is executed. This will follow the current event format that cowrie has in place for processing and storing information.
 
 
 ```plantuml
@@ -173,20 +173,7 @@ The attackers files are to be saved as a standard file in the location they exec
 
 ### 3.6 Design constraints
 
-see 9.5.15 and 9.5.16. for most systems, this will be around one page.
-
-> 9.5.15 Design constraints<br>
-> Specify constraints on the system design imposed by external standards, regulatory requirements, or project limitations.
-> 
-> 9.5.16 Standards compliance<br>
-> Specify the requirements derived from existing standards or regulations, including:
-> 
-> a) Report format;<br>
-> b) Data naming;<br>
-> c) Accounting procedures;<br>
-> d) Audit tracing.
-> 
-> For example, this could specify the requirement for software to trace processing activity. Such traces are needed for some applications to meet minimum regulatory or financial standards. An audit trace requirement may, for example, state that all changes to a payroll database shall be recorded in a trace file with before and after values.
+Cowrie has a currnet event format that logs system commands and saves files in an isolated location. The whoami and Nano functions must log their commands and saved information using this system. 
 
 ### 3.7 Nonfunctional system attributes
 
@@ -197,7 +184,7 @@ Write a short natural language description of the top nonfunctional requirements
 
 ### 3.8 Physical and Environmental Requirements 
 
-For systems with hardware components, identify the physical characteristics of that hardware (9.4.10) and environment conditions in which it must operate (9.4.11).  Depending on the project, this section may be from one page up to 5 pages.
+There are no physical or enviromental requirements for this project.
 
 ### 3.9 Supporting information
 
