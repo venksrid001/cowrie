@@ -217,7 +217,27 @@ One page on assumptions and dependencies (9.5.7).
 
 ### 6.2 Acronyms and abbreviations
 
-One page glossary _as required_.
+Here is the list of Acronyms and abbreviations used in this document.
+####List of Acronyms
+
+|Acronym  |	Category/ stands for |
+|---------|----------------------|
+|e.g.|Latin abbreviations|
+|Kbs|Knowledge based system| 
+|UML|Unified Modeling Language|
+|ENGR301|Engineering301|
+|ssh|Secure Shell|
+|CLI|Command line interface|
+|ECS|Engineering computer science|
+
+####List of abbreviations
+
+|Abbreviation  |Stands for |
+|---------|----------------------|
+|etc.|et cetera (means and so on)|
+|sync|Synchronization, synchronize| 
+|i.e.|Id est (means that is) Used to clarify or specify something in parentheses|
+
 
 ## 7. Contributions
 
