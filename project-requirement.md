@@ -96,8 +96,6 @@ References to other documents or standards. Follow the IEEE Citation  Reference 
 
 ### 3.1 External interfaces
 
-See 9.5.10. for most systems this will be around one page. 
-
 #### Interface 1 : Command Line Interface
 
 The purpose of this interface is to ensure that the user is within a UNIX environment to ensure they can perform certain linux commands such as nano (or some command to summon a text editor) and whoami. This is the sole interface where both input and output can be retirieved. 
