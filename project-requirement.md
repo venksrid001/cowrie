@@ -218,7 +218,8 @@ One page on assumptions and dependencies (9.5.7).
 ### 6.2 Acronyms and abbreviations
 
 Here is the list of Acronyms and abbreviations used in this document.
-####List of Acronyms
+
+#### List of Acronyms
 
 |Acronym  |	Category/ stands for |
 |---------|----------------------|
@@ -230,7 +231,7 @@ Here is the list of Acronyms and abbreviations used in this document.
 |CLI|Command line interface|
 |ECS|Engineering computer science|
 
-####List of abbreviations
+#### List of abbreviations
 
 |Abbreviation  |Stands for |
 |---------|----------------------|
