@@ -111,20 +111,35 @@ See 9.5.12. for most systems this will be around one page.
 
 ### 3.4 Performance requirements
 
-•	The whoami command shall respond within 0.5 seconds.
-•	The whoami command shall support 0-10 users simultaneously.
-•	
-•	The Nano Software shall open a new file within 0.5 seconds.
-•	The Nano write out function shall write the file to memory within 0.5 seconds
-•	The Nano exit function shall exit the application within 0.5 seconds
-•	The Nano read file function shall read and open a file within 0.5 seconds
-•	The Nano where is function shall find a string within 0.5 seconds
-•	The Nano replace function shall replace a string within 0.5 seconds
-•	The Nano cut function shall remove the string within 0.5 seconds
-•	The Nano paste function shall write the string within 0.5 seconds
-•	The Nano software shall handle *kbs of data when loading
-•	The Nano software shall handle *kbs of data when saving
+**3.4.1 whoami Response Time**
 
+The whoami command shall display response within 0.5 seconds of being called.
+
+**3.4.2 Nano Response time**
+
+The Nano software shall display the user interface within 0.5 seconds of being called.
+
+The Nano software shall open and display an existing file within 1 second of being called.
+
+The write out function shall write the file to memory within 1 second of being called.
+
+The exit function shall exit the application and return to the CLI within 0.5 seconds of being called.
+
+The where function shall find a string within 1 second of being called.
+
+The replace function shall replace a string within 0.5 seconds of being called.
+
+The cut function shall remove the string and store the string within 0.5 seconds of being called.
+
+The paste function shall write the stored string within 0.5 seconds of being called.
+
+**3.4.3 Nano Document Size**
+
+The Nano software shall handle *kbs of data when loading an existing file.
+
+The Nano software shall handle *kbs of data when saving to an existing file.
+
+The Nano software shall handle *kbs of data when saving to a new file.
 
 
 ### 3.5 Logical database requirements
