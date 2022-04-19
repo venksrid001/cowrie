@@ -100,11 +100,67 @@ See 9.5.10. for most systems this will be around one page.
 
 ### 3.2 Functions
 
-This is typically the longest subsection in the document. List up to fifty use cases (in order of priority for development), and for at least top ten focal use cases, write a short goal statement and use case body (up to seven pages).  Identify the use cases that comprise a minimum viable product.
+
+#### Use Case 1: User executes whoami command to see which user they are logged in as
+
+The first priority in terms of development would be to apply dynamic output to the whoami command, dependent upon who the user is currently logged in as. This would be first priority in terms of development as functionality of the whoami command will aid in developing a fully fledged text editor that operates dynamically depending upon the permissions enabled on a file. 
+
+![](use_cases/use_case1.png)
+
+#### Use Case 2: User executes text editor command to summon text editor to edit a file
+
+Once the whoami command has been implemented and ensured that the Cowrie honeypot has support for it, we plan to start implementing basic functionality for the text editor. For example, ensuring that some text editing environment (similar to that of nano) opens up once the user executes the command. 
+
+![](use_cases/use_case2.png)
+
+#### Use Case 3: User attempts to edit a file and save the progress they have made
+
+After providing support for the basic editing functionality, the next step would be to ensure that there is persistence for edited files. We need to implement some level of saving functionality to allow the user to continue upon the progress they have already made previously within a file. 
+
+![](use_cases/use_case3v2.png)
+
+#### Use Case 4: User uses Write Out option on an edited file
+
+Similar to the exit functionality, the Write Out option also allows for an option to save before the action is completed, also with an additional option to rename the file if needed, however this allows the user to continue with their progress on a file. We also need to ensure with saving files that we also assign correct permissions to files that are being saved, eg. Owner permissions, group permissions, other permissions etc.
+
+![](use_cases/use_case4.png)
+
+#### Use Case 5: User uses Write Out option on an edited file
+
+This functionality allows a user to open an already existing file within the text editing environment to continue their progress on that file.
+
+![](use_cases/use_case5.png)
+
+#### Use Case 6: User wants to search for a string within a file
+
+We also want to allow for the functionality to find and search if a certain string exists within a files contents
+
+![](use_cases/use_case6v2.png)
+
+#### Use Case 7: User wants to replace all occurrences of a string with another string in a file
+
+Along with implementing a find functionality within our text editing environment. It is imperative that along with that a find and replace functionality is also implemented and available to the user. 
+
+![](use_cases/use_case7.png)
+
+#### Use Case 8: User wants to cut/delete whole lines within a file 
+
+To almost complete a minimum viable text editor support for the Cowrie. It is also important that we provide support for mass deletion within the text editing environment, for example allowing a user to delete a whole line of text in their file.
+
+![](use_cases/use_case8.png)
+
+
+#### Use Case 9: User wants to paste text into their file
+
+Our final feature for our text editor is to add some level of support for pasting content from other files into the text editing environment for the user, ensuring that the text editor we provide for the Cowrie includes all the functionalities of a normal text editor.
+
+![](use_cases/use_case9.png)
+
+
 
 ### 3.3 Usability Requirements
 
-See 9.5.12. for most systems this will be around one page.
+
 
 Requirements for the functionality of a text editor within the CLI are as follows. The makings of a satisfactory text editor should mimic efficiency levels to that of the nano command when editing files within the terminal. For example options such as Read File, Write File, Exit, Cut and Paste need to be displayed clearly on the screen to be visible for the user. These sort of functions within the text editor need to have support for keyboard shortcuts to ensure the efficiency levels provided by the nano text editor are also emulated by our newly implemented text editor. For example, if an attacker accidentally enters in the command to execute the text editor to edit a file, they should be provided with the option to quickly exit the file with CTRL+X and proceed upon their intentions.
 
