@@ -98,6 +98,25 @@ References to other documents or standards. Follow the IEEE Citation  Reference 
 
 See 9.5.10. for most systems this will be around one page. 
 
+#### Interface 1 : Command Line Interface
+
+The purpose of this interface is to ensure that the user is within a UNIX environment to ensure they can perform certain linux commands such as nano (or some command to summon a text editor) and whoami. This is the sole interface where both input and output can be retirieved. 
+
+The source of input through this interface will come through the users end when they connect through to the Cowrie Honeypot, to prevent usability issues with the user, the responses will be delivered to the same terminal window as the user, such as the theme for most honeypot servers. 
+
+Outputs delivered for the whoami and text editor commands should be dynamic and should be responsive and adaptive to the current user state of the Cowrie. The text editor environment should be summoned for inputs such as (nano [filename]) to edit a file straight from the terminal. As well as have support for input commands such as (nano) which will solely bring up the text editing environment for the user to select or create files with names of their choice. For the whoami command, valid inputs from the user would strictly be confined to "whoami" as this is the case for a normal UNIX/Linux environment. Valid output would guarantee a username, as the user would most likely at the leas perform this command after they have logged into the Cowrie honeypot. Source of the output will be located in the config file and the system should at least print out the ocrrect username based off the current state of the Cowrie. 
+
+The timing of responses for the inputs should be around 5 seconds at most, particularly for loading up the text editing environment such as Nano. Functionalities within the text editor should be performed within a second of being called by the user. As for the whoami command, searching through the userdb.txt file and fetching the latest username, this process of gathering the output should be performed within a second of being called as well. 
+
+The way user data will be formatted such as username and password, will be separated by a ":" character. For example within the configured for us userdb.txt all the entries follow a set structure following username:x:password, the value "x" is an abitrary value and is not considered for when we parse the values to retrieve the username from a line. 
+
+The screen size/format would follow that of a normal linux terminal window.
+
+End messages will only be delivered to the user if they somehow mistype one of the commands (whoami or nano/text editor). 
+
+
+
+
 ### 3.2 Functions
 
 
@@ -159,8 +178,6 @@ Our final feature for our text editor is to add some level of support for pastin
 
 
 ### 3.3 Usability Requirements
-
-
 
 Requirements for the functionality of a text editor within the CLI are as follows. The makings of a satisfactory text editor should mimic efficiency levels to that of the nano command when editing files within the terminal. For example options such as Read File, Write File, Exit, Cut and Paste need to be displayed clearly on the screen to be visible for the user. These sort of functions within the text editor need to have support for keyboard shortcuts to ensure the efficiency levels provided by the nano text editor are also emulated by our newly implemented text editor. For example, if an attacker accidentally enters in the command to execute the text editor to edit a file, they should be provided with the option to quickly exit the file with CTRL+X and proceed upon their intentions.
 
