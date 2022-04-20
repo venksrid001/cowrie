@@ -212,8 +212,19 @@ Project requirements do not involve risk of death, serious harm, harm or injury
 
 ## 6. Appendices
 ### 6.1 Assumptions and dependencies 
+Supercharged Cowrie Project has below listed Assumptions and dependancies
 
-One page on assumptions and dependencies (9.5.7).
+#### Assumptions:
+1. Port (22) is enabled for SSH login.
+1. "admin" user has permission to do SSH login.
+1. Allwed to use basic linux commands, like: nano editor, pwd, whoami
+1. "whoami" command is executable and returns expected outcome.
+1. "userdb.txt" file content format would be "<USER_NAME>:<UESR_PASSWORD>"
+1. Screen size/format would be as per the standard linux editors.
+
+#### Dependancies:
+1. Availability of Source code for 'Cowrie Honeypot Server' project for extension and enhancements.
+1. 
 
 ### 6.2 Acronyms and abbreviations
 
@@ -223,21 +234,22 @@ Here is the list of Acronyms and abbreviations used in this document.
 
 |Acronym  |	Category/ stands for |
 |---------|----------------------|
-|e.g.|Latin abbreviations|
-|Kbs|Knowledge based system| 
-|UML|Unified Modeling Language|
-|ENGR301|Engineering301|
-|ssh|Secure Shell|
-|CLI|Command line interface|
-|ECS|Engineering computer science|
+|CLI | Command line interface|
+|e.g. | Latin abbreviations|
+|ECS | Engineering computer science|
+|ENGR301 | Engineering301|
+|Kbs | Knowledge based system| 
+|ssh | Secure Shell|
+|UML | Unified Modeling Language|
 
 #### List of abbreviations
 
 |Abbreviation  |Stands for |
 |---------|----------------------|
 |etc.|et cetera (means and so on)|
-|sync|Synchronization, synchronize| 
 |i.e.|Id est (means that is) Used to clarify or specify something in parentheses|
+|sync|Synchronization, synchronize| 
+
 
 
 ## 7. Contributions
