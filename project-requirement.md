@@ -240,13 +240,13 @@ Here is the list of Acronyms and abbreviations used in this document.
 
 |Acronym  |	Category/ stands for |
 |---------|----------------------|
-|CEF | Common Event Format |
+|CEF | Common Event Format (Used for loggiing) |
 |CLI | Command Line Interface |
 |e.g. | Latin abbreviations |
-|ECS | Engineering computer science |
-|ENGR301 | Engineering301 |
+|ECS | Engineering Computer Science |
+|ENGR301 | Course Code used in Victoria University for Engineering stream. |
 |Kbs | Knowledge based system |
-|ssh | Secure Shell |
+|ssh or SSH | Secure Shell used for remote login to the linux server |
 |UML | Unified Modeling Language |
 
 #### List of abbreviations
