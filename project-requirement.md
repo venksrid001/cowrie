@@ -173,7 +173,17 @@ The attackers files are to be saved as a standard file in the location they exec
 
 ### 3.6 Design constraints
 
-Cowrie has a currnet event format that logs system commands and saves files in an isolated location. The whoami and Nano functions must log their commands and saved information using this system. 
+**Python3**
+
+Python3 is an unfamiliar language with several of the team, most members coding experience has been focused on Java. This is a major constraint as users will be having to learn python while developing the program.
+
+**Expanding an existing system**
+
+Cowrie is already an operational piece of software. The project team will have to familiarise themselves with the current software and how to add modules to it. The system already has features and processes in place that the team must adhere to. 
+
+**Timeframe**
+
+Deadlines and timeframes will pose constraints on this project. Team members have other commitments such as work and other university courses that could have conflicting deadlines. There is also the risk of illness caused by but not limited to covid. This could have team members unable to perform their assigned tasks. 
 
 ### 3.7 Nonfunctional system attributes
 
