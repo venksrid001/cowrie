@@ -194,11 +194,11 @@ Write a short natural language description of the top nonfunctional requirements
 
 ### 3.8 Physical and Environmental Requirements 
 
-There are no physical or enviromental requirements for this project.
+There are no physical hardware components associated with this project. Basic environmental requirements solely consist of simple internet connection.
 
 ### 3.9 Supporting information
 
-see 9.5.19. 
+Their is no sypporting information for this project.
 
 ## 4. Verification
 
