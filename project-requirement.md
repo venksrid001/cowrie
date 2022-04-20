@@ -221,10 +221,13 @@ Supercharged Cowrie Project has below listed Assumptions and dependancies
 1. "whoami" command is executable and returns expected outcome.
 1. "userdb.txt" file content format would be "<USER_NAME>:<UESR_PASSWORD>"
 1. Screen size/format would be as per the standard linux editors.
+1. File editiing commands will be stored in a log file and its name will be Cowrie.log
+1. Location of the "Cowrie.log" file will be /cowrie/var/cowrie.
+1. Doesn't have specific hardware requirements.
 
 #### Dependancies:
 1. Availability of Source code for 'Cowrie Honeypot Server' project for extension and enhancements.
-1. 
+1. Knowledge of the python language would be required. 
 
 ### 6.2 Acronyms and abbreviations
 
@@ -234,21 +237,26 @@ Here is the list of Acronyms and abbreviations used in this document.
 
 |Acronym  |	Category/ stands for |
 |---------|----------------------|
-|CLI | Command line interface|
-|e.g. | Latin abbreviations|
-|ECS | Engineering computer science|
-|ENGR301 | Engineering301|
-|Kbs | Knowledge based system| 
-|ssh | Secure Shell|
-|UML | Unified Modeling Language|
+|CEF | Common Event Format |
+|CLI | Command Line Interface |
+|e.g. | Latin abbreviations |
+|ECS | Engineering computer science |
+|ENGR301 | Engineering301 |
+|Kbs | Knowledge based system |
+|ssh | Secure Shell |
+|UML | Unified Modeling Language |
 
 #### List of abbreviations
 
-|Abbreviation  |Stands for |
+|Abbreviation  | Stands/Used for |
 |---------|----------------------|
 |etc.|et cetera (means and so on)|
 |i.e.|Id est (means that is) Used to clarify or specify something in parentheses|
+|mkdir| Linux command to create new directoty |
 |sync|Synchronization, synchronize| 
+|nano| Linux Text Editor |
+|whoami| Linux Command to see current User details|
+
 
 
 
