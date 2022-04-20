@@ -246,7 +246,7 @@ Our interation of the Cowrie provides support for a wider range of linux command
 
 ### 3.8 Physical and Environmental Requirements 
 
-For systems with hardware components, identify the physical characteristics of that hardware (9.4.10) and environment conditions in which it must operate (9.4.11).  Depending on the project, this section may be from one page up to 5 pages.
+There are no physical hardware components associated with this project. Basic environmental requirements solely consist of simple internet connection. 
 
 ### 3.9 Supporting information
 
