@@ -224,10 +224,13 @@ Supercharged Cowrie Project has below listed Assumptions and dependancies
 1. File editiing commands will be stored in a log file and its name will be Cowrie.log
 1. Location of the "Cowrie.log" file will be /cowrie/var/cowrie.
 1. Doesn't have specific hardware requirements.
+1. Only file system will be used to store information rather than using any SQL (like MySQL, SQL Server etc.) or Non-SQL (Like: MongoDB, DyanmoDB etc.) database.
+1. Customization would be required only for 'whoami' and 'nano' text editor in this project.
 
 #### Dependancies:
 1. Availability of Source code for 'Cowrie Honeypot Server' project for extension and enhancements.
 1. Knowledge of the python language would be required. 
+1. Location of the various log files would be dependent on the source code for 'Cowrie' Project.
 
 ### 6.2 Acronyms and abbreviations
 
