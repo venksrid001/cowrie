@@ -96,18 +96,93 @@ References to other documents or standards. Follow the IEEE Citation  Reference 
 
 ### 3.1 External interfaces
 
-See 9.5.10. for most systems this will be around one page. 
+#### Interface 1 : Command Line Interface
+
+The purpose of this interface is to ensure that the user is within a UNIX environment to ensure they can perform certain linux commands such as nano (or some command to summon a text editor) and whoami. This is the sole interface where both input and output can be retirieved. 
+
+The source of input through this interface will come through the users end when they connect through to the Cowrie Honeypot, to prevent usability issues with the user, the responses will be delivered to the same terminal window as the user, such as the theme for most honeypot servers. 
+
+Outputs delivered for the whoami and text editor commands should be dynamic and should be responsive and adaptive to the current user state of the Cowrie. The text editor environment should be summoned for inputs such as (nano [filename]) to edit a file straight from the terminal. As well as have support for input commands such as (nano) which will solely bring up the text editing environment for the user to select or create files with names of their choice. For the whoami command, valid inputs from the user would strictly be confined to "whoami" as this is the case for a normal UNIX/Linux environment. Valid output would guarantee a username, as the user would most likely at the leas perform this command after they have logged into the Cowrie honeypot. Source of the output will be located in the config file and the system should at least print out the ocrrect username based off the current state of the Cowrie. 
+
+The timing of responses for the inputs should be around 5 seconds at most, particularly for loading up the text editing environment such as Nano. Functionalities within the text editor should be performed within a second of being called by the user. As for the whoami command, searching through the userdb.txt file and fetching the latest username, this process of gathering the output should be performed within a second of being called as well. 
+
+The way user data will be formatted such as username and password, will be separated by a ":" character. For example within the configured for us userdb.txt all the entries follow a set structure following username:x:password, the value "x" is an abitrary value and is not considered for when we parse the values to retrieve the username from a line. 
+
+The screen size/format would follow that of a normal linux terminal window.
+
+End messages will only be delivered to the user if they somehow mistype one of the commands (whoami or nano/text editor). For example ' 'whoiam' is not a recognised command'
+
+
+
 
 ### 3.2 Functions
 
-This is typically the longest subsection in the document. List up to fifty use cases (in order of priority for development), and for at least top ten focal use cases, write a short goal statement and use case body (up to seven pages).  Identify the use cases that comprise a minimum viable product.
+
+#### Use Case 1: User executes whoami command to see which user they are logged in as
+
+The first priority in terms of development would be to apply dynamic output to the whoami command, dependent upon who the user is currently logged in as. This would be first priority in terms of development as functionality of the whoami command will aid in developing a fully fledged text editor that operates dynamically depending upon the permissions enabled on a file. 
+
+![](use_cases/use_case1.png)
+
+#### Use Case 2: User executes text editor command to summon text editor to edit a file
+
+Once the whoami command has been implemented and ensured that the Cowrie honeypot has support for it, we plan to start implementing basic functionality for the text editor. For example, ensuring that some text editing environment (similar to that of nano) opens up once the user executes the command. 
+
+![](use_cases/use_case2.png)
+
+#### Use Case 3: User attempts to edit a file and save the progress they have made
+
+After providing support for the basic editing functionality, the next step would be to ensure that there is persistence for edited files. We need to implement some level of saving functionality to allow the user to continue upon the progress they have already made previously within a file. 
+
+![](use_cases/use_case3v2.png)
+
+#### Use Case 4: User uses Write Out option on an edited file
+
+Similar to the exit functionality, the Write Out option also allows for an option to save before the action is completed, also with an additional option to rename the file if needed, however this allows the user to continue with their progress on a file. We also need to ensure with saving files that we also assign correct permissions to files that are being saved, eg. Owner permissions, group permissions, other permissions etc.
+
+![](use_cases/use_case4.png)
+
+#### Use Case 5: User uses Write Out option on an edited file
+
+This functionality allows a user to open an already existing file within the text editing environment to continue their progress on that file.
+
+![](use_cases/use_case5.png)
+
+#### Use Case 6: User wants to search for a string within a file
+
+We also want to allow for the functionality to find and search if a certain string exists within a files contents
+
+![](use_cases/use_case6v2.png)
+
+#### Use Case 7: User wants to replace all occurrences of a string with another string in a file
+
+Along with implementing a find functionality within our text editing environment. It is imperative that along with that a find and replace functionality is also implemented and available to the user. 
+
+![](use_cases/use_case7.png)
+
+#### Use Case 8: User wants to cut/delete whole lines within a file 
+
+To almost complete a minimum viable text editor support for the Cowrie. It is also important that we provide support for mass deletion within the text editing environment, for example allowing a user to delete a whole line of text in their file.
+
+![](use_cases/use_case8.png)
+
+
+#### Use Case 9: User wants to paste text into their file
+
+Our final feature for our text editor is to add some level of support for pasting content from other files into the text editing environment for the user, ensuring that the text editor we provide for the Cowrie includes all the functionalities of a normal text editor.
+
+![](use_cases/use_case9.png)
+
+
 
 ### 3.3 Usability Requirements
 
-See 9.5.12. for most systems this will be around one page.
+Requirements for the functionality of a text editor within the CLI are as follows. The makings of a satisfactory text editor should mimic efficiency levels to that of the nano command when editing files within the terminal. For example options such as Read File, Write File, Exit, Cut and Paste need to be displayed clearly on the screen to be visible for the user. These sort of functions within the text editor need to have support for keyboard shortcuts to ensure the efficiency levels provided by the nano text editor are also emulated by our newly implemented text editor. For example, if an attacker accidentally enters in the command to execute the text editor to edit a file, they should be provided with the option to quickly exit the file with CTRL+X and proceed upon their intentions.
 
-> **9.5.12 Usability requirements**<br>
-> Define usability (quality in use) requirements. Usability requirements and objectives for the software system include measurable effectiveness, efficiency, and satisfaction criteria in specific contexts of use.
+Permissions to edit files and save them should be properly reflected when an attacker tries to edit a file. For example, nano when editing a file can also let the user know whenever a file is read only or not. Henceforth we plan to implement a text editor that is reflective of permissions enabled on a file, to not permanent changes to be made to a file regardless of the permissions enabled on a specific file. Concrete and clear error messages should be displayed to the user when attempting to edit a read-only file for example, with Nano it cearly displays upon the bottom of the file that the user is editing a read-only file, and this message is highlighted in orange. Making sure the user is immediately aware of the permissions enabled on the file that they are editing. 
+
+
+Requirements that are in place to ensure satisfactory output for the whoami command for Cowrie are as follows. The Cowrie should keep a log of all commands executed by the attacker whether they are supported or not, this should also log the user that the attacker is currently logged in as at that point of time. The whoami command should accurately print out the username/alias that the attacker has decided to go by. There aren't many usages or functionalities to do with the whoami command, however it is imperative for our iteration of the Cowrie honeypot that the whoami can dynamically represent the current use state of the cowrie.
 
 ### 3.4 Performance requirements
 
@@ -154,14 +229,24 @@ see 9.5.15 and 9.5.16. for most systems, this will be around one page.
 
 ### 3.7 Nonfunctional system attributes
 
-Present the systemic (aka nonfunctional) requirements of the product (see ISO/IEC 25010).
-List up to twenty systemic requirements / attributes.
-Write a short natural language description of the top nonfunctional requirements (approx. five pages).
+#### Security
+
+For the purpose of enhancing the Cowrie, by default the Cowrie already has mechanisms in place to log the commands performed by an attacker into log files following the CEF (Common Event Format). It already has designs in place to store newly created files by an attacker within the fake file system, considering the Cowrie designs the fake-file system from its own end, it is possible for us to search through the files an attacker creates, in case they create a malicious script. We have access to any actions or any content the user provides already with the mechanisms in place from the sydtem we are enhancing
+
+#### Availability
+
+The text editing environment should be available to the user regardless of the faults that may occur. For example a user may accidentally forget to add a filename to the end of their nano command to directly open a file in the text editor, we allow for such situations through the functionality of the read-file shortcut that can be done whilst in the editing environment. If a user possibly wants to exit a file, under all circumstances of when a user wants to exit a file, they should be prompted to confirm if they want to save the file or rename the file. If a fault happens even under those circumstances, for example a user accidentally exits without saving an edited file, we should provide no recovering ability for those files as this helps to further simulate the nuances of an actual linux system/environment. We provide prompts to ensure a user will remember to save their files before exiting them, thus the chance of this happening is very small. 
+
+Also for recovering possible faults for the whoami command, this can only be managed by providing a possible end message if the command performed by the user is not correct, to ensure the user types in the command correctly. We will implement it this way as this tends to be how Linux systems respond to unrecognised commands. 
+
+#### Portability
+
+Our interation of the Cowrie provides support for a wider range of linux commands. Hence it is preferred that usage and testing of our enhancement of the Cowrie honeypot is done under a UNIX environment. 
 
 
 ### 3.8 Physical and Environmental Requirements 
 
-For systems with hardware components, identify the physical characteristics of that hardware (9.4.10) and environment conditions in which it must operate (9.4.11).  Depending on the project, this section may be from one page up to 5 pages.
+There are no physical hardware components associated with this project. Basic environmental requirements solely consist of simple internet connection. 
 
 ### 3.9 Supporting information
 
