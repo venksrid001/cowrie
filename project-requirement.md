@@ -59,7 +59,7 @@ The text editor should provide an environment like that of Nano. A list of featu
 -	**Read File** This allows the user to open a file and load the text content into the editor.
 -	**Where is** This allows the user to find a string within the document.
 -	**Replace** This finds and replaces a string with another string.
--	**Cut** This copies a highlighted string and remove the text from the screen.
+-	**Cut** This copies a highlighted string and remove the text from the screen. 
 -	**Paste** This pastes a cut or copied string at the position of the curser.
 
 The user experience and interface within the text editor needs to mimic Nano, this includes a highlighted dynamic output at the bottom of the screen. This will need to provide information of how many lines are in the document when it is opened. 
@@ -177,17 +177,49 @@ see 9.5.19.
 
 Identify dates for key project deliverables: 
 
-1. architectural prototype
-1. minimum viable product
-1. further releases
+1. July 31st - Architectural Prototype 
+1. August 19th - Minimum Viable Product
+1. October 1st - Further Releases
 
-(1 page).
+
 
 ### 5.2 Budget
 
-Present a budget for the project (table), and justify each budget item (one paragraph per item, one page overall). 
+Since our project is software based, we do not require any physical equipment or resources outside of our reach to complete it. Therefore this project does not have a budget. 
 
 ### 5.3 Risks 
+
+Risk: Tripping
+Likelihood: Likely
+Impact: Light - severe 
+Can cause: Painful injuries
+Mitigation: Keep floor clear. Try keep bags, chords etc under tables. No running
+
+Risk: Spending large amounts of time looking at the screen.
+Likelihood: Very likely
+Impact: Light - severe 
+Can cause: headaches, blurry vision, dry eyes, and neck and shoulder pain
+Mitigation: Follow the 20-20-20 rule. Every 20 minutes look away from your screen and look at an object 20 feet away for at least 20 seconds.
+
+Risk: Sitting at the desk for long periods of time.
+Likelihood: Very likely
+Impact: Moderate
+Can cause: Bad posture, back pain
+Mitigation: take regular breaks, go for short walks
+
+Risk: Papercuts
+Liklihood: Unlikely
+Impact: Light
+Can cause: Bleeding, pain
+Mitigation: Dont use paper - it is not necessary for this project
+
+Risk: Lifting/carrying heavy items such as computer equipment or other personal belongings.
+Likelyhood: likely
+Impact moderate
+Can cause: Injuries if something is dropped, muscle sprains and strains
+Mitigation: Position items so they are easily accessible for everyone
+
+
 
 Identify the ten most important project risks to achieving project goals: their type, likelihood, impact, and mitigation strategies (3 pages).
 
