@@ -356,12 +356,56 @@ Project requirements do not involve risk of death, serious harm, harm or injury
 
 ## 6. Appendices
 ### 6.1 Assumptions and dependencies 
+Supercharged Cowrie Project has below listed Assumptions and dependancies
 
-One page on assumptions and dependencies (9.5.7).
+#### Assumptions:
+1. Port (22) is enabled for SSH login.
+1. "admin" user has permission to do SSH login.
+1. Allwed to use basic linux commands, like: nano editor, pwd, whoami
+1. "whoami" command is executable and returns expected outcome.
+1. "userdb.txt" file content format would be "<USER_NAME>:<UESR_PASSWORD>"
+1. Screen size/format would be as per the standard linux editors.
+1. File editiing commands will be stored in a log file and its name will be Cowrie.log
+1. Location of the "Cowrie.log" file will be /cowrie/var/cowrie.
+1. Doesn't have specific hardware requirements.
+1. Only file system will be used to store information rather than using any SQL (like MySQL, SQL Server etc.) or Non-SQL (Like: MongoDB, DyanmoDB etc.) database.
+1. Customization would be required only for 'whoami' and 'nano' text editor in this project.
+
+#### Dependancies:
+1. Availability of Source code for 'Cowrie Honeypot Server' project for extension and enhancements.
+1. Knowledge of the python language would be required. 
+1. Location of the various log files would be dependent on the source code for 'Cowrie' Project.
 
 ### 6.2 Acronyms and abbreviations
 
-One page glossary _as required_.
+Here is the list of Acronyms and abbreviations used in this document.
+
+#### List of Acronyms
+
+|Acronym  |	Category/ stands for |
+|---------|----------------------|
+|CEF | Common Event Format (Used for loggiing) |
+|CLI | Command Line Interface |
+|e.g. | Latin abbreviations |
+|ECS | Engineering Computer Science |
+|ENGR301 | Course Code used in Victoria University for Engineering stream. |
+|Kbs | Knowledge based system |
+|ssh or SSH | Secure Shell used for remote login to the linux server |
+|UML | Unified Modeling Language |
+
+#### List of abbreviations
+
+|Abbreviation  | Stands/Used for |
+|---------|----------------------|
+|etc.|et cetera (means and so on)|
+|i.e.|Id est (means that is) Used to clarify or specify something in parentheses|
+|mkdir| Linux command to create new directoty |
+|sync|Synchronization, synchronize| 
+|nano| Linux Text Editor |
+|whoami| Linux Command to see current User details|
+
+
+
 
 ## 7. Contributions
 
