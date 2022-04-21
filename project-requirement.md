@@ -89,7 +89,9 @@ The Cowrie honeypot is a helpful tool for observing the attackers behavior, but 
 ## 2. References
 
 
-1.W. Cabral, C. Valli, L. Sikos and S. Wakeling, "Review and Analysis of Cowrie Artefacts and Their Potential to be Used Deceptively," 2019 International Conference on Computational Science and Computational Intelligence (CSCI), 2019, pp. 166-171, doi: 10.1109/CSCI49370.2019.00035.
+1. W. Cabral, C. Valli, L. Sikos and S. Wakeling, "Review and Analysis of Cowrie Artefacts and Their Potential to be Used Deceptively," 2019 International Conference on Computational Science and Computational Intelligence (CSCI), 2019, pp. 166-171, doi: 10.1109/CSCI49370.2019.00035.
+
+2. Zealand, W., 2022. Offices.  WorkSafe. Available at: <https://www.worksafe.govt.nz/managing-health-and-safety/managing-risks/what-risk-looks-like-in-your-industry/office-workers> [Accessed 21 April 2022].
 
 ## 3. Specific requirements  
 
@@ -426,7 +428,7 @@ Risk: Lifting/carrying heavy items such as computer equipment or other personal 
 Likelihood: Likely <br>
 Impact: Moderate <br>
 Can Cause: Injuries if something is dropped, muscle sprains and strains <br>
-Mitigation: Position items so they are easily accessible for everyone. Provide assistance to members if required. <br>
+Mitigation: Position items so they are easily accessible for everyone. Provide assistance to members if required.[2] <br>
 <br>
 Risks done by Lucy <br>
 <br>
