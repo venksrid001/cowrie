@@ -324,35 +324,37 @@ Since our project is software based, we do not require any physical equipment or
 
 Risks  done by Shruti <br>
 <br>
-Risk: Tripping <br>
+Risk: Tripping, slipping, falling <br>
 Likelihood: Likely <br>
 Impact: Light - severe <br>
-Can cause: Painful injuries <br>
-Mitigation: Keep floor clear. Keep bags, cords etc under tables at all times. No running <br>
+Can cause: Painful injuries resulting in members being unable to participate and contribute <br>
+Mitigation: Clean any spills immediately and dry the floor.
+Ensure work areas and walkways are well-lit. Keep floor clear. Keep bags, cords etc under tables at all times. No running. Keep work area clutter free. <br>
 <br>
 Risk: Spending large amounts of time looking at the screen. <br>
 Likelihood: Very likely <br>
 Impact: Light - severe <br> 
 Can cause: headaches, blurry vision, dry eyes, and neck and shoulder pain <br>
-Mitigation: Follow the 20-20-20 rule. Every 20 minutes look away from your screen and look at an object 20 feet away for at least 20 seconds. <br>
+Mitigation: Follow the 20-20-20 rule. Every 20 minutes look away from your screen and look at an object 20 feet away for at least 20 seconds. Practice regular breaks and avoid unnecessary screen use. <br>
 <br>
 Risk: Sitting at the desk for long periods of time. <br>
 Likelihood: Very likely <br>
 Impact: Moderate <br>
-Can Cause: Bad posture, back pain <br>
-Mitigation: take regular breaks, go for short walks <br>
+Can Cause: Team members may spend a lot of time doing work seated at a desk, using a computer. As a result they are prone to strains and other injuries related to posture. This can also cause back pain, sleepiness and other issues later on. <br>
+Mitigation: Educate members about their head position; try to keep the weight of the head directly above the neck.
+Encourage members not to slouch when sitting at a desk. Take regular breaks, go for short walks outside and try stay active <br>
 <br>
 Risk: Papercuts <br>
 Likelihood: Unlikely <br>
 Impact: Light <br>
-Can Cause: Bleeding, pain <br>
-Mitigation: Dont use paper - it is not necessary for this project <br>
+Can Cause: Bleeding, pain and discomfort <br>
+Mitigation: Avoid using paper - it is not necessary for this project <br>
 <br>
 Risk: Lifting/carrying heavy items such as computer equipment or other personal belongings. <br>
 Likelihood: Likely <br>
 Impact: Moderate <br>
 Can Cause: Injuries if something is dropped, muscle sprains and strains <br>
-Mitigation: Position items so they are easily accessible for everyone <br>
+Mitigation: Position items so they are easily accessible for everyone. Provide assistance to members if required. <br>
 <br>
 Risks done by Lucy <br>
 <br>
