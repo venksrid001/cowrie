@@ -186,46 +186,79 @@ Requirements that are in place to ensure satisfactory output for the whoami comm
 
 ### 3.4 Performance requirements
 
-See 9.5.13. for most systems this will be around one page. Hardware projects also see section 9.4.6.
+**3.4.1 whoami Response Time**
 
-> **9.5.13 Performance requirements** <br>
-> Specify both the static and the dynamic numerical requirements placed on the software or on human interaction with the software as a whole. 
-> 
-> Static numerical requirements may include the following:
-> 
-> a) The number of terminals to be supported;  
-> b) The number of simultaneous users to be supported;  
-> c) Amount and type of information to be handled.
-> 
-> Static numerical requirements are sometimes identified under a separate section entitled Capacity.
-> 
-> Dynamic numerical requirements may include, for example, the numbers of transactions and tasks and the amount of data to be processed within certain time periods for both normal and peak workload conditions. The performance requirements should be stated in measurable terms.
-> 
->  For example, "_95 % of the transactions shall be processed in less than 1 second._" rather than, "An operator shall not have to wait for the transaction to complete."
-> 
-> NOTE Numerical limits applied to one specific function are normally specified as part of the processing subparagraph description of that function.
+The whoami command shall display response within 0.5 seconds of being called.
+
+**3.4.2 Nano Response time**
+
+The Nano software shall display the user interface within 0.5 seconds of being called.
+
+The Nano software shall open and display an existing file within 1 second of being called.
+
+The write out function shall write the file to memory within 1 second of being called.
+
+The exit function shall exit the application and return to the CLI within 0.5 seconds of being called.
+
+The where function shall find a string within 1 second of being called.
+
+The replace function shall replace a string within 0.5 seconds of being called.
+
+The cut function shall remove the string and store the string within 0.5 seconds of being called.
+
+The paste function shall write the stored string within 0.5 seconds of being called.
+
+**3.4.3 Nano Document Size**
+
+The Nano software shall handle *kbs of data when loading an existing file.
+
+The Nano software shall handle *kbs of data when saving to an existing file.
+
+The Nano software shall handle *kbs of data when saving to a new file.
 
 
 ### 3.5 Logical database requirements
 
-See 9.5.14. for most systems, a focus on d) and e) is appropriate, such as an object-oriented domain analysis. You should provide an overview domain model (e.g.  a UML class diagram of approximately ten classes) and write a brief description of the responsibilities of each class in the model (3 pages).
+The data base for Cowrie is set to represent a standard file system. Any files the attacker saves through Nano are to be stored within cowires downloads folder. All executed commands are to be saved in the cowrie.json file and all system messages are to be saved in the cowrie.log file. 
+
+The attackers files are to be saved as a standard file in the location they executed nano. Any files the attacker will open with Nano are stored where the command is executed. This will follow the current event format that cowrie has in place for processing and storing information.
+
+
+```plantuml
+@startuml
+    skinparam backgroundColor #EEEBDC
+    actor whoami
+    whoami -> "cowrie.json" : log all activity
+    whoami -> "cowrie.log" : log system messages
+@enduml
+```
+
+```plantuml
+@startuml
+    skinparam backgroundColor #EEEBDC
+    actor whoami
+    Nano -> "log" : run commmand
+    Nano -> "cowrie.json" : log all activity
+    Nano -> "cowrie.log" : log system messages
+    Nano -> "file" : save file at current location
+    "file" -> "downloads" : log saved files
+    "file" -> Nano : open file
+@enduml
+```
 
 ### 3.6 Design constraints
 
-see 9.5.15 and 9.5.16. for most systems, this will be around one page.
+**Python3**
 
-> 9.5.15 Design constraints<br>
-> Specify constraints on the system design imposed by external standards, regulatory requirements, or project limitations.
-> 
-> 9.5.16 Standards compliance<br>
-> Specify the requirements derived from existing standards or regulations, including:
-> 
-> a) Report format;<br>
-> b) Data naming;<br>
-> c) Accounting procedures;<br>
-> d) Audit tracing.
-> 
-> For example, this could specify the requirement for software to trace processing activity. Such traces are needed for some applications to meet minimum regulatory or financial standards. An audit trace requirement may, for example, state that all changes to a payroll database shall be recorded in a trace file with before and after values.
+Python3 is an unfamiliar language with several of the team, most members coding experience has been focused on Java. This is a major constraint as users will be having to learn python while developing the program.
+
+**Expanding an existing system**
+
+Cowrie is already an operational piece of software. The project team will have to familiarise themselves with the current software and how to add modules to it. The system already has features and processes in place that the team must adhere to. 
+
+**Timeframe**
+
+Deadlines and timeframes will pose constraints on this project. Team members have other commitments such as work and other university courses that could have conflicting deadlines. There is also the risk of illness caused by but not limited to covid. This could have team members unable to perform their assigned tasks. 
 
 ### 3.7 Nonfunctional system attributes
 
@@ -250,7 +283,7 @@ There are no physical hardware components associated with this project. Basic en
 
 ### 3.9 Supporting information
 
-see 9.5.19. 
+Their is no sypporting information for this project.
 
 ## 4. Verification
 
