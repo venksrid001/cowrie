@@ -122,56 +122,128 @@ End messages will only be delivered to the user if they somehow mistype one of t
 
 The first priority in terms of development would be to apply dynamic output to the whoami command, dependent upon who the user is currently logged in as. This would be first priority in terms of development as functionality of the whoami command will aid in developing a fully fledged text editor that operates dynamically depending upon the permissions enabled on a file. 
 
-![](use_cases/use_case1.png)
+| User | System |
+| ------ | ------ |
+| User logs into system through ssh on port 22 under the username ‘admin’ | |
+|  | Logs the user profile and username and password within the userdb.txt file which will contain information on all the available users and passwords allowed for the system. |
+| User performs the whoami command to confirm the username he is connected to Cowrie under |  |
+|  | Searches through userdb.txt file |
+|  | Parses through usernames and fetches the last entry (username) in the userdb.txt file |
+|  | Prints out username ‘admin’ to the user’s window |
 
 #### Use Case 2: User executes text editor command to summon text editor to edit a file
 
 Once the whoami command has been implemented and ensured that the Cowrie honeypot has support for it, we plan to start implementing basic functionality for the text editor. For example, ensuring that some text editing environment (similar to that of nano) opens up once the user executes the command. 
 
-![](use_cases/use_case2.png)
+| User | System |
+| ------ | ------ |
+| User wants to create a script and hence performs a command to summon a text editor to edit it |  |
+|  | Text editing environment opens up with a blank file, and displays options such as read, write file, and exit on the bottom of the page. |
+| User types and adds elements of his script to the file |  |
+|  | Text editor displays letters as the user types them in. |
 
 #### Use Case 3: User attempts to edit a file and save the progress they have made
 
 After providing support for the basic editing functionality, the next step would be to ensure that there is persistence for edited files. We need to implement some level of saving functionality to allow the user to continue upon the progress they have already made previously within a file. 
 
-![](use_cases/use_case3v2.png)
+| User | System |
+| ------ | ------ |
+| User executes command to start editing a file |  |
+| | Logs the command made to the cowrie/var/cowrie/cowrie.log file |
+|  | Opens text environment with the possible options |
+| Adds content to the file |  |
+|  | Registers input given by user and displays the input onto the screen |
+| User is finished editing the file and wants to save the progress they have made. Presses CTRL+X to exit the file |  |
+|  | Registers the action made by the user and prompts the user to save the file |
+| User wants to save the file and responds with ‘y’ to the prompt |  |
+|  | Saves file with a name and exits out of the environment |
 
 #### Use Case 4: User uses Write Out option on an edited file
 
 Similar to the exit functionality, the Write Out option also allows for an option to save before the action is completed, also with an additional option to rename the file if needed, however this allows the user to continue with their progress on a file. We also need to ensure with saving files that we also assign correct permissions to files that are being saved, eg. Owner permissions, group permissions, other permissions etc.
 
-![](use_cases/use_case4.png)
+| User | System |
+| ------ | ------ |
+| User finishes editing file and presses CTRL+o to execute the “Write-out” functionality |  |
+|  | Reads request from the user |
+|  | Prompts the user asking if they want to save the current progress they made on the file |
+|  | Saves the file and parses through userdb.txt and fetches the latest username to assign ownership permissions for the file to that user |
+| User responds with y confirming they want to save the file |  |
+|  | Reads answer from the user and starts another prompt to see if the user wants to change the filename |
+| User keeps filename as is |  |
+|  | System reads the request and closes the prompt and shows the text editing environment for the user to continue editing |
 
 #### Use Case 5: User uses Write Out option on an edited file
 
 This functionality allows a user to open an already existing file within the text editing environment to continue their progress on that file.
 
-![](use_cases/use_case5.png)
+| User | System |
+| ------ | ------ |
+| User is within the text environment but wants to open another file, hence they press CTRL+R to execute the read file functionality |  |
+|  | Registers request and opens up a prompt for the user to enter the path of the file to open |
+| Enters the path of the file they want to open |  |
+|  | Retrieves the file from the file path |
+|  | Displays the contents of the file in the text editing environment for the user to continue editing |
 
 #### Use Case 6: User wants to search for a string within a file
 
 We also want to allow for the functionality to find and search if a certain string exists within a files contents
 
-![](use_cases/use_case6v2.png)
+| User | System |
+| ------ | ------ |
+| User is currently in the editing environment and wants to check if a certain word exists in the file, presses CTRL+F |  |
+|  | Reads the request and opens up a search bar for the user to enter the string to search |
+| Enters string |  |
+|  | Displays text entered in the search bar |
+| Presses enter to start the search |  |
+|  | Searches through the contents of the file for the specific string |
+|  | Finds the string and highlights it for the user to see |
 
 #### Use Case 7: User wants to replace all occurrences of a string with another string in a file
 
 Along with implementing a find functionality within our text editing environment. It is imperative that along with that a find and replace functionality is also implemented and available to the user. 
 
-![](use_cases/use_case7.png)
+| User | System |
+| ------ | ------ |
+| User is within text environment and presses ALT+R to execute the find and replace  |  |
+|  | Processes request and opens up prompt for user to enter string to search for |
+| Enters string to search then presses enter |  |
+|  | Closes previous prompt |
+|  | Opens up another prompt for user to enter the string to replace the string that is being searched for |
+| Enters string and presses enter |  |
+|  | Searches for occurrences of the string to search |
+|  | Replaces all occurrences of that string with the replacement string entered by the user |
 
 #### Use Case 8: User wants to cut/delete whole lines within a file 
 
 To almost complete a minimum viable text editor support for the Cowrie. It is also important that we provide support for mass deletion within the text editing environment, for example allowing a user to delete a whole line of text in their file.
 
-![](use_cases/use_case8.png)
+| User | System |
+| ------ | ------ |
+| User highlights a line within their file and presses CTRL+K |  |
+|  | Registers request and deletes line from the file |
 
 
 #### Use Case 9: User wants to paste text into their file
 
 Our final feature for our text editor is to add some level of support for pasting content from other files into the text editing environment for the user, ensuring that the text editor we provide for the Cowrie includes all the functionalities of a normal text editor.
 
-![](use_cases/use_case9.png)
+| User | System |
+| ------ | ------ |
+| User is currently editing a file and wants to paste some text from the file into another script file they are creating, highlights some text and presses CTRL+6 to copy the text |  |
+|  | Reads request and adds the copied text to the user’s clipboard |
+| User exits current file by pressing CTRL+X |  |
+|  | System provides a prompt to the user confirming if they want to save their progress |
+| User responds with ‘y’ to the prompt |  |
+|  | System reads response and closes the current prompt |
+|  | Opens another prompt confirming if the user wants to rename the file |
+| User responds with ‘n’ to not rename the file |  |
+|  | Reads response and closes the prompt, and saves the file assigning ownership permissions to the user.  |
+|  | Exits out of the environment |
+| Runs command to open text editor environment |  |
+|  | Opens text editor environment |
+| Presses CTRL+U to paste the text |  |
+|  | Reads users clipboard and pastes the text onto the file |
 
 
 
