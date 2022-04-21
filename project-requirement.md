@@ -536,7 +536,7 @@ Here is the list of Acronyms and abbreviations used in this document.
 Lucy Carver: Section 5.3 (Risks 6 to 10 inclusive), Section 5.4, Section 5.4.1, Whole document editing. <br>
 Sridhar Venkatesh: Section 1.3.1, Section 3.1, 3.2, 3.3, 3.7 <br>
 Thomas Yang: Section 1, 1.1, 1.2, Section 4, 4.1, 4.2<br>
-Shruti Raja: <br>
+Shruti Raja: Section 1.3.3, Section 5.1, 5.2, 5.3 (Risks 1 to 5 inclusive)<br>
 Selby Dasent: Section 1.3.2, Section 3.4, 3.5 and 3.6 <br>
 Deepika Raheja: <br>
 
