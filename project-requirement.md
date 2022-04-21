@@ -69,7 +69,7 @@ The user experience and interface within the text editor needs to mimic Nano, th
 The Cowrie honeypot system is designed to capture SSH and Telnet connections, as well as record the session information. Cowrie is primarily used by researchers, however Cowrie can be used by individuals or companies that need to track real-time hacking attempts. Researchers are interested in Cowrie because it is seen as a valuable security technique that can be implemented to mitigate attacks and it also provides an opportunity to learn more detail about the nature of these attacks. Researchers can then examine these interactions to learn about new tools, tactics, and processes used by attackers. This resulting analysis then helps them create actionable cybersecurity intelligence and then remediate and secure the information security of the infrastructure. Hackers may also use Cowrie on other hackers, hoping adversaries will accidentally leak data that identifies them. Government agencies, law enforcement and defense networks can use Cowrie to create a trap for hostile hackers and get them to reveal their techniques.   
 Another use of Cowrie for researchers is a tool to gather data about attacks. For example, the lessons learned from the attacks can be used to build even better or stronger defense mechanisms to improve security.
 This knowledge can also be used to improve other honeypots or the system itself. In addition, new systems other than honeypots may be developed in future using this knowledge. Research helps to increase our understanding of deception techniques and can be used as a pivot for planning, configuring, and testing the default Cowrie configuration file to increase its deceptive capabilities when presented to attackers.
-The use of honeypots such as Cowrie is becoming increasingly more common in terms of studying how attackers penetrate into information security systems. From this, researchers can learn and analyze new threats and attack methodologies to counter and defend ourselves from cyber-attackers.
+The use of honeypots such as Cowrie is becoming increasingly more common in terms of studying how attackers penetrate into information security systems. From this, researchers can learn and analyze new threats and attack methodologies to counter and defend ourselves from cyber-attackers [1].
 
 #### 1.3.4 Limitations
 
@@ -89,6 +89,8 @@ The Cowrie honeypot is a helpful tool for observing the attackers behavior, but 
 ## 2. References
 
 References to other documents or standards. Follow the IEEE Citation  Reference scheme, available from the [IEEE website](https://www.ieee.org/) (please use the search box). (1 page, longer if required)
+
+1.W. Cabral, C. Valli, L. Sikos and S. Wakeling, "Review and Analysis of Cowrie Artefacts and Their Potential to be Used Deceptively," 2019 International Conference on Computational Science and Computational Intelligence (CSCI), 2019, pp. 166-171, doi: 10.1109/CSCI49370.2019.00035.
 
 ## 3. Specific requirements  
 
