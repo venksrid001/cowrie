@@ -88,13 +88,11 @@ The Cowrie honeypot is a helpful tool for observing the attackers behavior, but 
 
 ## 2. References
 
-References to other documents or standards. Follow the IEEE Citation  Reference scheme, available from the [IEEE website](https://www.ieee.org/) (please use the search box). (1 page, longer if required)
 
 1.W. Cabral, C. Valli, L. Sikos and S. Wakeling, "Review and Analysis of Cowrie Artefacts and Their Potential to be Used Deceptively," 2019 International Conference on Computational Science and Computational Intelligence (CSCI), 2019, pp. 166-171, doi: 10.1109/CSCI49370.2019.00035.
 
 ## 3. Specific requirements  
 
-20 pages outlining the requirements of the system. You should apportion these pages across the following subsections to focus on the most important parts of your product.
 
 ### 3.1 External interfaces
 
