@@ -37,7 +37,7 @@ The Supercharged Cowrie project plans to implement specific commands and ensure 
 
 **User interfaces:** 
 
-Operates within the command line interface. This Should allow for editing files within the command line for Windows and Unix certified systems. 
+Operates within the command line interface. This should allow for editing files within the command line for Windows and Unix certified systems. 
 
 **CPU/Memory**
 
@@ -274,54 +274,81 @@ Since our project is software based, we do not require any physical equipment or
 
 ### 5.3 Risks 
 
-Risk: Tripping
-Likelihood: Likely
-Impact: Light - severe 
-Can cause: Painful injuries
-Mitigation: Keep floor clear. Try keep bags, chords etc under tables. No running
+Risks  done by Shruti <br>
+<br>
+Risk: Tripping <br>
+Likelihood: Likely <br>
+Impact: Light - severe <br>
+Can cause: Painful injuries <br>
+Mitigation: Keep floor clear. Keep bags, cords etc under tables at all times. No running <br>
+<br>
+Risk: Spending large amounts of time looking at the screen. <br>
+Likelihood: Very likely <br>
+Impact: Light - severe <br> 
+Can cause: headaches, blurry vision, dry eyes, and neck and shoulder pain <br>
+Mitigation: Follow the 20-20-20 rule. Every 20 minutes look away from your screen and look at an object 20 feet away for at least 20 seconds. <br>
+<br>
+Risk: Sitting at the desk for long periods of time. <br>
+Likelihood: Very likely <br>
+Impact: Moderate <br>
+Can Cause: Bad posture, back pain <br>
+Mitigation: take regular breaks, go for short walks <br>
+<br>
+Risk: Papercuts <br>
+Likelihood: Unlikely <br>
+Impact: Light <br>
+Can Cause: Bleeding, pain <br>
+Mitigation: Dont use paper - it is not necessary for this project <br>
+<br>
+Risk: Lifting/carrying heavy items such as computer equipment or other personal belongings. <br>
+Likelihood: Likely <br>
+Impact: Moderate <br>
+Can Cause: Injuries if something is dropped, muscle sprains and strains <br>
+Mitigation: Position items so they are easily accessible for everyone <br>
+<br>
+Risks done by Lucy <br>
+<br>
+Risk: RSI (Repeated Strain Injury) <br>
+Likelihood: Likely <br>
+Impact: Moderate - Severe <br>
+Can Cause: Long term pain doing day to day tasks, inability to do select tasks, expenses in the form of medical appointments, loss of quality of life, potential of injury in other tasks increases, permanent damage to muscles and ligaments, more likely to develop sciatica, more likely to develop carpal tunnel. <br>
+Mitigation: Maintain a good posture whilst sitting at a desk. Frequent small breaks to stretch and readjust position at desk, and monitor posture. Take regular breaks while doing long and or repetitive tasks. If you are stressed, try breathing exercises, and focus on relaxing muscles to avoid strain and cramp. Unclench your jaw often to avoid pain there. Keep wrists flat and straight while writing. If pain is beginning to occur, do not ignore it, instead get up, move around, and make sure someone else in the team is aware that you may be in pain. <br>
+<br>
+Risk: Contracting Covid-19 <br>
+Likelihood: Very Likely <br>
+Impact: Severe <br>
+Can Cause: Widespread infection amongst the team, limiting ability to work on project. Can result in Long Covid in some individuals. Can also result in death if not treated properly. <br>
+Mitigation: Wear masks at all times when social distancing is not possible, sanitize and wash hands before eating food, sanitize hands after coming into contact with door handles etc. Avoid touching each other (ie handshakes). Ensure that if you have symptoms of Covid-19 that you take a test immediately, and isolate and inform all team members immediately if the test is postive. If you test positive, follow all government and health instructions. Make sure to rest lots, and take breaks from screens. Do not push yourself to return to study, as pushing yourself too soon can increase the chance of developing long covid. <br>
+<br>
+Risk: Electrical Fires <br>
+Likelihood: Unlikely <br>
+Impact: Severe <br>
+Can Cause: Burns, loss of equipment, loss of life, smoke inhalation, electrocution, damage to university property.<br>
+Mitigation: Avoid overloading power points, ensure chargers and laptops are not being used on flammable surfaces, and monitor chargers, phones and laptops for overheating. Particularly those with metal framed laptops, monitor the health of the device, and the heat it is putting out. Familiarise selves with nearest C02 fire extinguisher (Carbon Dioxide extinguisher). If an electrical fire is to occur, locate nearest C02 extinguisher, and follow instructions on the extinguisher. Ensure that someone on the team activates the nearest fire alarm. DO NO USE WATER ON AN ELECTRICAL FIRE. <br>
+<br>
+Risk: Spillage of food & liquids <br>
+Likelihood: Likely <br>
+Impact: Moderate <br>
+Can Cause: Damage to computers, sticky mess to clean up, slipping hazard, damage to university property, reduction in teams ability to work on project, damage to hard drives, loss of progress, electrical failures. <br>
+Mitigation: No food near computers. Only drinks in sealed, spillproof containers. Only have water in a sealed spill proof bottle in the laboratories. If spillage does occur, ensure it is cleaned up immediately, and notify other team members of the spill. If possible, find a wet floor sign to put up near the spill, to avoid other people slipping.<br>
+<br>
+Risk: Stress/Arguments/Anger/Disagreements within the team. <br>
+Likelihood: Very Likely <br>
+Impact: Severe <br>
+Can Cause: Physical confrontation amongst team members, hostility and emotional distress, inability to complete work as a team, a flawed end product, lasting resentment towards team members after the project has ended. Can damage team relationships, and  affect individual and team grades. Hostility between team members in front of client can jeopardise clients perception of the team. <br>
+Mitigation: Be mindful of the way team interacts - mindful of body language, tone, and facial expressions. If tension is brewing, make sure to take a breather from working with whoever the tension is with, and step outside. Do nottry and resolve conflicts whilst emotional. If a problem occurs, let the team know, as it is important to resolve conflict before it escalates. Maintain good communication with the team. Be mindful of interactions around deadlines, as all team members will be feeling tense close to deadlines. Maintain clear and consistent communication in the lead up to any and all deadlines. If conflict cannot be resolved one to one with team mates, escalate up the hierachy to the team tutor, and further if needed. Best way to mitigate problems is to solve them as soon as they occur - do not allow conflict to fester and grow. <br>
 
-Risk: Spending large amounts of time looking at the screen.
-Likelihood: Very likely
-Impact: Light - severe 
-Can cause: headaches, blurry vision, dry eyes, and neck and shoulder pain
-Mitigation: Follow the 20-20-20 rule. Every 20 minutes look away from your screen and look at an object 20 feet away for at least 20 seconds.
-
-Risk: Sitting at the desk for long periods of time.
-Likelihood: Very likely
-Impact: Moderate
-Can cause: Bad posture, back pain
-Mitigation: take regular breaks, go for short walks
-
-Risk: Papercuts
-Liklihood: Unlikely
-Impact: Light
-Can cause: Bleeding, pain
-Mitigation: Dont use paper - it is not necessary for this project
-
-Risk: Lifting/carrying heavy items such as computer equipment or other personal belongings.
-Likelyhood: likely
-Impact moderate
-Can cause: Injuries if something is dropped, muscle sprains and strains
-Mitigation: Position items so they are easily accessible for everyone
-
-
-
-Identify the ten most important project risks to achieving project goals: their type, likelihood, impact, and mitigation strategies (3 pages).
-
-If the project will involve any work outside the ECS laboratories, i.e. off-campus activities, these should be included in the following section.
 
 ### 5.4 Health and Safety
 
-Document here project requirements for Health and Safety. All teams must state in this section:
-
-1. How teams will manage computer-related risks such as Occupational Over Use, Cable management, etc.  
-
-2. Whether project work requires work or testing at any external (off-campus) workplaces/sites. If so, state the team's plans for receiving a Health and Safety induction for the external workplaces/sites. If the team has already received such an induction, state the date it was received. 
-
-3. Whether project work requires the team test with human or animal subjects? If so, explain why there is no option but for the team to perform this testing, and state the team's plans for receiving Ethics Approval _prior_ to testing.
-
-Also document in this section any additional discussions with the School Safety Officer regarding Health and Safety risks. Give any further information on relevant health and safety regulations, risks, and mitigations, etc.
-
+The team will manage computer related risks by following the mitigation strategies listed in the section above. To manage Occupational Over Use, team members will be aware to stop when they have any sort of disomfort, and take frequent breaks to adjust posture and hand placement. The team will be made aware of the correct positions for hands while typing, and correct posture for working at a desk. Frequent breaks will be the best way to manage risks of Occupational Over Use. <br>
+The team will manage cables by ensuring that powerpoints are not overloaded, and computer charging cables are laid out in such a way that tangles should not happen. In the laboratories computer cables will be placed along places that are there to leave cables in. In the event that a team member needs an extra cable to be plugged into something, the team member will ensure that there is enough space in the plug socket without overloading it, and make sure that the cable is laid out correctly to ensure that the cables are managed correctly. <br>
+<br>
+The project does not require work or testing at any external workplaces or sites. All work is software based, and will take place in either the university computer laboratories, university libraries, university campus seating, or at the team members own place of residence. All team members will adhere to the university computer safety requirements while on campus, and adhere to safety guidelines around computer use when working at their own place of residence. <br>
+<br>
+The project does not require and human or animal testing. All software testing will be done within the team by the team members, and does not require Ethics Approval. <br>
+<br>
+For the duration of this project, the team is required to adhere to all university policies, government laws, and Covid-19 health orders. It is the responsibility of each team member to read through the possible risks of this project, and familiarise themselves with the mitigation strategies listed. The list of risk and mitigation strategies may not be inclusive, and all team members are encouraged to add to the list as they see fit. <br>
 
 #### 5.4.1 Safety Plans
 
@@ -338,7 +365,12 @@ One page glossary _as required_.
 
 ## 7. Contributions
 
-A one page statement of contributions, including a list of each member of the group and what they contributed to this document.
+Lucy Carver: Section 5.3 (Risks 6 to 10 inclusive), Section 5.4, Section 5.4.1, Whole document editing. <br>
+Sridhar Venkatesh: <br>
+Thomas Yang: <br>
+Shruti Raja: <br>
+Selby Dasent: <br>
+Deepika Raheja: <br>
 
 ---
 
