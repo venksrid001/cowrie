@@ -37,7 +37,7 @@ The Supercharged Cowrie project plans to implement specific commands and ensure 
 
 **User interfaces:** 
 
-Operates within the command line interface. This Should allow for editing files within the command line for Windows and Unix certified systems. 
+Operates within the command line interface. This should allow for editing files within the command line for Windows and Unix certified systems. 
 
 **CPU/Memory**
 
@@ -59,7 +59,7 @@ The text editor should provide an environment like that of Nano. A list of featu
 -	**Read File** This allows the user to open a file and load the text content into the editor.
 -	**Where is** This allows the user to find a string within the document.
 -	**Replace** This finds and replaces a string with another string.
--	**Cut** This copies a highlighted string and remove the text from the screen.
+-	**Cut** This copies a highlighted string and remove the text from the screen. 
 -	**Paste** This pastes a cut or copied string at the position of the curser.
 
 The user experience and interface within the text editor needs to mimic Nano, this includes a highlighted dynamic output at the bottom of the screen. This will need to provide information of how many lines are in the document when it is opened. 
@@ -96,18 +96,93 @@ References to other documents or standards. Follow the IEEE Citation  Reference 
 
 ### 3.1 External interfaces
 
-See 9.5.10. for most systems this will be around one page. 
+#### Interface 1 : Command Line Interface
+
+The purpose of this interface is to ensure that the user is within a UNIX environment to ensure they can perform certain linux commands such as nano (or some command to summon a text editor) and whoami. This is the sole interface where both input and output can be retirieved. 
+
+The source of input through this interface will come through the users end when they connect through to the Cowrie Honeypot, to prevent usability issues with the user, the responses will be delivered to the same terminal window as the user, such as the theme for most honeypot servers. 
+
+Outputs delivered for the whoami and text editor commands should be dynamic and should be responsive and adaptive to the current user state of the Cowrie. The text editor environment should be summoned for inputs such as (nano [filename]) to edit a file straight from the terminal. As well as have support for input commands such as (nano) which will solely bring up the text editing environment for the user to select or create files with names of their choice. For the whoami command, valid inputs from the user would strictly be confined to "whoami" as this is the case for a normal UNIX/Linux environment. Valid output would guarantee a username, as the user would most likely at the leas perform this command after they have logged into the Cowrie honeypot. Source of the output will be located in the config file and the system should at least print out the ocrrect username based off the current state of the Cowrie. 
+
+The timing of responses for the inputs should be around 5 seconds at most, particularly for loading up the text editing environment such as Nano. Functionalities within the text editor should be performed within a second of being called by the user. As for the whoami command, searching through the userdb.txt file and fetching the latest username, this process of gathering the output should be performed within a second of being called as well. 
+
+The way user data will be formatted such as username and password, will be separated by a ":" character. For example within the configured for us userdb.txt all the entries follow a set structure following username:x:password, the value "x" is an abitrary value and is not considered for when we parse the values to retrieve the username from a line. 
+
+The screen size/format would follow that of a normal linux terminal window.
+
+End messages will only be delivered to the user if they somehow mistype one of the commands (whoami or nano/text editor). For example ' 'whoiam' is not a recognised command'
+
+
+
 
 ### 3.2 Functions
 
-This is typically the longest subsection in the document. List up to fifty use cases (in order of priority for development), and for at least top ten focal use cases, write a short goal statement and use case body (up to seven pages).  Identify the use cases that comprise a minimum viable product.
+
+#### Use Case 1: User executes whoami command to see which user they are logged in as
+
+The first priority in terms of development would be to apply dynamic output to the whoami command, dependent upon who the user is currently logged in as. This would be first priority in terms of development as functionality of the whoami command will aid in developing a fully fledged text editor that operates dynamically depending upon the permissions enabled on a file. 
+
+![](use_cases/use_case1.png)
+
+#### Use Case 2: User executes text editor command to summon text editor to edit a file
+
+Once the whoami command has been implemented and ensured that the Cowrie honeypot has support for it, we plan to start implementing basic functionality for the text editor. For example, ensuring that some text editing environment (similar to that of nano) opens up once the user executes the command. 
+
+![](use_cases/use_case2.png)
+
+#### Use Case 3: User attempts to edit a file and save the progress they have made
+
+After providing support for the basic editing functionality, the next step would be to ensure that there is persistence for edited files. We need to implement some level of saving functionality to allow the user to continue upon the progress they have already made previously within a file. 
+
+![](use_cases/use_case3v2.png)
+
+#### Use Case 4: User uses Write Out option on an edited file
+
+Similar to the exit functionality, the Write Out option also allows for an option to save before the action is completed, also with an additional option to rename the file if needed, however this allows the user to continue with their progress on a file. We also need to ensure with saving files that we also assign correct permissions to files that are being saved, eg. Owner permissions, group permissions, other permissions etc.
+
+![](use_cases/use_case4.png)
+
+#### Use Case 5: User uses Write Out option on an edited file
+
+This functionality allows a user to open an already existing file within the text editing environment to continue their progress on that file.
+
+![](use_cases/use_case5.png)
+
+#### Use Case 6: User wants to search for a string within a file
+
+We also want to allow for the functionality to find and search if a certain string exists within a files contents
+
+![](use_cases/use_case6v2.png)
+
+#### Use Case 7: User wants to replace all occurrences of a string with another string in a file
+
+Along with implementing a find functionality within our text editing environment. It is imperative that along with that a find and replace functionality is also implemented and available to the user. 
+
+![](use_cases/use_case7.png)
+
+#### Use Case 8: User wants to cut/delete whole lines within a file 
+
+To almost complete a minimum viable text editor support for the Cowrie. It is also important that we provide support for mass deletion within the text editing environment, for example allowing a user to delete a whole line of text in their file.
+
+![](use_cases/use_case8.png)
+
+
+#### Use Case 9: User wants to paste text into their file
+
+Our final feature for our text editor is to add some level of support for pasting content from other files into the text editing environment for the user, ensuring that the text editor we provide for the Cowrie includes all the functionalities of a normal text editor.
+
+![](use_cases/use_case9.png)
+
+
 
 ### 3.3 Usability Requirements
 
-See 9.5.12. for most systems this will be around one page.
+Requirements for the functionality of a text editor within the CLI are as follows. The makings of a satisfactory text editor should mimic efficiency levels to that of the nano command when editing files within the terminal. For example options such as Read File, Write File, Exit, Cut and Paste need to be displayed clearly on the screen to be visible for the user. These sort of functions within the text editor need to have support for keyboard shortcuts to ensure the efficiency levels provided by the nano text editor are also emulated by our newly implemented text editor. For example, if an attacker accidentally enters in the command to execute the text editor to edit a file, they should be provided with the option to quickly exit the file with CTRL+X and proceed upon their intentions.
 
-> **9.5.12 Usability requirements**<br>
-> Define usability (quality in use) requirements. Usability requirements and objectives for the software system include measurable effectiveness, efficiency, and satisfaction criteria in specific contexts of use.
+Permissions to edit files and save them should be properly reflected when an attacker tries to edit a file. For example, nano when editing a file can also let the user know whenever a file is read only or not. Henceforth we plan to implement a text editor that is reflective of permissions enabled on a file, to not permanent changes to be made to a file regardless of the permissions enabled on a specific file. Concrete and clear error messages should be displayed to the user when attempting to edit a read-only file for example, with Nano it cearly displays upon the bottom of the file that the user is editing a read-only file, and this message is highlighted in orange. Making sure the user is immediately aware of the permissions enabled on the file that they are editing. 
+
+
+Requirements that are in place to ensure satisfactory output for the whoami command for Cowrie are as follows. The Cowrie should keep a log of all commands executed by the attacker whether they are supported or not, this should also log the user that the attacker is currently logged in as at that point of time. The whoami command should accurately print out the username/alias that the attacker has decided to go by. There aren't many usages or functionalities to do with the whoami command, however it is imperative for our iteration of the Cowrie honeypot that the whoami can dynamically represent the current use state of the cowrie.
 
 ### 3.4 Performance requirements
 
@@ -187,14 +262,24 @@ Deadlines and timeframes will pose constraints on this project. Team members hav
 
 ### 3.7 Nonfunctional system attributes
 
-Present the systemic (aka nonfunctional) requirements of the product (see ISO/IEC 25010).
-List up to twenty systemic requirements / attributes.
-Write a short natural language description of the top nonfunctional requirements (approx. five pages).
+#### Security
+
+For the purpose of enhancing the Cowrie, by default the Cowrie already has mechanisms in place to log the commands performed by an attacker into log files following the CEF (Common Event Format). It already has designs in place to store newly created files by an attacker within the fake file system, considering the Cowrie designs the fake-file system from its own end, it is possible for us to search through the files an attacker creates, in case they create a malicious script. We have access to any actions or any content the user provides already with the mechanisms in place from the sydtem we are enhancing
+
+#### Availability
+
+The text editing environment should be available to the user regardless of the faults that may occur. For example a user may accidentally forget to add a filename to the end of their nano command to directly open a file in the text editor, we allow for such situations through the functionality of the read-file shortcut that can be done whilst in the editing environment. If a user possibly wants to exit a file, under all circumstances of when a user wants to exit a file, they should be prompted to confirm if they want to save the file or rename the file. If a fault happens even under those circumstances, for example a user accidentally exits without saving an edited file, we should provide no recovering ability for those files as this helps to further simulate the nuances of an actual linux system/environment. We provide prompts to ensure a user will remember to save their files before exiting them, thus the chance of this happening is very small. 
+
+Also for recovering possible faults for the whoami command, this can only be managed by providing a possible end message if the command performed by the user is not correct, to ensure the user types in the command correctly. We will implement it this way as this tends to be how Linux systems respond to unrecognised commands. 
+
+#### Portability
+
+Our interation of the Cowrie provides support for a wider range of linux commands. Hence it is preferred that usage and testing of our enhancement of the Cowrie honeypot is done under a UNIX environment. 
 
 
 ### 3.8 Physical and Environmental Requirements 
 
-There are no physical hardware components associated with this project. Basic environmental requirements solely consist of simple internet connection.
+There are no physical hardware components associated with this project. Basic environmental requirements solely consist of simple internet connection. 
 
 ### 3.9 Supporting information
 
@@ -210,53 +295,97 @@ Their is no sypporting information for this project.
 
 Identify dates for key project deliverables: 
 
-1. architectural prototype
-1. minimum viable product
-1. further releases
+1. July 31st - Architectural Prototype 
+1. August 19th - Minimum Viable Product
+1. October 1st - Further Releases
 
-(1 page).
+
 
 ### 5.2 Budget
 
-Present a budget for the project (table), and justify each budget item (one paragraph per item, one page overall). 
+Since our project is software based, we do not require any physical equipment or resources outside of our reach to complete it. Therefore this project does not have a budget. 
 
 ### 5.3 Risks 
 
-Identify the ten most important project risks to achieving project goals: their type, likelihood, impact, and mitigation strategies (3 pages).
+Risks  done by Shruti <br>
+<br>
+Risk: Tripping <br>
+Likelihood: Likely <br>
+Impact: Light - severe <br>
+Can cause: Painful injuries <br>
+Mitigation: Keep floor clear. Keep bags, cords etc under tables at all times. No running <br>
+<br>
+Risk: Spending large amounts of time looking at the screen. <br>
+Likelihood: Very likely <br>
+Impact: Light - severe <br> 
+Can cause: headaches, blurry vision, dry eyes, and neck and shoulder pain <br>
+Mitigation: Follow the 20-20-20 rule. Every 20 minutes look away from your screen and look at an object 20 feet away for at least 20 seconds. <br>
+<br>
+Risk: Sitting at the desk for long periods of time. <br>
+Likelihood: Very likely <br>
+Impact: Moderate <br>
+Can Cause: Bad posture, back pain <br>
+Mitigation: take regular breaks, go for short walks <br>
+<br>
+Risk: Papercuts <br>
+Likelihood: Unlikely <br>
+Impact: Light <br>
+Can Cause: Bleeding, pain <br>
+Mitigation: Dont use paper - it is not necessary for this project <br>
+<br>
+Risk: Lifting/carrying heavy items such as computer equipment or other personal belongings. <br>
+Likelihood: Likely <br>
+Impact: Moderate <br>
+Can Cause: Injuries if something is dropped, muscle sprains and strains <br>
+Mitigation: Position items so they are easily accessible for everyone <br>
+<br>
+Risks done by Lucy <br>
+<br>
+Risk: RSI (Repeated Strain Injury) <br>
+Likelihood: Likely <br>
+Impact: Moderate - Severe <br>
+Can Cause: Long term pain doing day to day tasks, inability to do select tasks, expenses in the form of medical appointments, loss of quality of life, potential of injury in other tasks increases, permanent damage to muscles and ligaments, more likely to develop sciatica, more likely to develop carpal tunnel. <br>
+Mitigation: Maintain a good posture whilst sitting at a desk. Frequent small breaks to stretch and readjust position at desk, and monitor posture. Take regular breaks while doing long and or repetitive tasks. If you are stressed, try breathing exercises, and focus on relaxing muscles to avoid strain and cramp. Unclench your jaw often to avoid pain there. Keep wrists flat and straight while writing. If pain is beginning to occur, do not ignore it, instead get up, move around, and make sure someone else in the team is aware that you may be in pain. <br>
+<br>
+Risk: Contracting Covid-19 <br>
+Likelihood: Very Likely <br>
+Impact: Severe <br>
+Can Cause: Widespread infection amongst the team, limiting ability to work on project. Can result in Long Covid in some individuals. Can also result in death if not treated properly. <br>
+Mitigation: Wear masks at all times when social distancing is not possible, sanitize and wash hands before eating food, sanitize hands after coming into contact with door handles etc. Avoid touching each other (ie handshakes). Ensure that if you have symptoms of Covid-19 that you take a test immediately, and isolate and inform all team members immediately if the test is postive. If you test positive, follow all government and health instructions. Make sure to rest lots, and take breaks from screens. Do not push yourself to return to study, as pushing yourself too soon can increase the chance of developing long covid. <br>
+<br>
+Risk: Electrical Fires <br>
+Likelihood: Unlikely <br>
+Impact: Severe <br>
+Can Cause: Burns, loss of equipment, loss of life, smoke inhalation, electrocution, damage to university property.<br>
+Mitigation: Avoid overloading power points, ensure chargers and laptops are not being used on flammable surfaces, and monitor chargers, phones and laptops for overheating. Particularly those with metal framed laptops, monitor the health of the device, and the heat it is putting out. Familiarise selves with nearest C02 fire extinguisher (Carbon Dioxide extinguisher). If an electrical fire is to occur, locate nearest C02 extinguisher, and follow instructions on the extinguisher. Ensure that someone on the team activates the nearest fire alarm. DO NO USE WATER ON AN ELECTRICAL FIRE. <br>
+<br>
+Risk: Spillage of food & liquids <br>
+Likelihood: Likely <br>
+Impact: Moderate <br>
+Can Cause: Damage to computers, sticky mess to clean up, slipping hazard, damage to university property, reduction in teams ability to work on project, damage to hard drives, loss of progress, electrical failures. <br>
+Mitigation: No food near computers. Only drinks in sealed, spillproof containers. Only have water in a sealed spill proof bottle in the laboratories. If spillage does occur, ensure it is cleaned up immediately, and notify other team members of the spill. If possible, find a wet floor sign to put up near the spill, to avoid other people slipping.<br>
+<br>
+Risk: Stress/Arguments/Anger/Disagreements within the team. <br>
+Likelihood: Very Likely <br>
+Impact: Severe <br>
+Can Cause: Physical confrontation amongst team members, hostility and emotional distress, inability to complete work as a team, a flawed end product, lasting resentment towards team members after the project has ended. Can damage team relationships, and  affect individual and team grades. Hostility between team members in front of client can jeopardise clients perception of the team. <br>
+Mitigation: Be mindful of the way team interacts - mindful of body language, tone, and facial expressions. If tension is brewing, make sure to take a breather from working with whoever the tension is with, and step outside. Do nottry and resolve conflicts whilst emotional. If a problem occurs, let the team know, as it is important to resolve conflict before it escalates. Maintain good communication with the team. Be mindful of interactions around deadlines, as all team members will be feeling tense close to deadlines. Maintain clear and consistent communication in the lead up to any and all deadlines. If conflict cannot be resolved one to one with team mates, escalate up the hierachy to the team tutor, and further if needed. Best way to mitigate problems is to solve them as soon as they occur - do not allow conflict to fester and grow. <br>
 
-If the project will involve any work outside the ECS laboratories, i.e. off-campus activities, these should be included in the following section.
 
 ### 5.4 Health and Safety
 
-Document here project requirements for Health and Safety. All teams must state in this section:
-
-1. How teams will manage computer-related risks such as Occupational Over Use, Cable management, etc.  
-
-2. Whether project work requires work or testing at any external (off-campus) workplaces/sites. If so, state the team's plans for receiving a Health and Safety induction for the external workplaces/sites. If the team has already received such an induction, state the date it was received. 
-
-3. Whether project work requires the team test with human or animal subjects? If so, explain why there is no option but for the team to perform this testing, and state the team's plans for receiving Ethics Approval _prior_ to testing.
-
-Also document in this section any additional discussions with the School Safety Officer regarding Health and Safety risks. Give any further information on relevant health and safety regulations, risks, and mitigations, etc.
-
+The team will manage computer related risks by following the mitigation strategies listed in the section above. To manage Occupational Over Use, team members will be aware to stop when they have any sort of disomfort, and take frequent breaks to adjust posture and hand placement. The team will be made aware of the correct positions for hands while typing, and correct posture for working at a desk. Frequent breaks will be the best way to manage risks of Occupational Over Use. <br>
+The team will manage cables by ensuring that powerpoints are not overloaded, and computer charging cables are laid out in such a way that tangles should not happen. In the laboratories computer cables will be placed along places that are there to leave cables in. In the event that a team member needs an extra cable to be plugged into something, the team member will ensure that there is enough space in the plug socket without overloading it, and make sure that the cable is laid out correctly to ensure that the cables are managed correctly. <br>
+<br>
+The project does not require work or testing at any external workplaces or sites. All work is software based, and will take place in either the university computer laboratories, university libraries, university campus seating, or at the team members own place of residence. All team members will adhere to the university computer safety requirements while on campus, and adhere to safety guidelines around computer use when working at their own place of residence. <br>
+<br>
+The project does not require and human or animal testing. All software testing will be done within the team by the team members, and does not require Ethics Approval. <br>
+<br>
+For the duration of this project, the team is required to adhere to all university policies, government laws, and Covid-19 health orders. It is the responsibility of each team member to read through the possible risks of this project, and familiarise themselves with the mitigation strategies listed. The list of risk and mitigation strategies may not be inclusive, and all team members are encouraged to add to the list as they see fit. <br>
 
 #### 5.4.1 Safety Plans
 
-Safety Plans may be required for some projects, depending on project requirements. Safety Plan templates are available on the course Health & Safety page. Two questions all teams must answer are:
-
-**Do project requirements involve anything that can cause serious harm or death?**  
-Examples: building/modifying devices using voltages > 60 V, chemicals, large moving machinery, flying devices, bodies of water.
-
-If so, you will have to write a separate Safety Plan as part of project requirements, and the Safety Plan must be referenced in this section. For health and safety risks involving serious harm or death, you must first contact the School Safety Officer and Course Coordinator first to discuss the Safety Plan and project requirements.
-
-**Do project requirements involve anything that can cause harm or injury?**  
-Examples: building/modifying things with voltages <= 60V, small moving machinery, wearable devices.
-
-If so, you will have to write a separate Safety Plan as part of project requirements, and the Safety Plan must be referenced in this section. For health and safety risks involving harm or injury, you should write a draft of the Safety Plan before contacting the School Safety Officer and Course Coordinator to discuss the Safety Plan and project requirements.
-
-If a safety plan is required, list in this section the date the School Safety officer accepted your Health and Safety plan (if accepted by submission date).
-
-_If the project is purely software and requires no contact risks involving physical harm, then state "Project requirements do not involve risk of death, serious harm, harm or injury." in this section._
-
+Project requirements do not involve risk of death, serious harm, harm or injury
 
 ## 6. Appendices
 ### 6.1 Assumptions and dependencies 
@@ -269,7 +398,12 @@ One page glossary _as required_.
 
 ## 7. Contributions
 
-A one page statement of contributions, including a list of each member of the group and what they contributed to this document.
+Lucy Carver: Section 5.3 (Risks 6 to 10 inclusive), Section 5.4, Section 5.4.1, Whole document editing. <br>
+Sridhar Venkatesh: <br>
+Thomas Yang: <br>
+Shruti Raja: <br>
+Selby Dasent: <br>
+Deepika Raheja: <br>
 
 ---
 
