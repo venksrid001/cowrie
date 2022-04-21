@@ -282,11 +282,11 @@ The paste function shall write the stored string within 0.5 seconds of being cal
 
 **3.4.3 Nano Document Size**
 
-The Nano software shall handle *kbs of data when loading an existing file.
+The Nano software shall handle 1024kb of data when loading an existing file.
 
-The Nano software shall handle *kbs of data when saving to an existing file.
+The Nano software shall handle 1024kb of data when saving to an existing file.
 
-The Nano software shall handle *kbs of data when saving to a new file.
+The Nano software shall handle 1024kb of data when saving to a new file.
 
 
 ### 3.5 Logical database requirements
