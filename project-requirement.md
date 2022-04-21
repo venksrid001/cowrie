@@ -357,7 +357,7 @@ There are no physical hardware components associated with this project. Basic en
 
 ### 3.9 Supporting information
 
-Their is no sypporting information for this project.
+Their is no supporting information for this project.
 
 ## 4. Verification
 
@@ -537,7 +537,7 @@ Lucy Carver: Section 5.3 (Risks 6 to 10 inclusive), Section 5.4, Section 5.4.1, 
 Sridhar Venkatesh: Section 1.3.1, Section 3.1, 3.2, 3.3, 3.7 <br>
 Thomas Yang: Section 1, 1.1, 1.2, Section 4, 4.1, 4.2<br>
 Shruti Raja: <br>
-Selby Dasent: <br>
+Selby Dasent: Section 1.3.2, Section 3.4, 3.5 and 3.6 <br>
 Deepika Raheja: <br>
 
 ---
