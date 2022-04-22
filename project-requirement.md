@@ -11,11 +11,11 @@ The Supercharged Cowrie project is expected to expand the current capability of 
 
 ### Client
 
+Client Contact Details: <br>
 Client:  Masood Mansoori, PhD. M.Sc. B.Sc. <br>
-Contact Details: <br>
 Email: masood.mansoori@vuw.ac.nz <br>
 Work Phone: 04 886 5369 <br>
-University Office: CO 130, Cotton Building 
+University Office: CO 130, Cotton Building <br>
 
 ### 1.1 Purpose
 
@@ -23,7 +23,7 @@ The purpose of this project is to extend the functionality of the Cowrie system.
 
 ### 1.2 Scope
 
-The scope of the Supercharged Cowrie system will be fairly elementary. The Client has stated they do not wish for a fully-fledged editor, with reliance on external libraries; but rather an editor that runs on basic script and can fulfill basic editing functionalities. These functionalities include typical commands taht come with simulating an operating system, for example: nano, pwd, mkdir, whoami etc.
+The scope of the Supercharged Cowrie project will be fairly elementary. The Client has stated they do not wish for a fully-fledged editor, with reliance on external libraries; but rather an editor that runs on basic script and can fulfill basic editing functionalities. These functionalities include typical commands taht come with simulating an operating system, for example: nano, pwd, mkdir, whoami etc.
 
 ### 1.3 Product Overview 
 #### 1.3.1 Product Perspective
@@ -100,11 +100,11 @@ The Cowrie honeypot is a helpful tool for observing the attackers behavior, but 
 
 #### Interface 1 : Command Line Interface
 
-The purpose of this interface is to ensure that the user is within a UNIX environment to ensure they can perform certain linux commands such as nano (or some command to summon a text editor) and whoami. This is the sole interface where both input and output can be retirieved. 
+The purpose of this interface is to ensure that the user is within a UNIX environment to ensure they can perform certain linux commands such as nano (or some command to summon a text editor) and whoami. This is the sole interface where both input and output can be retrieved. 
 
 The source of input through this interface will come through the users end when they connect through to the Cowrie Honeypot, to prevent usability issues with the user, the responses will be delivered to the same terminal window as the user, such as the theme for most honeypot servers. 
 
-Outputs delivered for the whoami and text editor commands should be dynamic and should be responsive and adaptive to the current user state of the Cowrie. The text editor environment should be summoned for inputs such as (nano [filename]) to edit a file straight from the terminal. As well as have support for input commands such as (nano) which will solely bring up the text editing environment for the user to select or create files with names of their choice. For the whoami command, valid inputs from the user would strictly be confined to "whoami" as this is the case for a normal UNIX/Linux environment. Valid output would guarantee a username, as the user would most likely at the leas perform this command after they have logged into the Cowrie honeypot. Source of the output will be located in the config file and the system should at least print out the ocrrect username based off the current state of the Cowrie. 
+Outputs delivered for the whoami and text editor commands should be dynamic and should be responsive and adaptive to the current user state of the Cowrie. The text editor environment should be summoned for inputs such as (nano [filename]) to edit a file straight from the terminal. As well as have support for input commands such as (nano) which will solely bring up the text editing environment for the user to select or create files with names of their choice. For the whoami command, valid inputs from the user would strictly be confined to "whoami" as this is the case for a normal UNIX/Linux environment. Valid output would guarantee a username, as the user would most likely to perform this command after they have logged into the Cowrie honeypot. The source of the output will be located in the config file and the system should at least print out the ocrrect username based off the current state of the Cowrie. 
 
 The timing of responses for the inputs should be around 5 seconds at most, particularly for loading up the text editing environment such as Nano. Functionalities within the text editor should be performed within a second of being called by the user. As for the whoami command, searching through the userdb.txt file and fetching the latest username, this process of gathering the output should be performed within a second of being called as well. 
 
@@ -112,7 +112,7 @@ The way user data will be formatted such as username and password, will be separ
 
 The screen size/format would follow that of a normal linux terminal window.
 
-End messages will only be delivered to the user if they somehow mistype one of the commands (whoami or nano/text editor). For example ' 'whoiam' is not a recognised command'
+End messages will only be delivered to the user if they somehow mistype one of the commands (whoami or nano/text editor). For example ''whoiam' is not a recognised command'
 
 
 
@@ -256,7 +256,7 @@ Requirements for the functionality of a text editor within the CLI are as follow
 Permissions to edit files and save them should be properly reflected when an attacker tries to edit a file. For example, nano when editing a file can also let the user know whenever a file is read only or not. Henceforth we plan to implement a text editor that is reflective of permissions enabled on a file, to not permanent changes to be made to a file regardless of the permissions enabled on a specific file. Concrete and clear error messages should be displayed to the user when attempting to edit a read-only file for example, with Nano it cearly displays upon the bottom of the file that the user is editing a read-only file, and this message is highlighted in orange. Making sure the user is immediately aware of the permissions enabled on the file that they are editing. 
 
 
-Requirements that are in place to ensure satisfactory output for the whoami command for Cowrie are as follows. The Cowrie should keep a log of all commands executed by the attacker whether they are supported or not, this should also log the user that the attacker is currently logged in as at that point of time. The whoami command should accurately print out the username/alias that the attacker has decided to go by. There aren't many usages or functionalities to do with the whoami command, however it is imperative for our iteration of the Cowrie honeypot that the whoami can dynamically represent the current use state of the cowrie.
+Requirements that are in place to ensure satisfactory output for the whoami command for Cowrie are as follows. The Cowrie should keep a log of all commands executed by the attacker whether they are supported or not, this should also log the user that the attacker is currently logged in as at that point of time. The whoami command should accurately print out the username/alias that the attacker has decided to go by. There are not many usages or functionalities to do with the whoami command, however it is imperative for our iteration of the Cowrie honeypot that the whoami can dynamically represent the current use state of the cowrie.
 
 ### 3.4 Performance requirements
 
@@ -332,7 +332,7 @@ Cowrie is already an operational piece of software. The project team will have t
 
 **Timeframe**
 
-Deadlines and timeframes will pose constraints on this project. Team members have other commitments such as work and other university courses that could have conflicting deadlines. There is also the risk of illness caused by but not limited to covid. This could have team members unable to perform their assigned tasks. 
+Deadlines and timeframes will pose constraints on this project. Team members have other commitments such as work and other university courses that could have conflicting deadlines. There is also the risk of illness caused by but not limited to covid. This could have team members unable to perform their assigned tasks. One team member is suffering currently with long covid, making deadlines difficult at times. 
 
 ### 3.7 Nonfunctional system attributes
 
@@ -357,11 +357,11 @@ There are no physical hardware components associated with this project. Basic en
 
 ### 3.9 Supporting information
 
-Their is no supporting information for this project.
+There is no supporting information for this project.
 
 ## 4. Verification
 
-There is currently two main requirements dictated by the client. These are whoami, and the text editor. An important characterstic to note about verification is that verification is static test, as opposed to the validation phase which contains dynamic testing of the code base. The overall objective of verification is to ensure that the documentation and design meet the specificed requirements outlined and fulfil the clients needs. Successful implementation of these requirements will be dependent on each requirement passing multiple verification methods listed below.
+There are currently two main requirements dictated by the client. These are whoami, and the text editor. An important characterstic to note about verification is that verification is static test, as opposed to the validation phase which contains dynamic testing of the code base. The overall objective of verification is to ensure that the documentation and design meet the specificed requirements outlined and fulfil the clients needs. Successful implementation of these requirements will be dependent on each requirement passing multiple verification methods listed below.
 
 - Walk-throughs
 - Inspections
@@ -392,18 +392,17 @@ Identify dates for key project deliverables:
 
 ### 5.2 Budget
 
-Since our project is software based, we do not require any physical equipment or resources outside of our reach to complete it. Therefore this project does not have a budget. 
+The Supercharged Cowrie project is software based, therefore we do not require any physical equipment or resources outside of our reach to complete it. Therefore this project does not have a budget. 
 
 ### 5.3 Risks 
 
 Risks  done by Shruti <br>
 <br>
-Risk: Tripping, slipping, falling <br>
+Risk: Tripping <br>
 Likelihood: Likely <br>
 Impact: Light - severe <br>
 Can cause: Painful injuries resulting in members being unable to participate and contribute <br>
-Mitigation: Clean any spills immediately and dry the floor.
-Ensure work areas and walkways are well-lit. Keep floor clear. Keep bags, cords etc under tables at all times. No running. Keep work area clutter free. <br>
+Mitigation: Ensure work areas and walkways are well-lit. Keep floor clear. Keep bags, cords etc under tables at all times. No running. Keep work area clutter free. <br>
 <br>
 Risk: Spending large amounts of time looking at the screen. <br>
 Likelihood: Very likely <br>
@@ -414,9 +413,8 @@ Mitigation: Follow the 20-20-20 rule. Every 20 minutes look away from your scree
 Risk: Sitting at the desk for long periods of time. <br>
 Likelihood: Very likely <br>
 Impact: Moderate <br>
-Can Cause: Team members may spend a lot of time doing work seated at a desk, using a computer. As a result they are prone to strains and other injuries related to posture. This can also cause back pain, sleepiness and other issues later on. <br>
-Mitigation: Educate members about their head position; try to keep the weight of the head directly above the neck.
-Encourage members not to slouch when sitting at a desk. Take regular breaks, go for short walks outside and try stay active <br>
+Can Cause: Bad posture, back pain. <br>
+Mitigation: Educate members about their head position; try to keep the weight of the head directly above the neck. Encourage team members to take short walks<br>
 <br>
 Risk: Papercuts <br>
 Likelihood: Unlikely <br>
@@ -448,7 +446,7 @@ Risk: Electrical Fires <br>
 Likelihood: Unlikely <br>
 Impact: Severe <br>
 Can Cause: Burns, loss of equipment, loss of life, smoke inhalation, electrocution, damage to university property.<br>
-Mitigation: Avoid overloading power points, ensure chargers and laptops are not being used on flammable surfaces, and monitor chargers, phones and laptops for overheating. Particularly those with metal framed laptops, monitor the health of the device, and the heat it is putting out. Familiarise selves with nearest C02 fire extinguisher (Carbon Dioxide extinguisher). If an electrical fire is to occur, locate nearest C02 extinguisher, and follow instructions on the extinguisher. Ensure that someone on the team activates the nearest fire alarm. DO NO USE WATER ON AN ELECTRICAL FIRE. <br>
+Mitigation: Avoid overloading power points, ensure chargers and laptops are not being used on flammable surfaces, and monitor chargers, phones and laptops for overheating. Particularly those with metal framed laptops, monitor the health of the device, and the heat it is putting out. Familiarise selves with nearest C02 fire extinguisher (Carbon Dioxide extinguisher), and/or the nearest Dry Powder extinguisher. If an electrical fire is to occur, locate the nearest C02 or Dry Powder extinguisher, and follow instructions on the extinguisher. Ensure that someone on the team activates the nearest fire alarm. DO NOT USE WATER ON AN ELECTRICAL FIRE. <br>
 <br>
 Risk: Spillage of food & liquids <br>
 Likelihood: Likely <br>
@@ -533,29 +531,11 @@ Here is the list of Acronyms and abbreviations used in this document.
 
 ## 7. Contributions
 
-Lucy Carver: Section 5.3 (Risks 6 to 10 inclusive), Section 5.4, Section 5.4.1, Whole document editing. <br>
+Lucy Carver: Section 5.3 (Risks 6 to 10 inclusive), Section 5.4, Section 5.4.1, Whole document editing + original section 1 editing and rewriting <br>
 Sridhar Venkatesh: Section 1.3.1, Section 3.1, 3.2, 3.3, 3.7 <br>
 Thomas Yang: Section 1, 1.1, 1.2, Section 4, 4.1, 4.2<br>
 Shruti Raja: Section 1.3.3, Section 5.1, 5.2, 5.3 (Risks 1 to 5 inclusive)<br>
 Selby Dasent: Section 1.3.2, Section 3.4, 3.5 and 3.6 <br>
 Deepika Raheja: Section 1.3.4 and Section 6
-
----
-
-## Formatting Rules 
-
- * Write your document using [Markdown](https://gitlab.ecs.vuw.ac.nz/help/user/markdown#gitlab-flavored-markdown-gfm) and ensure you commit your work to your team's GitLab repository.
- * Major sections should be separated by a horizontal rule.
-
-
-## Assessment  
-
-The goal of a requirements document is the problem you are attempting to solve:  not a first attempt at a solution to that problem. The most important factor in the assessmernt of the document is how will it meet that goal. The document will be assessed for both presentation and content. 
-
-The presentation will be based on how easy it is to read, correct spelling, grammar, punctuation, clear diagrams, and so on.
-
-The content will be assessed according to its clarity, consistency, relevance, critical engagement and a demonstrated understanding of the material in the course. We look for evidence these traits are represented and assess the level of performance against these traits. While being comprehensive and easy to understand, this document must be reasonably concise too. You will be affected negatively by writing a report with too many pages (far more than what has been suggested for each section above).
-
-We aim to evaluate ENGR301 documents and projects as if they were real projects rather than academic exercises &mdash; especially as they are real projects with real clients. The best way to get a good mark in a document is to do the right thing for your project, your client, and your team. We encourage you to raise questions with your tutor or course staff, as soon as possible, so you can incorporate their feedback into your work.
 
 ---
