@@ -104,7 +104,9 @@ Each architectural view should include at least one architectural model. If arch
 
 ### 4.4 Physical 
 
-While this is a software based project Cowrie will need to be set up with within a network that has access to the internet. The device it is installed on must be able to run Python 3.7+ and Python-virtualenv. Several honeypots are set up withing company networks
+The extensions we are developing for Cowrie are software based and Cowrie is a virtual honeypot. This means it only requires the Python 3.7+ and Python-virtualenv software to run. This does mean there are very little requirements for a physical computer to be able to use this software. It can be set up in a cloud or docker environment or on a physical server. The device it is installed on does require a connection to a network. 
+
+It is recommended that several honeypots are set up within a network to maximise the chance a malicious actor access them. The below diagram shows where in a network they can be set up. Honeypot1 is set up outside of the firewall with direct access to the internet. Honeypot2 is set up on the same network as the companies’ service network, this includes DNS, Wab and mail servers. Honeypot3 is set up within the companies’ main network next to standard users’ computers and servers. 
 
 ```plantuml
 @startuml
@@ -120,8 +122,8 @@ node Service_Network
 node Server
 node Computer
 
-Internet -- Firewall : label
-Firewall -- Honeypot1 : label
+Internet -- Firewall
+Firewall -- Honeypot1
 Firewall -- LAN1
 Firewall -- LAN2
 LAN1 -- Honeypot2
