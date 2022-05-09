@@ -67,6 +67,26 @@ See ISO/IEC/IEEE 42010 clause 5.3 and ISO/IEC/IEEE 12207 clause 6.4.4.3(2).
 
 For most systems this will be about 2 pages, including a table mapping concerns to stakeholder.
 
+For this project, our stakeholders will be:
+| Stakeholder  | Role |
+| ------------- | ------------- |
+| Team members  | Developing Cowrie |
+| Masood Mansoori | Client |
+| Project Manager  | Project Manager |
+| Jesse Wood | Tutor |
+| Winston Seah  | Owner |
+| User  | Using end product |
+
+
+| Stakeholder  | Main Concern |
+| ------------- | ------------- |
+| Team members  | Developing Cowrie to meet Client requirements on time  |
+| Masood Mansoori  | Team producing the correct end product  |
+| Project Manager  | Managing the team's communication and progress  |
+| Jesse Wood  | Ensuring team is informed and aware of requirements  |
+| Winston Seah  | Ensuring the team satisfies the client's requirements and expectations  |
+| Users  |  Results of the final product  |
+
 ### 3.2 Architectural Viewpoints
 (1 page, 42010 5.4) 
 
