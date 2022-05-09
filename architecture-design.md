@@ -103,7 +103,35 @@ Each architectural view should include at least one architectural model. If arch
 ...
 
 ### 4.4 Physical 
-...
+
+While this is a software based project Cowrie will need to be set up with within a network that has access to the internet. The device it is installed on must be able to run Python 3.7+ and Python-virtualenv. Several honeypots are set up withing company networks
+
+```plantuml
+@startuml
+
+cloud Internet
+node Firewall
+node Honeypot1
+node Honeypot2
+node Honeypot3
+database LAN1
+database LAN2
+node Service_Network
+node Server
+node Computer
+
+Internet -- Firewall : label
+Firewall -- Honeypot1 : label
+Firewall -- LAN1
+Firewall -- LAN2
+LAN1 -- Honeypot2
+LAN1 -- Service_Network
+LAN2 -- Server
+LAN2 -- Honeypot3
+LAN2 -- Computer
+
+@enduml
+```
 
 ### 4.5 Scenarios
 ...
