@@ -106,7 +106,7 @@ Each architectural view should include at least one architectural model. If arch
 
 Cowrie has been built as a virtual honeypot. Therefore, there is very little in terms of physical requirements for this project. It can be set up on any server or computer that has Python 3.7+ and Python-virtualenv installed and is connected to a network. 
 
-The extensions that are being developed for Cowrie will utilise the same virtual environment that Cowrie is currently run within. This means that the extensions will use the systems and protocols within Cowrie to connect to a network and send and receive information. Figure 4.4.1 covers where honeypots can be set up within a network.
+The extensions that are being developed for Cowrie will utilise the same virtual environment that Cowrie is currently run within. This means that the extensions will use the systems and protocols within Cowrie to connect to a network and send and receive information. There are multiple areas within a network a honeypot should be set up as displayed in Figure 4.4.1. These include outside of the networks firewall, along side the service network servers and among the end users and main servers of the network. 
  
 
 ```plantuml
