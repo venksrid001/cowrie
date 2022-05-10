@@ -149,10 +149,9 @@ Schedules must be justified and supported by evidences; they must be either dire
 
 Identify dates for key project deliverables:
 
-
-July 31st - Architectural Prototype
-August 19th - Minimum Viable Product
-October 1st - Further Releases
+1. July 31st - Architectural Prototype 
+1. August 19th - Minimum Viable Product
+1. October 1st - Further Releases
 
 (1 page).
 
