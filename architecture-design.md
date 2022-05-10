@@ -137,7 +137,18 @@ Each architectural view should include at least one architectural model. If arch
 ...
 
 ### 4.5 Scenarios
-...
+
+This is a UML use case diagram that displays each essential use case for the extended iteration of Cowrie. Which will primarily have support for a fully fledged text edtior. The usecases highlighted in blue represent two of the most important and essential functionalities for the text editor. The guide for maintaining a minimum viable product are as follows.
+
+#### 4.5.1 Opening Files Within the Text Environment
+
+Users/Attackers logged into the Cowrie using the text editor would need support for opening files within or outside the text environment - eg. nano (filename), or using the read file functionality within the editing environment. Either scenario would produce or summon a text editing environment for a user to utilise and edit files.
+
+#### 4.5.2 User Exits Out of the Environment
+
+Another scenario which would also be considered is also allowing users to exit out of the environment when they please. This scenario would also include use cases such as prompting a user to save the file they have made changes to, and prompting the user to rename the file if they please. 
+
+![](use_cases/use_case-diagramv2.png)
 
 ## 5. Development Schedule
 
