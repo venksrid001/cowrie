@@ -138,7 +138,7 @@ Each architectural view should include at least one architectural model. If arch
 
 ### 4.5 Scenarios
 
-This is a UML use case diagram that displays each essential use case for the extended iteration of Cowrie. Which will primarily have support for a fully fledged text edtior. The usecases highlighted in blue represent two of the most important and essential functionalities for the text editor. The guide for maintaining a minimum viable product are as follows.
+This is a UML use case diagram that displays each essential use case for the extended iteration of Cowrie. Which will primarily have support for a fully fledged text edtior. The usecases highlighted in blue represent two of the most important and essential functionalities for the text editor. The guide for maintaining a minimum viable product are as follows. Use Cases highlighted in green highlight the features and use cases/scenarios that the Text editor would have support for.
 
 #### 4.5.1 Opening Files Within the Text Environment
 
