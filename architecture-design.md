@@ -96,6 +96,12 @@ For this project, our stakeholders will be:
 
 Identify the architectural viewpoints you will use to present your system's architecture. Write one sentence to outline each viewpoint. Show which viewpoint frames which architectural concern.
 
+Logical:
+Process:
+Development:
+Physical:
+Scenario:
+
 ### 4. Architectural Views
 
 (5 sub-sections of 2 pages each sub-section, per 42010, 5.5, 5.6, with reference to Annex F of both 12207 and 15288) 
