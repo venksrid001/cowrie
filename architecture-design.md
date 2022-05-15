@@ -139,13 +139,14 @@ Attacker will try to hack the environment using SSH, and this project will creat
 There are two scenarios when attacker will access the honeypot.
 
 **First Time Attack:**
+
 Whenever any attacker first time tries to access the honeypot. In this scenario, we can provide user a fresh environment and we don’t need to prepare too much for this. It would be the simplest solution.
 
 **Returning Attack:**
 
-In this scenario, we need to make sure:
+In this scenario, an attacker comes back to exploits a system again then we need to make sure that:
 
-1.	Whenever, an attacker makes any changes to the file structure (Create new folder, rename existing folder, delete any folder, create new file etc) then it should remain same for next time.
+1.	The attacker can see exactly the same changes to the file structure that he made in his previous session. Like create new folder, rename existing folder, delete any folder, create new file etc.
 2.	Metadata (e.g., last modified owner, last modified files, last modified directories, last modified time etc) for files and directories should not be altered.
 3.	There should not be noticeable delay in the response.
 
