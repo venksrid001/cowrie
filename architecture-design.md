@@ -143,6 +143,7 @@ Our client has stated that they will be conducting the tests on our project once
 Walk throughs and inspections will allow us to discuss, explain and assess our individual contributions to the team and client. Team members, along with the client, can then make any suggestions and inspect specific parts that may need improving. Walkthrough and inspection meetings will involve the following procedure: Author (team member) explains what they have worked on, all other members inspect and point out any defects or possible improvements,  author makes changes according to what was inspected, changes will be checked at the next meeting. Everyone will get a turn to be the author. Consistent fortnightly meetings with the client and all team members will take place so that everyone is in agreement and is aware how the success of the project is tracking.
 
 ### 4.2.4 Prototyping
+Our fortnightly meetings with the client will give us the chance to make small developments on prototypes of functional features and will also allow us to constantly provide updates and present these developments. This will be done using walk-throughs and inspections (refer to sub-section 4.2.3 above).  Doing this will keep the client informed on what has been completed and what still needs to be done or needs further attention. Our client will then have an opportunity to clarify and voice any feedback or opinions they may have so that changes can be made on prototypes early on.
 
 ...
 
