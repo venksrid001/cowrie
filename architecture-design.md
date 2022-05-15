@@ -133,7 +133,10 @@ Each architectural view should include at least one architectural model. If arch
 ### 4.2.2 Version Control
 To maintain good version control, we will be using Gitlab for this project. Gitlab allows us to use features such as branches, merge requests, issues and epics so that all team members can collaborate and contribute simultaneously while also keeping track of all changes and progress for the project. All project contributions on Gitlab will be done online. This means that all parts of the project will be backed up and easily accessible to team members at all times. 
 
-We will be using branches on Gitlab for when different team members are working on different parts of the project. Each member will create and work on their own branch that will be created from the master branch. 
+We will be using branches on Gitlab for when different team members are working on different parts of the project. Each member will create and work on their own branch that will be created from the master branch. This will allow members to easily make contributions from their own devices at their convenience. Another benefit of using branches in Gitlab is that any branch containing mistakes or code with bugs will not be pushed onto the master branch, this means that members can experiment and try out different ways of completing their part of the project without worrying about any consequences it may have on already working part of the master branch. Once a member has finished with their branch, a merge request to the master branch will be committed. Another team member will review this merge request to check and approve it and will then merge it into the master branch.
+
+Gitlab issues and epics will be used to break down the project into separate parts that team members will assign themselves to. This will allow us to keep track of the progress of the project by knowing what has been done, what is being done, and what is still left to do. Issues will also be used to discuss the implementation of ideas and elaborate on code implementations.
+
 ### 4.2.3 Testing
 ### 4.2.4 Prototyping
 
