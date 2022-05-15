@@ -136,6 +136,13 @@ Attacker will try to hack the environment using SSH, and this project will creat
 
 ![](diagrams/process.png)
 
+There are two scenarios when attacker will access the honeypot.
+**First Time Attack:**
+Whenever any attacker first time tries to access the honeypot. In this scenario, we can provide user a fresh environment and we don’t need to prepare too much for this. It would be the simplest solution.
+**Returning Attack:**
+In this scenario, we need to make sure:
+
+
 ### 4.4 Physical 
 
 Cowrie has been built as a virtual honeypot. Therefore, there is very little in terms of physical requirements for this project. It can be set up on any server or computer that has Python 3.7+ and Python-virtualenv installed and is connected to a network. 
