@@ -161,9 +161,7 @@ The extensions that are being developed for Cowrie will utilise the same virtual
  
 
 ```plantuml
-
 @startuml
-
 cloud Internet
 node Firewall
 node Honeypot1
@@ -184,7 +182,6 @@ LAN1 -- Service_Network
 LAN2 -- Server
 LAN2 -- Honeypot3
 LAN2 -- Computer
-
 @enduml
 ```
 
