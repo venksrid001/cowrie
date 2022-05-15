@@ -145,7 +145,7 @@ Whenever any attacker first time tries to access the honeypot. In this scenario,
 
 In this scenario, we need to make sure:
 
-Whenever, an attacker makes any changes to the file structure (Create new folder, Rename existing folder, delete any folder, create new file etc) then it should remain same for next time.
+Whenever, an attacker makes any changes to the file structure (create new folder, rename existing folder, delete any folder, create new file etc) then it should remain same for next time.
 
 
 ### 4.4 Physical 
