@@ -161,6 +161,7 @@ The extensions that are being developed for Cowrie will utilise the same virtual
  
 
 ```plantuml
+
 @startuml
 
 cloud Internet
