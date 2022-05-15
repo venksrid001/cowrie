@@ -129,7 +129,11 @@ Each architectural view should include at least one architectural model. If arch
 
 ### 4.2 Development
 ### 4.2.1 Code Structure
+
 ### 4.2.2 Version Control
+To maintain good version control, we will be using Gitlab for this project. Gitlab allows us to use features such as branches, merge requests, issues and epics so that all team members can collaborate and contribute simultaneously while also keeping track of all changes and progress for the project. All project contributions on Gitlab will be done online. This means that all parts of the project will be backed up and easily accessible to team members at all times. 
+
+We will be using branches on Gitlab for when different team members are working on different parts of the project. Each member will create and work on their own branch that will be created from the master branch. 
 ### 4.2.3 Testing
 ### 4.2.4 Prototyping
 
