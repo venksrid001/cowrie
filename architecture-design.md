@@ -149,7 +149,8 @@ In this scenario, an attacker comes back to exploits a system again then we need
 1.	The attacker can see exactly the same changes to the file structure that he made in his previous session. Like create new folder, rename existing folder, delete any folder, create new file etc.
 2.	Metadata (e.g., last modified owner, last modified files, last modified directories, last modified time etc) for files and directories should not be altered.
 3.	There should not be noticeable delay in the response.
-
+4.	The attacker should be able to see his all-historical commands as it is and in the same sequence, which he has performed by executing commands.
+5.	There should not be any evidence where attacker should be able to observe that any commands has been replayed or re-executed.
 
 
 ### 4.4 Physical 
