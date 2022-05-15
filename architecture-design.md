@@ -131,7 +131,9 @@ Each architectural view should include at least one architectural model. If arch
 ...
 
 ### 4.3 Process
-...
+
+Attacker will try to hack the environment using SSH, and this project will create the honeypot for the attackers. It will provide the simulated environment, where an attacker assumes that he is accessing the actual environment. 
+
 ![](diagrams/process.png)
 
 ### 4.4 Physical 
