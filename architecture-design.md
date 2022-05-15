@@ -128,6 +128,11 @@ Each architectural view should include at least one architectural model. If arch
 ...
 
 ### 4.2 Development
+### 4.2.1 Code Structure
+### 4.2.2 Version Control
+### 4.2.3 Testing
+### 4.2.4 Prototyping
+
 ...
 
 ### 4.3 Process
