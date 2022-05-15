@@ -132,6 +132,7 @@ Each architectural view should include at least one architectural model. If arch
 
 ### 4.3 Process
 ...
+[process diagram](diagrams/process.png)
 
 ### 4.4 Physical 
 
