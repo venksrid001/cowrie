@@ -132,7 +132,7 @@ Each architectural view should include at least one architectural model. If arch
 
 ### 4.3 Process
 
-Attacker will try to hack the environment using SSH, and this project will create the honeypot for the attackers. It will provide the simulated environment, where an attacker assumes that he is accessing the actual environment. 
+Attacker will try to hack the environment using SSH (on port 22), and this project will create the honeypot for the attackers to protect the system and study the behaviour of the attacker. It will provide the simulated environment, where an attacker assumes that he is accessing the actual environment. Any un-authorised access to the server using SSH will be forwarded to the Cowrie honeypot running on port 2222. As it is depicted in the below diagram.
 
 ![](diagrams/process.png)
 
