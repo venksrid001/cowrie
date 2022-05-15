@@ -138,6 +138,10 @@ We will be using branches on Gitlab for when different team members are working 
 Gitlab issues and epics will be used to break down the project into separate parts that team members will assign themselves to. This will allow us to keep track of the progress of the project by knowing what has been done, what is being done, and what is still left to do. Issues will also be used to discuss the implementation of ideas and elaborate on code implementations.
 
 ### 4.2.3 Testing
+Our client has stated that they will be conducting the tests on our project once every two weeks during a meeting with all team members. The testing involves the client checking the accuracy of design and documentation as well as checking the correctness of the implementation and output. We will do this by using methods such as walk-throughs and inspections. By using these methods, we can regularly ensure that we are meeting the clients expectations and we can receive feedback on what parts need improvements or changes made to them.
+
+Walk throughs and inspections will allow us to discuss, explain and assess our individual contributions to the team and client. Team members, along with the client, can then make any suggestions and inspect specific parts that may need improving. Walkthrough and inspection meetings will involve the following procedure: Author (team member) explains what they have worked on, all other members inspect and point out any defects or possible improvements,  author makes changes according to what was inspected, changes will be checked at the next meeting. Everyone will get a turn to be the author. Consistent fortnightly meetings with the client and all team members will take place so that everyone is in agreement and is aware how the success of the project is tracking.
+
 ### 4.2.4 Prototyping
 
 ...
