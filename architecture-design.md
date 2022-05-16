@@ -163,7 +163,7 @@ Below diagram depicts the process architecture for Supercharged cowrie project
 
 **Attacker's Actions Anslysis Process:** This process will study the actions performed by the attacker, so that we can find out any vulnerabilities in our system and make it robust.
 
-#### Non-functional Requirementsd
+#### Non-functional Requirements:
 Non functional requirements can be splitted into multiple categories, as described below:
 
 **1. High performance:** 
