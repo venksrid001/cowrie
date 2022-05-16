@@ -154,12 +154,11 @@ Our fortnightly meetings with the client will give us the chance to make small d
 
 ### 4.4 Physical 
 
-Cowrie has been built as a virtual honeypot. Therefore, there is very little in terms of physical requirements for this project. It can be set up on any server or computer that has Python 3.7+ and Python-virtualenv installed and is connected to a network. This project does not require a database to be set up or backup servers to be in place, figure 4.4.1 shows that only a network connection is required.
+Cowrie has been built as a virtual honeypot. Therefore, there is very little in terms of physical requirements for this project. It can be set up on any server or computer that has Python 3.7+ and Python-virtualenv installed and is connected to a network. This project does not require a database to be set up or backup servers to be in place, figure 4.4.1 shows that only a network connection is required for the virtual enviroment to opperate.
 
 ![](physical/physical_network.png)
 
 *Figure 4.4.1: Physical blueprint*
-
 
 The extensions that are being developed for Cowrie will utilise the same virtual environment that Cowrie is currently run within. This means that the extensions will use the systems and protocols within Cowrie to connect to a network and send and receive information. There are multiple areas within a network a honeypot should be set up as displayed in Figure 4.4.2. These include outside of the networks firewall, along side the service network servers and among the end users and main servers of the network. 
  
