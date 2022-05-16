@@ -152,7 +152,8 @@ In this scenario, an attacker comes back to exploits a system again then we need
 4.	The attacker should be able to see his all-historical commands as it is and in the same sequence, which he has performed by executing commands.
 5.	There should not be any evidence where attacker should be able to observe that any commands has been replayed or re-executed.
 
-
+---
+![]("C:\Users\Lenovo\Desktop\temp\cowrie\Process View of Cowrie Project.png")
 ### 4.4 Physical 
 
 Cowrie has been built as a virtual honeypot. Therefore, there is very little in terms of physical requirements for this project. It can be set up on any server or computer that has Python 3.7+ and Python-virtualenv installed and is connected to a network. 
