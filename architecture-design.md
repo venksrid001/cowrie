@@ -128,7 +128,38 @@ Each architectural view should include at least one architectural model. If arch
 ...
 
 ### 4.2 Development
+
 ### 4.2.1 Code Structure
+
+- Forward arrows illustrate a dependancy - eg. Package1 -> Package2 means Package1 depends on Package2.
+- Dashed lines illustrate modules within the package/directory in question
+- Blue Rectangles illustrate directories/packages
+- Green rectangles illustrate python modules
+
+#### 4.2.1.1 Structure for whoami command
+
+Considering there is already a source code/python module providing the implementation of basic Linux commands such as cd/echo etc. Preferably we will add our implementation of the whoami command to the base.py file that is already located within Cowrie's source code files. There are already mechanisms built in place to interpret user input/commands from the user to pass these commands down as system arguments for the base.py file to manipulate and perform commands accordingly.
+
+#### 4.2.1.2 Structure for Text Editor
+
+The source code for the text editor command will be located within the directory cowrie/src/cowrie/commands/TextEditor. We have been given approval to utilise the python library "curses" from our client, to provide further assistance on simulating a text-based terminal environment for the text editor. Each 
+
+We have decided to adopt a Model-View-Controller (MVC) design pattern to structure the python modules and place them in their respective packages. 
+
+The "View" package will be responsible for providing a text based terminal environment for the user, and will contain most of the visual logic within the editor.py module, such as location of cursor, size of window and visible buttons/widgets to display the shortcuts that can be used when in the environment.
+
+The "Controller" package is responsible for manipulating user input/commands and providing necessary input for the Model package (which will consist of all the editing logic/additional text editing functionalities). This currently has a dependency on the CLI which will be the primary source of user input. 
+
+The "Model" package is responsible for other additional functionalities for the text editor. Such as having modules to enable saving files, writing to files etc. 
+
+Each of these packages have been separated into two layers to further identify what package is dependant on another package. This has been implemented with the design rule that packages should only be dependant on other packages that are either within the same layer or in a layer below, to ensure there are some constraints to our structure. Hence Controller and Model have been placed in Layer 1, where it's responsibility revolves around both interpreting user input and the overall logic of the editor. 
+
+Layer 2 will contain code/implementation of the Text Editing environment, and is dependant on the current state of the editing logic that is within the Model package. 
+
+
+![](diagrams/whoami_txt_editor_diagram.png)
+
+*Figure 4.2.1.3 UML Package Diagram*
 
 ### 4.2.2 Version Control
 To maintain good version control, we will be using Gitlab for this project. Gitlab allows us to use features such as branches, merge requests, issues and epics so that all team members can collaborate and contribute simultaneously while also keeping track of all changes and progress for the project. All project contributions on Gitlab will be done online. This means that all parts of the project will be backed up and easily accessible to team members at all times. 
