@@ -158,35 +158,13 @@ Cowrie has been built as a virtual honeypot. Therefore, there is very little in 
 
 The extensions that are being developed for Cowrie will utilise the same virtual environment that Cowrie is currently run within. This means that the extensions will use the systems and protocols within Cowrie to connect to a network and send and receive information. There are multiple areas within a network a honeypot should be set up as displayed in Figure 4.4.1. These include outside of the networks firewall, along side the service network servers and among the end users and main servers of the network. 
  
-
-```plantuml
-@startuml
-
-cloud Internet
-node Firewall
-node Honeypot1
-node Honeypot2
-node Honeypot3
-database LAN1
-database LAN2
-node Service_Network
-node Server
-node Computer
-
-Internet -- Firewall
-Firewall -- Honeypot1
-Firewall -- LAN1
-Firewall -- LAN2
-LAN1 -- Honeypot2
-LAN1 -- Service_Network
-LAN2 -- Server
-LAN2 -- Honeypot3
-LAN2 -- Computer
-
-@enduml
-```
+![](Physical/Network.png)
 
 *Figure 4.4.1: Honeypots within a network*
+
+![](Physical/Physical.png)
+
+*Figure 4.4.2: Physical blueprint*
 
 ### 4.5 Scenarios
 
