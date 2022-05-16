@@ -221,17 +221,35 @@ LAN2 -- Computer
 
 ### 4.5 Scenarios
 
-This is a UML use case diagram that displays each essential use case for the extended iteration of Cowrie. Which will primarily have support for a decently fleshed out text edtior. The usecases highlighted in blue represent two of the most important and essential functionalities for the text editor. The guide for maintaining a minimum viable product are as follows. Use Cases highlighted in green highlight the features and use cases/scenarios that the Text editor would have support for.
+The two main scenarios that have been highlighted, are Opening/Saving files using the text editor, and correct/dynamic output with regards to the whoami command. Proper support for these two scenarios would ensure that our minimum viable product is completed.  
 
-#### 4.5.1 Opening Files Within the Text Environment
+#### 4.5.1 Opening Files/Saving Files with the Text Editor
 
-Users/Attackers logged into the Cowrie using the text editor would need support for opening files within or outside the text environment - eg. nano (filename), or using the read file functionality within the editing environment. Either scenario would produce or summon a text editing environment for a user to utilise and edit files.
+This scenario would also include use cases such as prompting a user to save the file they have made changes to, and prompting the user to rename the file if they please. 
 
-#### 4.5.2 User Exits Out of the Environment
+1. User summons text environment with 'editor' command with a file
+2. System opens text environment with the user's requested file opened
+3. User adds content to the file and presses CTRL+X to save
+4. Prompts user to rename and confirm they want to save
+5. User responds with 'y' to the prompts
+6. File is stored in the file system and system exits out of the text environment
 
-Another scenario which would also be considered is also allowing users to exit out of the environment when they please. This scenario would also include use cases such as prompting a user to save the file they have made changes to, and prompting the user to rename the file if they please. 
+![](use_cases/cowrie_use_case_text_editor.png)
 
-![](use_cases/use_case-diagramv2.png)
+*Figure 4.5.2 Scenario for Text Editor*
+
+#### 4.5.3 User Executes Whoami Command
+
+This scenario will be pretty simple to simulate, and this alone will cover all the possible usages of the whoami command. Attackers may use this command to test the functionality of the system, or perhaps if they have created many users they may utilise this command to reaffirm them as to what user they are currently operating under. 
+
+1. Attacker logs into the cowrie at port 22 with the username "attacker"
+2. Cowrie logs the newly inputted credentials into the file userdb.txt
+3. Attacker performs whoami command to check the validity of the system they're in
+4. System parses through userdb.txt file and fetches latest username and prints it out as output to the user
+
+![](use_cases/cowrie_use_casewhoami.png)
+
+*Figure 4.5.4 Scenario for 'whoami' command*
 
 ## 5. Development Schedule
 
