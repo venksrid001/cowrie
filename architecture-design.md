@@ -210,11 +210,12 @@ Schedules must be justified and supported by evidences; they must be either dire
 
 ### 5.1 Schedule
 
-Identify dates for key project deliverables:
+
+The following are the key dates for the project deliverables. These dates have been comfirmed in advance with the client and team members and everyone is in agreement. 
 
 1. July 31st - Architectural Prototype 
-1. August 19th - Minimum Viable Product
-1. October 1st - Further Releases
+1. August 19th - Minimum Viable Product (Text editor and whoami command)
+1. October 1st - Further Releases (Extra commands that will be implemented after further discussions with the client)
 
 (1 page).
 
