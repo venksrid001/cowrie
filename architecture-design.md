@@ -175,10 +175,10 @@ Attacker should not be able to identify that he is trapped with the honeypot.
 
 **3. Security:** Supercharged cowrie project should be able to indentify authorised and un-authorised access effieciently and any un-authorised access should not be allowed to access actual system.
 
-**4. Failure tolerance:** the system should be fail proof and be able to recover and keep
+**4. Failure tolerance:** The system should be fail proof and be able to recover and keep
 working in a matter of seconds.
 
-**5. multiple Profiles Support:** Supercharged Cowrie Porject should be able to support multiple profiles for various IoT devices.
+**5. Multiple profiles support:** Supercharged Cowrie Porject should be able to support multiple profiles for various IoT devices.
 
 ### 4.4 Physical 
 
