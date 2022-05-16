@@ -152,12 +152,6 @@ In this scenario, an attacker comes back to exploits a system again then we need
 4.	The attacker should be able to see his all-historical commands as it is and in the same sequence, which he has performed by executing commands.
 5.	There should not be any evidence where attacker should be able to observe that any commands has been replayed or re-executed.
 
---- Porttion to be deleted --
-The process architecture takes into account some non-functional requirements, such as performance and
-availability. It addresses issues of concurrency and distribution, of system’s integrity, of fault-tolerance, and
-how the main abstractions from the logical view fit within the process architecture—on which thread of
-control is an operation for an object actually executed
----
 Below diagram depicts the process architecture for Supercharged cowrie project
 ![](diagrams/Process_View_of_Cowrie_Project.png)
 
