@@ -152,8 +152,22 @@ In this scenario, an attacker comes back to exploits a system again then we need
 4.	The attacker should be able to see his all-historical commands as it is and in the same sequence, which he has performed by executing commands.
 5.	There should not be any evidence where attacker should be able to observe that any commands has been replayed or re-executed.
 
+--- Porttion to be deleted --
+The process architecture takes into account some non-functional requirements, such as performance and
+availability. It addresses issues of concurrency and distribution, of system’s integrity, of fault-tolerance, and
+how the main abstractions from the logical view fit within the process architecture—on which thread of
+control is an operation for an object actually executed
 ---
+Below diagram depicts the process architecture for Supercharged cowrie project
 ![](diagrams/Process_View_of_Cowrie_Project.png)
+
+**Login Process:** It is an expternal process, and it is not part of our implementation. This step is just to show the starting point of the interaction.
+
+**Identification of Un-authorised Access Process:** This process will check for all of the SSH accesses, if any authorized person will try to acceess the system then it will not forwaard the login (SSH) request to the honeypot. Only un-authorised SSH requests will be forwaarded to the honeypot system.
+
+**Honeypot Process:** It will accpets the SSH request and keep track of all of the actions specified above.
+
+**Attacker's Actions Anslysis Process:** This process will study the actions performed by the attacker, so that we can find out any vulnerabilities in our system and make it robust.
 
 
 ### 4.4 Physical 
