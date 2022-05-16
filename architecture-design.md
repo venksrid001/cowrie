@@ -128,6 +128,25 @@ Each architectural view should include at least one architectural model. If arch
 ...
 
 ### 4.2 Development
+### 4.2.1 Code Structure
+
+### 4.2.2 Version Control
+To maintain good version control, we will be using Gitlab for this project. Gitlab allows us to use features such as branches, merge requests, issues and epics so that all team members can collaborate and contribute simultaneously while also keeping track of all changes and progress for the project. All project contributions on Gitlab will be done online. This means that all parts of the project will be backed up and easily accessible to team members at all times. 
+
+We will be using branches on Gitlab for when different team members are working on different parts of the project. Each member will create and work on their own branch that will be created from the master branch. This will allow members to easily make contributions from their own devices at their convenience. Another benefit of using branches in Gitlab is that any branch containing mistakes or code with bugs will not be pushed onto the master branch, this means that members can experiment and try out different ways of completing their part of the project without worrying about any consequences it may have on already working part of the master branch. Once a member has finished with their branch, a merge request to the master branch will be committed. Another team member will review this merge request to check and approve it and will then merge it into the master branch.
+
+Gitlab issues and epics will be used to break down the project into separate parts that team members will assign themselves to. This will allow us to keep track of the progress of the project by knowing what has been done, what is being done, and what is still left to do. Issues will also be used to discuss the implementation of ideas and elaborate on code implementations.
+
+### 4.2.3 Testing
+Our client has stated that they will be conducting the tests on our project once every two weeks during a meeting with all team members. The testing involves the client checking the accuracy of design and documentation as well as checking the correctness of the implementation and output. We will do this by using methods such as unit testing and acceptance testing. Walk-throughs and inspections will also be conducted for verification purposes. By using these methods, we can regularly ensure that we are meeting the clients expectations and we can receive feedback on what parts need improvements or changes made to them.  Walk throughs and inspections will allow us to discuss, explain and assess our individual contributions to the team and client. Team members, along with the client, can then make any suggestions and inspect specific parts that may need improving. Walkthrough and inspection meetings will involve the following procedure: Author (team member) explains what they have worked on, all other members inspect and point out any defects or possible improvements,  author makes changes according to what was inspected, changes will be checked at the next meeting. Everyone will get a turn to be the author. Consistent fortnightly meetings with the client and all team members will take place so that everyone is in agreement and is aware how the success of the project is tracking.
+
+ Unit Testing will be frequently used to test parts of our implementation of the commands the client has asked for. Unit testing will essentially involve testing individual methods and making sure the method itself is correctly implemented and functions as expected. E.g  Testing a method for logins can check the user's credentials and will return true or false if they have logged in. The benefits of using unit testing is that it is time efficient, so it can be done often. 
+ 
+ We will also be using acceptance testing. This will involve creating a set of tests that will ensure the team can produce the minimum viable product required by the client. (i.e text editor and whom command). These tests would involve ensuring that the text editor opens, and responds to the minimize or close button or testing whoami to ensure that it only runs when the text editor is open, and returns right output etc. Acceptance testing will ensure that all the bare minimum functions work as expected to meet client requirements.
+
+### 4.2.4 Prototyping
+Our fortnightly meetings with the client will give us the chance to make small developments on prototypes of functional features and will also allow us to constantly provide updates and present these developments. This will be done using walk-throughs and inspections (refer to sub-section 4.2.3 above).  Doing this will keep the client informed on what has been completed and what still needs to be done or needs further attention. Our client will then have an opportunity to clarify and voice any feedback or opinions they may have so that changes can be made on prototypes early on.
+
 ...
 
 ### 4.3 Process
