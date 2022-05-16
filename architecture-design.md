@@ -150,7 +150,54 @@ Our fortnightly meetings with the client will give us the chance to make small d
 ...
 
 ### 4.3 Process
-...
+
+Attacker will try to hack the environment using SSH (on port 22), and this project will create the honeypot for the attackers to protect the system and study the behaviour of the attacker. It will provide the simulated environment, where an attacker assumes that he is accessing the actual environment. Any un-authorised access to the server using SSH will be forwarded to the Cowrie honeypot running on port 2222 using iptables or firewall. As it is depicted in the below diagram.
+
+![](diagrams/process.png)
+
+There are two scenarios when attacker will access the honeypot.
+
+**First Time Attack:**
+
+Whenever any attacker first time tries to access the honeypot. In this scenario, we can provide user a fresh environment and we don’t need to prepare too much for this. It would be the simplest solution.
+
+**Returning Attack:**
+
+In this scenario, an attacker comes back to exploits a system again then we need to make sure that:
+
+1.	The attacker can see exactly the same changes to the file structure that he made in his previous session. Like create new folder, rename existing folder, delete any folder, create new file etc.
+2.	Metadata (e.g., last modified owner, last modified files, last modified directories, last modified time etc) for files and directories should not be altered.
+3.	There should not be noticeable delay in the response.
+4.	The attacker should be able to see his all-historical commands as it is and in the same sequence, which he has performed by executing commands.
+5.	There should not be any evidence where attacker should be able to observe that any commands has been replayed or re-executed.
+
+Below diagram depicts the process architecture for Supercharged cowrie project
+![](diagrams/Process_View_of_Cowrie_Project.png)
+
+**Login Process:** It is an expternal process, and it is not part of our implementation. This step is just to show the starting point of the interaction.
+
+**Identification of Un-authorised Access Process:** This process will check for all of the SSH accesses, if any authorized person will try to acceess the system then it will not forwaard the login (SSH) request to the honeypot. Only un-authorised SSH requests will be forwaarded to the honeypot system.
+
+**Honeypot Process:** It will accpets the SSH request and keep track of all of the actions specified above.
+
+**Attacker's Actions Anslysis Process:** This process will study the actions performed by the attacker, so that we can find out any vulnerabilities in our system and make it robust.
+
+#### Non-functional Requirements:
+Non functional requirements can be splitted into multiple categories, as described below:
+
+**1. High performance:** 
+Supercharged Cowrie system should respond quickly Whenever any attacker tried to login. 
+Also, if there are multiple attacks on the same time then system must be able to tackle all of the requests.
+
+**2. User friendly:** 
+Attacker should not be able to identify that he is trapped with the honeypot.
+
+**3. Security:** Supercharged cowrie project should be able to indentify authorised and un-authorised access effieciently and any un-authorised access should not be allowed to access actual system.
+
+**4. Failure tolerance:** The system should be fail proof and be able to recover and keep
+working in a matter of seconds.
+
+**5. Multiple profiles support:** Supercharged Cowrie Porject should be able to support multiple profiles for various IoT devices.
 
 ### 4.4 Physical 
 
