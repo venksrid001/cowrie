@@ -125,7 +125,17 @@ As appropriate you should include the following viewpoints:
 Each architectural view should include at least one architectural model. If architectural models are shared across views, refer back to the first occurrence of that model in your document, rather than including a separate section for the architectural models.
 
 ### 4.1 Logical
-...
+### 4.1.1 State Flow diagram
+To get a good understanding of our projects imodular interactions, as well as how the user interacts with our program. A diagram, in this case, a state flow diagram will be used to show transitions between states. State flow diagrams consist of multiple states and transitions. States signify an event that occurs, sometimes, these events will contain internal activities that manipulate the data. These states are connected by transitions. Transitions are the "connection" between different states. These transitions will also have labels defining what conditions need to be met before the transition can occur. The following is a state flow diagram of our cowrie project
+
+INSERT DIAGRAM HERE
+
+### 4.1.2 Class Interaction Model
+To further develop and understand the intricacies of the project, we will also use class interaction models. Similar to state flow diagrams, class interaction models delve deeper into class specific roles, this includes class specific methods, class attributes, and how each class interacts with its sub classes, if any are present. 
+
+### 4.1.2.1 Text Editor Class Model
+
+### 4.1.2.2 Cowrie Class Model
 
 ### 4.2 Development
 ### 4.2.1 Code Structure
