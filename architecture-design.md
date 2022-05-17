@@ -227,6 +227,12 @@ The two main scenarios that have been highlighted, are Opening/Saving files usin
 
 This scenario would also include use cases such as prompting a user to save the file they have made changes to, and prompting the user to rename the file if they please. 
 
+**Actor**: Attacker <br>
+**Actor's desire**: Attacker wants to be able to create script files and have them saved within the file system <br>
+**Actor's reasoning**: To ensure that he/she is able to go back in the script and add content when necessary, eg. debugging the script by fixing code in the script, the actor wants to be able to save their progress to then be able to add content later.
+
+**Acceptance Criteria**
+
 1. User summons text environment with 'editor' command with a file
 2. System opens text environment with the user's requested file opened
 3. User adds content to the file and presses CTRL+X to save
@@ -241,6 +247,12 @@ This scenario would also include use cases such as prompting a user to save the 
 #### 4.5.3 User Executes Whoami Command
 
 This scenario will be pretty simple to simulate, and this alone will cover all the possible usages of the whoami command. Attackers may use this command to test the functionality of the system, or perhaps if they have created many users they may utilise this command to reaffirm them as to what user they are currently operating under. 
+
+**Actor**: Attacker <br>
+**Actor's desires**: Attacker wants to use the whoami command to reaffirm what user they are utilising <br>
+**Actor's reasoning**: If many users are being created the attacker could use the whoami command to confirm what user they are executing a script under. <br>
+
+**Acceptance Criteria**
 
 1. Attacker logs into the cowrie at port 22 with the username "attacker"
 2. Cowrie logs the newly inputted credentials into the file userdb.txt
