@@ -128,7 +128,38 @@ Each architectural view should include at least one architectural model. If arch
 ...
 
 ### 4.2 Development
+
 ### 4.2.1 Code Structure
+
+- Forward arrows illustrate a dependancy - eg. Package1 -> Package2 means Package1 depends on Package2.
+- Dashed lines illustrate modules within the package/directory in question
+- Blue Rectangles illustrate directories/packages
+- Green rectangles illustrate python modules
+
+#### 4.2.1.1 Structure for whoami command
+
+Considering there is already a source code/python module providing the implementation of basic Linux commands such as cd/echo etc. Preferably we will add our implementation of the whoami command to the base.py file that is already located within Cowrie's source code files. There are already mechanisms built in place to interpret user input/commands from the user to pass these commands down as system arguments for the base.py file to manipulate and perform commands accordingly.
+
+#### 4.2.1.2 Structure for Text Editor
+
+The source code for the text editor command will be located within the directory cowrie/src/cowrie/commands/TextEditor. We have been given approval to utilise the python library "curses" from our client, to provide further assistance on simulating a text-based terminal environment for the text editor. Each 
+
+We have decided to adopt a Model-View-Controller (MVC) design pattern to structure the python modules and place them in their respective packages. 
+
+The "View" package will be responsible for providing a text based terminal environment for the user, and will contain most of the visual logic within the editor.py module, such as location of cursor, size of window and visible buttons/widgets to display the shortcuts that can be used when in the environment.
+
+The "Controller" package is responsible for manipulating user input/commands and providing necessary input for the Model package (which will consist of all the editing logic/additional text editing functionalities). This currently has a dependency on the CLI which will be the primary source of user input. 
+
+The "Model" package is responsible for other additional functionalities for the text editor. Such as having modules to enable saving files, writing to files etc. 
+
+Each of these packages have been separated into two layers to further identify what package is dependant on another package. This has been implemented with the design rule that packages should only be dependant on other packages that are either within the same layer or in a layer below, to ensure there are some constraints to our structure. Hence Controller and Model have been placed in Layer 1, where it's responsibility revolves around both interpreting user input and the overall logic of the editor. 
+
+Layer 2 will contain code/implementation of the Text Editing environment, and is dependant on the current state of the editing logic that is within the Model package. 
+
+
+![](diagrams/whoami_txt_editor_diagram.png)
+
+*Figure 4.2.1.3 UML Package Diagram*
 
 ### 4.2.2 Version Control
 To maintain good version control, we will be using Gitlab for this project. Gitlab allows us to use features such as branches, merge requests, issues and epics so that all team members can collaborate and contribute simultaneously while also keeping track of all changes and progress for the project. All project contributions on Gitlab will be done online. This means that all parts of the project will be backed up and easily accessible to team members at all times. 
@@ -237,17 +268,47 @@ LAN2 -- Computer
 
 ### 4.5 Scenarios
 
-This is a UML use case diagram that displays each essential use case for the extended iteration of Cowrie. Which will primarily have support for a decently fleshed out text edtior. The usecases highlighted in blue represent two of the most important and essential functionalities for the text editor. The guide for maintaining a minimum viable product are as follows. Use Cases highlighted in green highlight the features and use cases/scenarios that the Text editor would have support for.
+The two main scenarios that have been highlighted, are Opening/Saving files using the text editor, and correct/dynamic output with regards to the whoami command. Proper support for these two scenarios would ensure that our minimum viable product is completed.  
 
-#### 4.5.1 Opening Files Within the Text Environment
+#### 4.5.1 Opening Files/Saving Files with the Text Editor
 
-Users/Attackers logged into the Cowrie using the text editor would need support for opening files within or outside the text environment - eg. nano (filename), or using the read file functionality within the editing environment. Either scenario would produce or summon a text editing environment for a user to utilise and edit files.
+This scenario would also include use cases such as prompting a user to save the file they have made changes to, and prompting the user to rename the file if they please. 
 
-#### 4.5.2 User Exits Out of the Environment
+**Actor**: Attacker <br>
+**Actor's desire**: Attacker wants to be able to create script files and have them saved within the file system <br>
+**Actor's reasoning**: To ensure that he/she is able to go back in the script and add content when necessary, eg. debugging the script by fixing code in the script, the actor wants to be able to save their progress to then be able to add content later.
 
-Another scenario which would also be considered is also allowing users to exit out of the environment when they please. This scenario would also include use cases such as prompting a user to save the file they have made changes to, and prompting the user to rename the file if they please. 
+**Acceptance Criteria**
 
-![](use_cases/use_case-diagramv2.png)
+1. User summons text environment with 'editor' command with a file
+2. System opens text environment with the user's requested file opened
+3. User adds content to the file and presses CTRL+X to save
+4. Prompts user to rename and confirm they want to save
+5. User responds with 'y' to the prompts
+6. File is stored in the file system and system exits out of the text environment
+
+![](use_cases/cowrie_use_case_text_editor.png)
+
+*Figure 4.5.2 Scenario for Text Editor*
+
+#### 4.5.3 User Executes Whoami Command
+
+This scenario will be pretty simple to simulate, and this alone will cover all the possible usages of the whoami command. Attackers may use this command to test the functionality of the system, or perhaps if they have created many users they may utilise this command to reaffirm them as to what user they are currently operating under. 
+
+**Actor**: Attacker <br>
+**Actor's desires**: Attacker wants to use the whoami command to reaffirm what user they are utilising <br>
+**Actor's reasoning**: If many users are being created the attacker could use the whoami command to confirm what user they are executing a script under. <br>
+
+**Acceptance Criteria**
+
+1. Attacker logs into the cowrie at port 22 with the username "attacker"
+2. Cowrie logs the newly inputted credentials into the file userdb.txt
+3. Attacker performs whoami command to check the validity of the system they're in
+4. System parses through userdb.txt file and fetches latest username and prints it out as output to the user
+
+![](use_cases/cowrie_use_casewhoami.png)
+
+*Figure 4.5.4 Scenario for 'whoami' command*
 
 ## 5. Development Schedule
 
