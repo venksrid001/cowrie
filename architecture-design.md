@@ -92,14 +92,12 @@ For this project, our stakeholders will be:
 | Users  |  Results of the final product  |
 
 ### 3.2 Architectural Viewpoints
-(1 page, 42010 5.4) 
-
-Identify the architectural viewpoints you will use to present your system's architecture. Write one sentence to outline each viewpoint. Show which viewpoint frames which architectural concern.
 
 Physical Viewpoint: Concerned with the topology of the systems components on the physical layer. <br>
 Logical Viewpoint: Concerned with the abstracted funcionality of the system to the end users <br>
 Development Viewpoint: Concerned with the this is about the development of the system from the programmers point of view. <br>
 Process Viewpoint: Concerned with the run time processes of the system, and how these work together <br>
+Scenarios: Using use cases to describe interactions with processes and objects. Use cases are important to help ensure the system will work upon completion. <br>
 
 ### 4. Architectural Views
 
