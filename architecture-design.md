@@ -318,13 +318,15 @@ Schedules must be justified and supported by evidences; they must be either dire
 
 ### 5.1 Schedule
 
-Identify dates for key project deliverables:
+
+The following are the key dates for the project deliverables. These dates have been comfirmed in advance with the client and all team members.
 
 1. July 31st - Architectural Prototype 
-1. August 19th - Minimum Viable Product
-1. October 1st - Further Releases
+1. August 19th - Minimum Viable Product (Text editor and whoami command)
+1. October 1st - Further Releases (Extra commands that will be implemented after further discussions with the client once the minimum viable product has been completed).
 
-(1 page).
+These dates have been selected according to the size of the project, skillset of the team and the clients requirements. Along with these dates, we will be following the agile method and having sprints every two weeks. By breaking down the project into smaller, achievable tasks, we will be able to increase the overall productivity of the team. Sprints will also allow us to accomodate any change requests that may occur since we will have more control over the project.
+
 
 ### 5.2 Budget and Procurement
 
