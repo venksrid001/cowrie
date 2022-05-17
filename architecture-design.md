@@ -99,6 +99,7 @@ Identify the architectural viewpoints you will use to present your system's arch
 Physical Viewpoint: Concerned with the topology of the systems components on the physical layer. <br>
 Logical Viewpoint: Concerned with the abstracted funcionality of the system to the end users <br>
 Development Viewpoint: Concerned with the this is about the development of the system from the programmers point of view. <br>
+Process Viewpoint: Concerned with the run time processes of the system, and how these work together <br>
 
 ### 4. Architectural Views
 
