@@ -99,6 +99,7 @@ Development Viewpoint: Concerned with the this is about the development of the s
 Process Viewpoint: Concerned with the run time processes of the system, and how these work together <br>
 Scenarios: Using use cases to describe interactions with processes and objects. Use cases are important to help ensure the system will work upon completion. <br>
 
+
 ### 4. Architectural Views
 
 (5 sub-sections of 2 pages each sub-section, per 42010, 5.5, 5.6, with reference to Annex F of both 12207 and 15288) 
