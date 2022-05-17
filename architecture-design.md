@@ -96,7 +96,8 @@ For this project, our stakeholders will be:
 
 Identify the architectural viewpoints you will use to present your system's architecture. Write one sentence to outline each viewpoint. Show which viewpoint frames which architectural concern.
 
-Logical View: This is the viewpoint to describe the abstracted funcionality of the system to the end users
+Physical Viewpoint: This is the viewpoint to desribe the topology of our systems components on the physical layer.
+Logical Viewpoint: This is the viewpoint to describe the abstracted funcionality of the system to the end users
 
 ### 4. Architectural Views
 
