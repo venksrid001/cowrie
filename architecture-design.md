@@ -49,7 +49,10 @@ The scope of the Supercharged Cowrie project will be fairly elementary. The Clie
 
 ### 1.3 Changes to requirements
 
-No changes necessary
+The original project requirements states that we will be implementing the whoami command along with the editor. However, since then, we have dicovered that the whoami command has already been dynamically implemented. Because of this, we have decided to implement the "locate" command instead of the whoami command. We have gotten approval from the client to do this. 
+The new and current requirements are now: Implementing an editor, Implementing the locate command.
+The locate command is used to search for files and directories by their names. The locate command will print the absolute path of all files and directories that matches the search pattern and for which the user has read permissions.
+
 
 ## 2. References
 
