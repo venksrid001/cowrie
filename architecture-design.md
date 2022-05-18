@@ -170,7 +170,7 @@ Our client has stated that they will be conducting the tests on our project once
 
  Unit Testing will be frequently used to test parts of our implementation of the commands the client has asked for. Unit testing will essentially involve testing individual methods and making sure the method itself is correctly implemented and functions as expected. E.g  Testing a method for logins can check the user's credentials and will return true or false if they have logged in. The benefits of using unit testing is that it is time efficient, so it can be done often. 
  
- We will also be using acceptance testing. This will involve creating a set of tests that will ensure the team can produce the minimum viable product required by the client. (i.e text editor and whom command). These tests would involve ensuring that the text editor opens, and responds to the minimize or close button or testing whoami to ensure that it only runs when the text editor is open, and returns right output etc. Acceptance testing will ensure that all the bare minimum functions work as expected to meet client requirements.
+ We will also be using acceptance testing. This will involve creating a set of tests that will ensure the team can produce the minimum viable product required by the client. (i.e text editor and locate command). These tests would involve ensuring that the text editor opens, and responds to the minimize or close button or, testing the locate command to ensure that it prints the correct file path etc. Acceptance testing will ensure that all the bare minimum functions work as expected to meet client requirements.
 
 ### 4.2.4 Prototyping
 Our fortnightly meetings with the client will give us the chance to make small developments on prototypes of functional features and will also allow us to constantly provide updates and present these developments. This will be done using walk-throughs and inspections (refer to sub-section 4.2.3 above).  Doing this will keep the client informed on what has been completed and what still needs to be done or needs further attention. Our client will then have an opportunity to clarify and voice any feedback or opinions they may have so that changes can be made on prototypes early on.
@@ -286,17 +286,15 @@ This scenario has a very succinct process, as it is solely requiring the user to
 
 ## 5. Development Schedule
 
-_For each subsection, make clear what (if anything) has changed from the requirements document._ If unchanged, these sections should be copied over from the requirements document, not simply cross-referenced.
-
-Schedules must be justified and supported by evidences; they must be either direct client requirements or direct consequences of client requirements. If the requirements document did not contain justifications or supporting evidences, then both must be provided here.
+Subsection 5.1 has been modified from the project requirements. Extra information and justifications of the project deliverable dates have been added.
 
 ### 5.1 Schedule
 
 
-The following are the key dates for the project deliverables. These dates have been comfirmed in advance with the client and all team members.
+The following are the key dates for the project deliverables. These dates have been comfirmed in advance with the client and the client has given approval over email for these dates.
 
 1. July 31st - Architectural Prototype 
-1. August 19th - Minimum Viable Product (Text editor and whoami command)
+1. August 19th - Minimum Viable Product (Text editor and locate command)
 1. October 1st - Further Releases (Extra commands that will be implemented after further discussions with the client once the minimum viable product has been completed).
 
 These dates have been selected according to the size of the project, skillset of the team and the clients requirements. Along with these dates, we will be following the agile method and having sprints every two weeks. By breaking down the project into smaller, achievable tasks, we will be able to increase the overall productivity of the team. Sprints will also allow us to accomodate any change requests that may occur since we will have more control over the project.
