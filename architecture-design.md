@@ -135,7 +135,7 @@ Each architectural view should include at least one architectural model. If arch
 
 #### 4.2.1.1 Structure for whoami command
 
-Considering there is already a source code/python module providing the implementation of basic Linux commands such as cd/echo etc. Preferably we will add our implementation of the whoami command to the base.py file that is already located within Cowrie's source code files. There are already mechanisms built in place to interpret user input/commands from the user to pass these commands down as system arguments for the base.py file to manipulate and perform commands accordingly.
+Considering there is already a source code/python module providing the implementation of basic Linux commands such as cd/echo etc. Preferably we will add our implementation of the locate command to the base.py file that is already located within Cowrie's source code files. There are already mechanisms built in place to interpret user input/commands from the user to pass these commands down as system arguments for the base.py file to manipulate and perform commands accordingly.
 
 #### 4.2.1.2 Structure for Text Editor
 
@@ -154,7 +154,7 @@ Each of these packages have been separated into two layers to further identify w
 Layer 2 will contain code/implementation of the Text Editing environment, and is dependant on the current state of the editing logic that is within the Model package. 
 
 
-![](diagrams/whoami_txt_editor_diagram.png)
+![](diagrams/new_diagram_with_locate.png)
 
 *Figure 4.2.1.3 UML Package Diagram*
 
@@ -267,22 +267,20 @@ This scenario would also include use cases such as prompting a user to save the 
 
 *Figure 4.5.2 Scenario for Text Editor*
 
-#### 4.5.3 User Executes Whoami Command
+#### 4.5.3 User Executes Locate Command
 
-This scenario will be pretty simple to simulate, and this alone will cover all the possible usages of the whoami command. Attackers may use this command to test the functionality of the system, or perhaps if they have created many users they may utilise this command to reaffirm them as to what user they are currently operating under. 
+This scenario has a very succinct process, as it is solely requiring the user to implement the command with a regex expression added onto it. For example expressions such as "*.sh" will allow the locate command to work with the expression to search through the file system for files with an extension of .sh. To avoid possible uncertainty - this will produce outputs of the absolute paths of these files in question, similar to how the 'locate' command operates in a Linux environment. 
 
 **Actor**: Attacker <br>
-**Actor's desires**: Attacker wants to use the whoami command to reaffirm what user they are utilising <br>
-**Actor's reasoning**: If many users are being created the attacker could use the whoami command to confirm what user they are executing a script under. <br>
+**Actor's desires**: Attacker wants to use the locate command to spot any files with a particular extension eg. *.sh <br>
+**Actor's reasoning**: Will allow attacker to keep track of the path of the scripts they are making. <br>
 
 **Acceptance Criteria**
 
-1. Attacker logs into the cowrie at port 22 with the username "attacker"
-2. Cowrie logs the newly inputted credentials into the file userdb.txt
-3. Attacker performs whoami command to check the validity of the system they're in
-4. System parses through userdb.txt file and fetches latest username and prints it out as output to the user
+1. Attacker performs locate command with the regex expression *.sh to find all paths of their scripts
+2. System parses through file system using string search, and prints out the absolute paths of the script files within the file system 
 
-![](use_cases/cowrie_use_casewhoami.png)
+![](diagrams/use_case_locate.png)
 
 *Figure 4.5.4 Scenario for 'whoami' command*
 
