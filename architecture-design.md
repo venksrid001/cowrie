@@ -136,7 +136,7 @@ Each architectural view should include at least one architectural model. If arch
 - Blue Rectangles illustrate directories/packages
 - Green rectangles illustrate python modules
 
-#### 4.2.1.1 Structure for whoami command
+#### 4.2.1.1 Structure for Locate command
 
 Considering there is already a source code/python module providing the implementation of basic Linux commands such as cd/echo etc. Preferably we will add our implementation of the locate command to the base.py file that is already located within Cowrie's source code files. There are already mechanisms built in place to interpret user input/commands from the user to pass these commands down as system arguments for the base.py file to manipulate and perform commands accordingly.
 
