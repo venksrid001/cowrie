@@ -455,6 +455,7 @@ Here is the list of Acronyms and abbreviations used in this document.
 ## 7. Contributions
 
 Lucy Carver: 5.3 (risks 6-10 inclusive), 5.4, 5.4.1, 3.2
+Sridhar Venkatesh: 4.2.1, 4.2.1.1, 4.2.1.2 including code structure diagram, All of section 4.5 including diagram
 ---
 
 ## Formatting Rules 
