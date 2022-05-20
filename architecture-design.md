@@ -44,7 +44,7 @@ The locate command is used to search for files and directories by their names. T
 
 ### 3.1 Stakeholders
 
-For this project, our stakeholders will be:
+The following tables contain information regarding the stakeholders for this project and their concerns.
 | Stakeholder  | Role |
 | ------------- | ------------- |
 | Team members  | Developing Cowrie |
@@ -285,8 +285,7 @@ Subsection 5.1 has been modified from the project requirements. Extra informatio
 
 ### 5.1 Schedule
 
-
-The following are the key dates for the project deliverables. These dates have been comfirmed in advance with the client and the client has given approval over email for these dates.
+The following are the key dates for the project deliverables. These dates have been comfirmed in advance with the client and the client has given approval via email for these dates.
 
 1. July 31st - Architectural Prototype 
 1. August 19th - Minimum Viable Product (Text editor and locate command)
@@ -300,8 +299,6 @@ These dates have been selected according to the size of the project, skillset of
 The Supercharged Cowrie project is software based, therefore we do not require any physical equipment or resources outside of our reach to complete it. Therefore this project does not have a budget.
 
 ### 5.3 Risks 
-
-Risks  done by Shruti 
 
 Risk: Tripping 
 Likelihood: Likely 
@@ -333,7 +330,6 @@ Impact: Moderate
 Can Cause: Injuries if something is dropped, muscle sprains and strains 
 Mitigation: Position items so they are easily accessible for everyone. Provide assistance to members if required.[2] 
 
-Risks done by Lucy 
 
 Risk: RSI (Repeated Strain Injury) <br>
 Likelihood: Likely <br>
@@ -384,7 +380,6 @@ Project requirements do not involve risk of death, serious harm, harm or injury
 
 ### 6.1 Assumptions and dependencies 
 
- 
 Supercharged Cowrie Project has below listed Assumptions and dependancies
 
 #### Assumptions:
@@ -439,7 +434,7 @@ Lucy Carver: 5.3 (risks 6-10 inclusive), 5.4, 5.4.1, 3.2 <br>
 Sridhar Venkatesh: 4.2.1, 4.2.1.1, 4.2.1.2 including code structure diagram, All of section 4.5 including diagrams <br>
 Thomas Yang: 4.1.1, 4.1.2, 4.1.2.1, 4.1.2.2, 4.1.2.3, 4.1.2.4<br>
 Selby Dasent: 4.4, Editing<br>
-Shruti Raja: <br>
+Shruti Raja: 1.3, 3.1, 4.2.2, 4.2.3, 4.2.4, 5.1, 5.2, 5.3 (risks 1-5 inclusive) <br>
 Deepika Raheja: 4.3, 6
 
 
