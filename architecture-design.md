@@ -4,7 +4,7 @@
 
 ## 1. Introduction
 
-The Supercharged Cowrie project is expected to expand the current capability of the Cowrie honeypot server, which is utilized to bait cyber attacks. The Cowrie system logs attackers' behaviour to help inform the user how to be better prepared for future attacks, when designing other systems.
+The Supercharged Cowrie project is expected to expand the current capability of the Cowrie honeypot server, which is utilized to capture and document cyber attacks. The Cowrie system logs attackers' behaviour to help inform the user how to be better prepared for future attacks, when designing other systems.
 
 ### Client
 
@@ -66,11 +66,15 @@ The following tables contain information regarding the stakeholders for this pro
 
 ### 3.2 Architectural Viewpoints
 
-Physical Viewpoint: Concerned with the topology of the systems components on the physical layer. <br>
-Logical Viewpoint: Concerned with the abstracted funcionality of the system to the end users <br>
-Development Viewpoint: Concerned with the this is about the development of the system from the programmers point of view. <br>
-Process Viewpoint: Concerned with the run time processes of the system, and how these work together <br>
-Scenarios: Using use cases to describe interactions with processes and objects. Use cases are important to help ensure the system will work upon completion. <br>
+**Physical Viewpoint:** Concerned with the topology of the systems components on the physical layer. <br>
+
+**Logical Viewpoint:** Concerned with the abstracted funcionality of the system to the end users <br>
+
+**Development Viewpoint:** Concerned with the this is about the development of the system from the programmers point of view. <br>
+
+**Process Viewpoint:** Concerned with the run time processes of the system, and how these work together <br>
+
+**Scenarios:** Using use cases to describe interactions with processes and objects. Use cases are important to help ensure the system will work upon completion. <br>
 
 
 ### 4. Architectural Views
@@ -79,13 +83,14 @@ Scenarios: Using use cases to describe interactions with processes and objects. 
 
 ### 4.1.1 State Flow diagram
 
-To get a good understanding of our projects modular interactions, as well as how the user interacts with our program. A diagram, in this case, a state flow diagram will be used to show transitions between states. State flow diagrams consist of multiple states and transitions. States signify an event that occurs, sometimes, these events will contain internal activities that manipulate the data. These states are connected by transitions. Transitions are the "connection" between different states. These transitions will also have labels defining what conditions need to be met before the transition can occur. The following is a state flow diagram of our cowrie project.
+To get a good understanding of our projects modular interactions, as well as how the user interacts with our program. A diagram, in this case, a state flow diagram will be used to show transitions between states. State flow diagrams consist of multiple states and transitions. States signify an event that occurs, sometimes, these events will contain internal activities that manipulate the data. These states are connected by transitions. Transitions are the "connection" between different states. These transitions will also have labels defining what conditions need to be met before the transition can occur. Figure 4.1.1.1 is a state flow diagram of our cowrie project.
 
 The lefthand side of the diagram represents the attacker's starting input. In the initial state our attacker starts in the attacker shell. From there, the attacker connects to our cowrie server. From there, everything they type within the console is logged. This continues until the attacker exits from their shell, at which point, the log files in cowrie are updated.
 
 The righthand side of the diragam represents the user's input. In the initial state the user starts in the cowrie shell. From there, the user initialises the cowrie server. This server continously runs until the exit command is given. The log files only ever update if there is an attacker present and they have connected, attempted any console commands, and then, disconnected from the cowrie server.
 
 ![](diagrams/State_Flow_Cowrie.png)
+*Figure 4.1.1.1: State flow diagram.
 
 ### 4.1.2 Class Interaction Model
 
@@ -176,7 +181,7 @@ Our fortnightly meetings with the client will give us the chance to make small d
 
 The process view underlines the interactions that are being performed from a user's perspective. Revealing how the system operates according to a user's request and the process it performs when providing a response to the user's request. 
 
-Attacker will try to hack the environment using SSH (on port 22), and this project will create the honeypot for the attackers to protect the system and study the behaviour of the attacker. It will provide the simulated environment, where an attacker assumes that he is accessing the actual environment. Any un-authorised access to the server using SSH will be forwarded to the Cowrie honeypot running on port 2222 using iptables or firewall. As it is depicted in the below diagram.
+An attacker will try to access the environment through using an SSH connection (on port 22), and this project will create a honeypot to monitor the system and study the behaviour of attackers. It will provide a simulated environment, where an attacker assumes that he is accessing a computer or server within a network environment. Any un-authorised access to the server using SSH will be forwarded to the Cowrie honeypot running on port 2222 using iptables or firewall. As it is depicted in the below diagram.
 
 ![](diagrams/process.png)
 
@@ -226,7 +231,7 @@ working in a matter of seconds.
 
 ### 4.4 Physical 
 
-Cowrie has been built as a virtual honeypot. Therefore, there is very little in terms of physical requirements for this project. It can be set up on any server or computer that has Python 3.7+ and Python-virtualenv installed and is connected to a network. This project does not require a database to be set up or backup servers to be in place, figure 4.4.1 shows that only a network connection is required for the virtual enviroment to opperate.
+Cowrie has been built as a virtual honeypot. Therefore, there is very little in terms of physical requirements for the development of this project. It can be set up on any server or computer that has Python 3.7+ and Python-virtualenv installed and is connected to a network. Being a virual envroment that is ment to be attacked, any outside access to databases or backups pose a risk the attacker could access them outside of the controled enviroment. Therefore, project does not require a database to be set up or backup servers to be in place, figure 4.4.1 shows that only a network connection is required for the virtual enviroment to opperate.
 
 ![](physical/physical_network.png)
 
@@ -236,7 +241,7 @@ The extensions that are being developed for Cowrie will utilise the same virtual
  
 ![](physical/network_diagram.png)
 
-*Figure 4.4.2: Honeypots within a network*
+*Figure 4.4.2: Honeypot locations within a network*
 
 
 ### 4.5 Scenarios
