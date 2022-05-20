@@ -1,31 +1,6 @@
-# ENGR 301: Architectural Design and Proof-of-Concept
+# ENGR 301 Project 03 Architectural Design and Proof-of-Concept
 
-## Proof-of-Concept
-
-The aim of an architectural proof-of-concept (spike or walking skeleton) is to demonstrate the technical feasibility of your chosen architecture, to mitigate technical and project risks, and to plan and validate your technical and team processes (e.g., build systems, story breakdown, Kanban boards, acceptance testing, deployment).
-
-A walking skeleton is an initial technical attempt that will form the architectural foundation of your product. Since a walking skeleton is expected to be carried into your product, it must be completed to the quality standards expected for your final product. A walking skeleton should demonstrate all the technologies your program will rely on "end-to-end" &mdash; from the user interface down to the hardware.
-
-In the context of ENGR 301, a walking skeleton does not need to deliver any business value to your project: the aim is technical validation and risk mitigation.
-
-
-## Document
-
-The aim of the architectural design document is to describe the architecture and high-level design of the system your group is to build, to identify any critical technical issues with your design, and to explain how you have addressed the highest rated technical and architectural risks. The architecture document should also demonstrate your understanding of architectural techniques and architectural quality, using tools and associated notations as necessary to communicate the architecture precisely, unambiguously and clearly in a written technical document.
-
-Page specifications below are *limits not targets* and refer to the pages in the PDF generated from the markdown. Because the size of your document is necessarily limited, you should ensure that you focus your efforts on those architectural concerns that are most important to completing a successful system: if sections are at their page limit, indicate how many items would be expected in a complete specification.
-
-The ENGR 301 project architecture design document should be based on the standard ISO/IEC/IEEE 42010:2011(E) _Systems and software engineering &mdash; Architecture description_, plus appropriate sections from ISO/IEC/IEEE 29148:2018(E) _Systems and software engineering &mdash; Life cycle processes &mdash; Requirements engineering_; ISO/IEC/IEEE 15289:2017 _Systems and software engineering &mdash; Content of life-cycle information items (documentation)_; ISO/IEC/IEEE 15288:2015 _Systems and software engineering &mdash; System life-cycle processes_; ISO/IEC/IEEE 12207:2017 _Systems and software engineering &mdash; Software life cycle processes_ and ISO 25010 SQuaRE; with notations from ISO/ISE 19501 (UML). In particular, Annex F of ISO/IEC/IEEE 15288 and Annex F of ISO/IEC/IEEE 12207. These standards are available through the Victoria University Library subscription to the [IEEE Xplore Digital Library](https://ieeexplore.ieee.org/) (e.g., by visiting IEEE Xplore from a computer connected to the University network).
-
-The document should contain the sections listed below, and conform to the formatting rules listed at the end of this brief.
-
-All team members are expected to contribute equally to the document and list their contributions in the last section of the document (please make sure that your continued contribution to this document can be traced in GitLab). You should work on your document in your team's GitLab repository in a directory called "M2_Architecture". If more than one team member has contributed to a particular commit, all those team member IDs should be included in the first line of the git commit message. ``git blame``, ``git diff``, file histories, etc. will be tools used to assess individual contributions, so everyone is encouraged to contribute individually (your contribution should be made to many sections of the document, rather than focusing on just a single section), commit early and commit often.
-
----
-
-# ENGR 301 Project *NN* Architectural Design and Proof-of-Concept
-
-**Authors:** a comma-separated list of the names of each member of the team.
+**Authors:** Lucy Carver, Sridhar Venkatesh, Thomas Yang, Selby Dasent, Shruti Raja, Deepika Raheja.
 
 ## 1. Introduction
 
@@ -56,23 +31,12 @@ The locate command is used to search for files and directories by their names. T
 
 ## 2. References
 
-References to other documents or standards. Follow the IEEE Citation Reference scheme, available from the [IEEE website](https://ieee-dataport.org/sites/default/files/analysis/27/IEEE%20Citation%20Guidelines.pdf) (PDF; 20 KB). (1 page, longer if required)
+
 
 ## 3. Architecture
 
-Describe your system's architecture according to ISO/IEC/IEEE 42010:2011(E), ISO/IEC/IEEE 12207, ISO/IEC/IEEE 15289 and ISO/IEC/IEEE 15288.
-
-Note in particular the note to clause 5 of 42010:
-
-_"The verb include when used in Clause 5 indicates that either the information is present in the architecture description or reference to that information is provided therein."_
-
-This means that you should refer to information (e.g. risks, requirements, models) in this or other documents rather than repeat information.
 
 ### 3.1 Stakeholders
-
-See ISO/IEC/IEEE 42010 clause 5.3 and ISO/IEC/IEEE 12207 clause 6.4.4.3(2).
-
-For most systems this will be about 2 pages, including a table mapping concerns to stakeholder.
 
 For this project, our stakeholders will be:
 | Stakeholder  | Role |
@@ -105,27 +69,10 @@ Scenarios: Using use cases to describe interactions with processes and objects. 
 
 ### 4. Architectural Views
 
-(5 sub-sections of 2 pages each sub-section, per 42010, 5.5, 5.6, with reference to Annex F of both 12207 and 15288) 
-
-Describe your system's architecture in a series of architectural views, each view corresponding to one viewpoint.
-
-You should include views from the following viewpoints (from Kruchten's 4+1 model):
-
- * Logical
- * Development
- * Process
- * Physical 
- * Scenarios - present scenarios illustrating how two of your most important use cases are supported by your architecture
-
-As appropriate you should include the following viewpoints:
-
- * Circuit Architecture
- * Hardware Architecture
-
-Each architectural view should include at least one architectural model. If architectural models are shared across views, refer back to the first occurrence of that model in your document, rather than including a separate section for the architectural models.
-
 ### 4.1 Logical
+
 ### 4.1.1 State Flow diagram
+
 To get a good understanding of our projects modular interactions, as well as how the user interacts with our program. A diagram, in this case, a state flow diagram will be used to show transitions between states. State flow diagrams consist of multiple states and transitions. States signify an event that occurs, sometimes, these events will contain internal activities that manipulate the data. These states are connected by transitions. Transitions are the "connection" between different states. These transitions will also have labels defining what conditions need to be met before the transition can occur. The following is a state flow diagram of our cowrie project.
 
 The lefthand side of the diagram represents the attacker's starting input. In the initial state our attacker starts in the attacker shell. From there, the attacker connects to our cowrie server. From there, everything they type within the console is logged. This continues until the attacker exits from their shell, at which point, the log files in cowrie are updated.
@@ -135,6 +82,7 @@ The righthand side of the diragam represents the user's input. In the initial st
 ![](diagrams/State_Flow_Cowrie.png)
 
 ### 4.1.2 Class Interaction Model
+
 To further develop and understand the intricacies of the project, we will also use class interaction models. Similar to state flow diagrams, class interaction models delve deeper into class specific roles, this includes class specific methods, class attributes, and how each class interacts with its sub classes.
 
 In our project, we have decided to pursue an MVC architecture. This is shown by the named frames marked "model", "view", and "controller". We also have an additional package present "commands" which stores the commands we will simulate the use of in our project.
@@ -142,15 +90,19 @@ In our project, we have decided to pursue an MVC architecture. This is shown by 
 ![](diagrams/class_interaction_model.png)
 
 ### 4.1.2.1 Class Interaction Model Package
+
 The model package will contain the "brains" of our program. This package holds the Editor_model class, Stored_object interface, and the Folder and File class. The Editor_model class stores the simulated files and folders of our cowrie system, as well as the current file being viewed. The model also has access to the commands package to ensure that model can implement commands that can change its files and folders.
 
 ### 4.1.2.2 Class Interaction View Package
+
 The view package consists of the Editor class. This will be our text based editor as required by the client in our minimum viable product. The editor class consists of attributes to "draw" the text editor. This involves converting a file's contents and displaying it on the generated window. Drawing the cursor and displaying text when required according to the console commands implemented. Since the Editor class is solely responsible for drawing the text editor, changes to the appearance of the editor is calculated inside the Text_editor_controller class inside the Controller package.
 
 ### 4.1.2.3 Class Controller View Package
+
 The controller package involves the Text_editor_controller class. This class invovlves calculating the changes to update our text editor. This is in comparison to the Editor class which is solely responsible for changing and drawing the text based editor. The controller package also is linked to the model package as access to number of files, file names current file, etc, are important when calculating changes in the text editor. 
 
 ### 4.1.2.4 Class Commands View Package
+
 The commands package contains all the additional commands that will appear within our cowrie system. The commands package will contain the "Locate" class. This class represents are implmentation of the locate console command which returns the file path.
 
 
@@ -343,14 +295,9 @@ The Supercharged Cowrie project is software based, therefore we do not require a
 
 #### 5.2.1 Budget
 
-Present a budget for the project (as a table), showing the amount of expenditure the project requires and the date(s) on which it will be incurred. Substantiate each budget item by reference to fulfilment of project goals (one paragraph per item).
-
-(1 page). 
 
 #### 5.2.2 Procurement
 
-Present a table of goods or services that will be required to deliver project goals and specify how they are to be procured (e.g. from the School or from an external organisation). These may be software applications, libraries, training or other infrastructure, including open source software. Justify and substantiate procurement with reference to fulfilment of project goals, one paragraph per item.
-(1 page).
 
 ### 5.3 Risks 
 
@@ -491,7 +438,7 @@ Here is the list of Acronyms and abbreviations used in this document.
 Lucy Carver: 5.3 (risks 6-10 inclusive), 5.4, 5.4.1, 3.2 <br>
 Sridhar Venkatesh: 4.2.1, 4.2.1.1, 4.2.1.2 including code structure diagram, All of section 4.5 including diagram <br>
 Thomas Yang: 4.1.1, 4.1.2, 4.1.2.1, 4.1.2.2, 4.1.2.3, 4.1.2.4<br>
-Selby Dasent: <br>
+Selby Dasent: 4.4, Editing<br>
 Shruti Raja: <br>
 Deepika Raheja: 
 
@@ -500,22 +447,3 @@ Deepika Raheja:
 
 ---
 
-## Formatting Rules 
-
- * Write your document using [Markdown](https://gitlab.ecs.vuw.ac.nz/help/user/markdown#gitlab-flavored-markdown-gfm) in your team's GitLab repository.
- * Major sections should be separated by a horizontal rule.
-
-
-## Assessment 
-
-This document will be weighted at 20% on the architectural proof-of-concept(s), and 80% on the architecture design.
-
-The proof-of-concept will be assessed for coverage (does it demonstrate all the technologies needed to build your project?) and quality (with an emphasis on simplicity, modularity, and modifiability).
-
-The document will be assessed by considering both presentation and content. Group and individual group members will be assessed by identical criteria, the group mark for the finished PDF and the individual mark on the contributions visible through `git blame`, `git diff`, file histories, etc. 
-
-The presentation will be based on how easy it is to read, correct spelling, grammar, punctuation, clear diagrams, and so on.
-
-The content will be assessed according to its clarity, consistency, relevance, critical engagement and a demonstrated understanding of the material in the course. We look for evidence these traits are represented and assess the level of performance against these traits. Inspection of the GitLab Group is the essential form of assessing this document. While being comprehensive and easy to understand, this document must be reasonably concise too. You will be affected negatively by writing a report with too many pages (far more than what has been suggested for each section above).
-
----
