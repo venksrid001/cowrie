@@ -490,7 +490,7 @@ Here is the list of Acronyms and abbreviations used in this document.
 
 Lucy Carver: 5.3 (risks 6-10 inclusive), 5.4, 5.4.1, 3.2 <br>
 Sridhar Venkatesh: 4.2.1, 4.2.1.1, 4.2.1.2 including code structure diagram, All of section 4.5 including diagram <br>
-Thomas Yang: <br>
+Thomas Yang: 4.1.1, 4.1.2, 4.1.2.1, 4.1.2.2, 4.1.2.3, 4.1.2.4<br>
 Selby Dasent: <br>
 Shruti Raja: <br>
 Deepika Raheja: 
