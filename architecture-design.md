@@ -254,7 +254,7 @@ The extensions that are being developed for Cowrie will utilise the same virtual
 
 ### 4.5 Scenarios
 
-The two main scenarios that have been highlighted, are Opening/Saving files using the text editor, and correct/dynamic output with regards to the whoami command. Proper support for these two scenarios would ensure that our minimum viable product is completed.  
+The two main scenarios that have been highlighted, are Opening/Saving files using the text editor, and correct/dynamic output with regards to the "locate" command. Proper support for these two scenarios would ensure that our minimum viable product is completed.  
 
 #### 4.5.1 Opening Files/Saving Files with the Text Editor
 
