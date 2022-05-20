@@ -133,11 +133,8 @@ To get a good understanding of our projects imodular interactions, as well as ho
 ### 4.1.2 Class Interaction Model
 To further develop and understand the intricacies of the project, we will also use class interaction models. Similar to state flow diagrams, class interaction models delve deeper into class specific roles, this includes class specific methods, class attributes, and how each class interacts with its sub classes, if any are present. 
 
-### 4.1.2.1 Text Editor Class Model
-The text editor class provides a clear interface from which the user can easily interact with the program without having to access command line like nature. This will involve a typical pop-up box reminiscent of standard programs that one may choose to access. This text editor class will also have a class attribute of the cowrie class. This is to ensure that the editor, while be a seperate class to the cowrie, still is able to function properly.
+![](diagrams/class_interaction_model.png)
 
-### 4.1.2.2 Cowrie Class Model
-The cowrie class will contain the main bulk of our programs logic. Error checking, the locate method, file storing etc, will all happens using methods and attributes available in the cowrie class. The main elements of the cowrie class will contain the simulation of SSH and telnet properties of cowrie. While the simulation will be limited in commands, as stated by the project requirement document, some commands will be available.
 
 ### 4.2 Development
 ### 4.2.1 Code Structure
