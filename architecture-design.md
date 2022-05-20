@@ -126,14 +126,32 @@ Each architectural view should include at least one architectural model. If arch
 
 ### 4.1 Logical
 ### 4.1.1 State Flow diagram
-To get a good understanding of our projects imodular interactions, as well as how the user interacts with our program. A diagram, in this case, a state flow diagram will be used to show transitions between states. State flow diagrams consist of multiple states and transitions. States signify an event that occurs, sometimes, these events will contain internal activities that manipulate the data. These states are connected by transitions. Transitions are the "connection" between different states. These transitions will also have labels defining what conditions need to be met before the transition can occur. The following is a state flow diagram of our cowrie project
+To get a good understanding of our projects modular interactions, as well as how the user interacts with our program. A diagram, in this case, a state flow diagram will be used to show transitions between states. State flow diagrams consist of multiple states and transitions. States signify an event that occurs, sometimes, these events will contain internal activities that manipulate the data. These states are connected by transitions. Transitions are the "connection" between different states. These transitions will also have labels defining what conditions need to be met before the transition can occur. The following is a state flow diagram of our cowrie project.
+
+The lefthand side of the diagram represents the attacker's starting input. In the initial state our attacker starts in the attacker shell. From there, the attacker connects to our cowrie server. From there, everything they type within the console is logged. This continues until the attacker exits from their shell, at which point, the log files in cowrie are updated.
+
+The righthand side of the diragam represents the user's input. In the initial state the user starts in the cowrie shell. From there, the user initialises the cowrie server. This server continously runs until the exit command is given. The log files only ever update if there is an attacker present and they have connected, attempted any console commands, and then, disconnected from the cowrie server.
 
 ![](diagrams/State_Flow_Cowrie.png)
 
 ### 4.1.2 Class Interaction Model
-To further develop and understand the intricacies of the project, we will also use class interaction models. Similar to state flow diagrams, class interaction models delve deeper into class specific roles, this includes class specific methods, class attributes, and how each class interacts with its sub classes, if any are present. 
+To further develop and understand the intricacies of the project, we will also use class interaction models. Similar to state flow diagrams, class interaction models delve deeper into class specific roles, this includes class specific methods, class attributes, and how each class interacts with its sub classes.
+
+In our project, we have decided to pursue an MVC architecture. This is shown by the named frames marked "model", "view", and "controller". We also have an additional package present "commands" which stores the commands we will simulate the use of in our project.
 
 ![](diagrams/class_interaction_model.png)
+
+### 4.1.2.1 Class Interaction Model Package
+The model package will contain the "brains" of our program. This package holds the Editor_model class, Stored_object interface, and the Folder and File class. The Editor_model class stores the simulated files and folders of our cowrie system, as well as the current file being viewed. The model also has access to the commands package to ensure that model can implement commands that can change its files and folders.
+
+### 4.1.2.2 Class Interaction View Package
+The view package consists of the Editor class. This will be our text based editor as required by the client in our minimum viable product. The editor class consists of attributes to "draw" the text editor. This involves converting a file's contents and displaying it on the generated window. Drawing the cursor and displaying text when required according to the console commands implemented. Since the Editor class is solely responsible for drawing the text editor, changes to the appearance of the editor is calculated inside the Text_editor_controller class inside the Controller package.
+
+### 4.1.2.3 Class Controller View Package
+The controller package involves the Text_editor_controller class. This class invovlves calculating the changes to update our text editor. This is in comparison to the Editor class which is solely responsible for changing and drawing the text based editor. The controller package also is linked to the model package as access to number of files, file names current file, etc, are important when calculating changes in the text editor. 
+
+### 4.1.2.4 Class Commands View Package
+The commands package contains all the additional commands that will appear within our cowrie system. The commands package will contain the "Locate" class. This class represents are implmentation of the locate console command which returns the file path.
 
 
 ### 4.2 Development
