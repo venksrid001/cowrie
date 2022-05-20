@@ -24,13 +24,19 @@ The scope of the Supercharged Cowrie project will be fairly elementary. The Clie
 
 ### 1.3 Changes to requirements
 
-The original project requirements states that we will be implementing the whoami command along with the editor. However, since then, we have dicovered that the whoami command has already been dynamically implemented. Because of this, we have decided to implement the "locate" command instead of the whoami command. We have gotten approval from the client to do this. 
-The new and current requirements are now: Implementing an editor, Implementing the locate command.
+The original project requirements state that we will be implementing the 'whoami' command along with the editor. However, after considering the feedback provided from the client - it is not necessary to apply dynamic support/ouput of the 'whoami' command within the Cowrie honeypot. In place of this, it has been decided that dynamic implementation and support will be provided for the 'locate' command instead. Ensuring the current state of the minimum viable product will be as follows:
+
+- Text Editor that allows for saving and editing files within the Cowrie file system
+- Dynamic implementation for the 'locate' command
+
 The locate command is used to search for files and directories by their names. The locate command will print the absolute path of all files and directories that matches the search pattern and for which the user has read permissions.
 
 
 ## 2. References
 
+1. W. Cabral, C. Valli, L. Sikos and S. Wakeling, "Review and Analysis of Cowrie Artefacts and Their Potential to be Used Deceptively," 2019 International Conference on Computational Science and Computational Intelligence (CSCI), 2019, pp. 166-171, doi: 10.1109/CSCI49370.2019.00035.
+
+2. Zealand, W., 2022. Offices.  WorkSafe. Available at: <https://www.worksafe.govt.nz/managing-health-and-safety/managing-risks/what-risk-looks-like-in-your-industry/office-workers> [Accessed 21 April 2022].
 
 
 ## 3. Architecture
