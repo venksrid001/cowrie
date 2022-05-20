@@ -135,7 +135,7 @@ The development view entails the system view from the programmers perspective. T
 
 #### 4.2.1.1 Structure for Locate command
 
-Considering there is already a source code/python module providing the implementation of basic Linux commands such as cd/echo etc. Preferably we will add our implementation of the locate command to the base.py file that is already located within Cowrie's source code files. There are already mechanisms built in place to interpret user input/commands from the user to pass these commands down as system arguments for the base.py file to manipulate and perform commands accordingly.
+Considering there is already a source code/python module providing the implementation of basic Linux commands located within cowrie/src/cowrie/commands, the implementation of the locate command will be placed within this folder. The current version of Cowrie has python modules dedicated for the implementation of a command, to maintain consistency with the pre existing file structure for the source code in Cowrie, we will produce a locate.py file containing the implementation of the 'locate' command. 
 
 #### 4.2.1.2 Structure for Text Editor
 
