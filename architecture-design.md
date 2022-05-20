@@ -397,14 +397,14 @@ Supercharged Cowrie Project has below listed Assumptions and dependancies
 1. Port (22) is enabled for SSH login.
 1. "admin" user has permission to do SSH login.
 1. Allwed to use basic linux commands, like: nano editor, pwd, whoami
-1. "whoami" command is executable and returns expected outcome.
+1. "locate" command is executable and returns expected outcome.
 1. "userdb.txt" file content format would be "<USER_NAME>:<UESR_PASSWORD>"
 1. Screen size/format would be as per the standard linux editors.
 1. File editiing commands will be stored in a log file and its name will be Cowrie.log
 1. Location of the "Cowrie.log" file will be /cowrie/var/cowrie.
 1. Doesn't have specific hardware requirements.
 1. Only file system will be used to store information rather than using any SQL (like MySQL, SQL Server etc.) or Non-SQL (Like: MongoDB, DyanmoDB etc.) database.
-1. Customization would be required only for 'whoami' and 'nano' text editor in this project.
+1. Customization would be required only for 'locate' and 'nano' text editor in this project.
 
 #### Dependancies:
 1. Availability of Source code for 'Cowrie Honeypot Server' project for extension and enhancements.
@@ -437,16 +437,16 @@ Here is the list of Acronyms and abbreviations used in this document.
 |mkdir| Linux command to create new directoty |
 |sync|Synchronization, synchronize| 
 |nano| Linux Text Editor |
-|whoami| Linux Command to see current User details|
+|Locate| command to retrieve absolute path of files satisfying a regex expression inputted by the user|
 
 ## 7. Contributions
 
 Lucy Carver: 5.3 (risks 6-10 inclusive), 5.4, 5.4.1, 3.2 <br>
-Sridhar Venkatesh: 4.2.1, 4.2.1.1, 4.2.1.2 including code structure diagram, All of section 4.5 including diagram <br>
+Sridhar Venkatesh: 4.2.1, 4.2.1.1, 4.2.1.2 including code structure diagram, All of section 4.5 including diagrams <br>
 Thomas Yang: 4.1.1, 4.1.2, 4.1.2.1, 4.1.2.2, 4.1.2.3, 4.1.2.4<br>
 Selby Dasent: 4.4, Editing<br>
 Shruti Raja: <br>
-Deepika Raheja: 
+Deepika Raheja: 4.3, 6
 
 
 
