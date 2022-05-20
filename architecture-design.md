@@ -129,6 +129,13 @@ Each architectural view should include at least one architectural model. If arch
 
 ### 4.2 Development
 
+The development view entails the system view from the programmers perspective. This represents the management revolving the software aspect of the Cowrie, and the reasoning behind these management decisions. This section consists of the following subsections
+
+- Code Structure
+- Version Control
+- Testing
+- Prototyping
+
 ### 4.2.1 Code Structure
 
 - Forward arrows illustrate a dependancy - eg. Package1 -> Package2 means Package1 depends on Package2.
@@ -142,13 +149,13 @@ Considering there is already a source code/python module providing the implement
 
 #### 4.2.1.2 Structure for Text Editor
 
-The source code for the text editor command will be located within the directory cowrie/src/cowrie/commands/TextEditor. We have been given approval to utilise the python library "curses" from our client, to provide further assistance on simulating a text-based terminal environment for the text editor. Each 
+The source code for the text editor command will be located within the directory cowrie/src/cowrie/commands/TextEditor. We have been given approval to utilise the python library "curses" from the client/primary stakeholder, to provide further assistance on simulating a text-based terminal environment for the text editor.
 
-We have decided to adopt a Model-View-Controller (MVC) design pattern to structure the python modules and place them in their respective packages. 
+Considering the text based terminal environment would emulate a Graphical-User-Interface, the Model-View-Controller (MVC) design pattern has been used to structure the python modules and place them in their respective packages. 
 
 The "View" package will be responsible for providing a text based terminal environment for the user, and will contain most of the visual logic within the editor.py module, such as location of cursor, size of window and visible buttons/widgets to display the shortcuts that can be used when in the environment.
 
-The "Controller" package is responsible for manipulating user input/commands and providing necessary input for the Model package (which will consist of all the editing logic/additional text editing functionalities). This currently has a dependency on the CLI which will be the primary source of user input. 
+The "Controller" package is responsible for manipulating user input/commands and providing necessary input for the Model package (which will consist of all the editing logic/additional text editing functionalities). For example the "Controller" package is responsible for reading keyboard input from the user within the text environment to update the position of a cursor, along with reading keyboard shortcuts performed by the user to summon certain features with the editing environment eg. Save, Cut and Paste etc.  
 
 The "Model" package is responsible for other additional functionalities for the text editor. Such as having modules to enable saving files, writing to files etc. 
 
@@ -157,7 +164,7 @@ Each of these packages have been separated into two layers to further identify w
 Layer 2 will contain code/implementation of the Text Editing environment, and is dependant on the current state of the editing logic that is within the Model package. 
 
 
-![](diagrams/new_diagram_with_locate.png)
+![](diagrams/package_diagram_without_classes.png)
 
 *Figure 4.2.1.3 UML Package Diagram*
 
