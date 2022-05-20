@@ -184,40 +184,40 @@ There are two scenarios when an attacker accesses the honeypot.
 
 **First Time Attack:**
 
-Whenever any attacker first time tries to access the honeypot. In this scenario, we can provide user a fresh environment and we don’t need to prepare too much for this. It would be the simplest solution.
+This is when attacker tries to access the honeypot for the first time. In this scenario, we can provide user a fresh environment and we don’t need to prepare too much for this. It would be the simplest solution.
 
 **Returning Attack:**
 
-In this scenario, an attacker comes back to exploits a system again then we need to make sure that:
+In this scenario, if an attacker comes back to exploit a system, we need to make sure that:
 
 1.	The attacker can see exactly the same changes to the file structure that he made in his previous session. Like create new folder, rename existing folder, delete any folder, create new file etc.
-2.	Metadata (e.g., last modified owner, last modified files, last modified directories, last modified time etc) for files and directories should not be altered.
+2.	Metadata (e.g. last modified owner, last modified files, last modified directories, last modified time etc) for files and directories should not be altered.
 3.	There should not be noticeable delay in the response.
-4.	The attacker should be able to see his all-historical commands as it is and in the same sequence, which he has performed by executing commands.
-5.	There should not be any evidence where attacker should be able to observe that any commands has been replayed or re-executed.
+4.	The attacker should be able to see their all-historical commands as it is and in the same order in which they performed the commands.
+5.	There should not be any evidence that lets the attacker know if any command has been replayed or re-executed.
 
-Below diagram depicts the process architecture for Supercharged cowrie project
+The diagram below depicts the process architecture for Supercharged cowrie project
 ![](diagrams/Process_View_of_Cowrie_Project.png)
 
-**Login Process:** It is an expternal process, and it is not part of our implementation. This step is just to show the starting point of the interaction.
+**Login Process:** It is an external process, and it is not part of our implementation. This step is just to show the starting point of the interaction.
 
-**Identification of Un-authorised Access Process:** This process will check for all of the SSH accesses, if any authorized person will try to acceess the system then it will not forwaard the login (SSH) request to the honeypot. Only un-authorised SSH requests will be forwaarded to the honeypot system.
+**Identification of Un-authorised Access Process:** This process will check for all of the SSH accesses. If an authorized person tries to acceess the system, then it will not forward the login (SSH) request to the honeypot. Only un-authorised SSH requests will be forwarded to the honeypot system.
 
-**Honeypot Process:** It will accpets the SSH request and keep track of all of the actions specified above.
+**Honeypot Process:** It will accpet the SSH request and keep track of all the actions specified above.
 
-**Attacker's Actions Anslysis Process:** This process will study the actions performed by the attacker, so that we can find out any vulnerabilities in our system and make it robust.
+**Attacker's Actions Anslysis Process:** This process will study the actions performed by the attacker. This will help us to find any vulnerabilities in our system and make it robust.
 
 #### Non-functional Requirements:
 Non functional requirements can be splitted into multiple categories, as described below:
 
 **1. High performance:** 
-Supercharged Cowrie system should respond quickly Whenever any attacker tried to login. 
-Also, if there are multiple attacks on the same time then system must be able to tackle all of the requests.
+Supercharged Cowrie system should respond quickly whenever an attacker tries to login. 
+Also, if there are multiple attacks on at the same time, then the system must be able to tackle all of the requests.
 
 **2. User friendly:** 
-Attacker should not be able to identify that he is trapped with the honeypot.
+Attacker should not be able to identify that he is trapped within the honeypot.
 
-**3. Security:** Supercharged cowrie project should be able to indentify authorised and un-authorised access effieciently and any un-authorised access should not be allowed to access actual system.
+**3. Security:** Supercharged cowrie project should be able to indentify authorised and un-authorised access efficiently.Un-authorised access should not be allowed to access the actual system.
 
 **4. Failure tolerance:** The system should be fail proof and be able to recover and keep
 working in a matter of seconds.
@@ -226,13 +226,13 @@ working in a matter of seconds.
 
 ### 4.4 Physical 
 
-Cowrie has been built as a virtual honeypot. Therefore, there is very little in terms of physical requirements for the development of this project. It can be set up on any server or computer that has Python 3.7+ and Python-virtualenv installed and is connected to a network. Being a virual envroment that is ment to be attacked, any outside access to databases or backups pose a risk the attacker could access them outside of the controled enviroment. Therefore, project does not require a database to be set up or backup servers to be in place, figure 4.4.1 shows that only a network connection is required for the virtual enviroment to opperate.
+Cowrie has been built as a virtual honeypot. Therefore, there is very little in terms of physical requirements for the development of this project. It can be set up on any server or computer that has Python 3.7+ and Python-virtualenv installed and is connected to a network. Being a virual envroment that is meant to be attacked, any outside access to databases or backups pose a risk as the attacker could access them outside of the controled enviroment. Therefore, the project does not require a database to be set up or any backup servers to be in place, figure 4.4.1 shows that only a network connection is required for the virtual enviroment to opperate.
 
 ![](physical/physical_network.png)
 
 *Figure 4.4.1: Physical blueprint*
 
-The extensions that are being developed for Cowrie will utilise the same virtual environment that Cowrie is currently run within. This means that the extensions will use the systems and protocols within Cowrie to connect to a network and send and receive information. There are multiple areas within a network a honeypot should be set up as displayed in Figure 4.4.2. These include outside of the networks firewall, along side the service network servers and among the end users and main servers of the network. 
+The extensions that are being developed for Cowrie will utilise the same virtual environment that Cowrie is currently run within. This means that the extensions will use the systems and protocols within Cowrie to connect to a network and send and receive information. There are multiple areas within a network that a honeypot could be set up, as displayed in Figure 4.4.2. These include: outside of the networks firewall, along side the service network servers and among the end users and main servers of the network. 
  
 ![](physical/network_diagram.png)
 
@@ -249,7 +249,7 @@ This scenario would also include use cases such as prompting a user to save the 
 
 **Actor**: Attacker <br>
 **Actor's desire**: Attacker wants to be able to create script files and have them saved within the file system <br>
-**Actor's reasoning**: To ensure that he/she is able to go back in the script and add content when necessary, eg. debugging the script by fixing code in the script, the actor wants to be able to save their progress to then be able to add content later.
+**Actor's reasoning**: To ensure that he/she is able to go back in the script and add content when necessary, eg. debugging the script by fixing code in the script, the attacker wants to be able to save their progress to then be able to add content later.
 
 **Acceptance Criteria**
 
@@ -279,7 +279,7 @@ This scenario has a very succinct process, as it is solely requiring the user to
 
 ![](diagrams/use_case_locate.png)
 
-*Figure 4.5.4 Scenario for 'whoami' command*
+*Figure 4.5.4 Scenario for 'locate' command*
 
 ## 5. Development Schedule
 
@@ -293,7 +293,7 @@ The following are the key dates for the project deliverables. These dates have b
 1. August 19th - Minimum Viable Product (Text editor and locate command)
 1. October 1st - Further Releases (Extra commands that will be implemented after further discussions with the client once the minimum viable product has been completed).
 
-These dates have been selected according to the size of the project, skillset of the team and the clients requirements. Along with these dates, we will be following the agile method and having sprints every two weeks. By breaking down the project into smaller, achievable tasks, we will be able to increase the overall productivity of the team. Sprints will also allow us to accomodate any change requests that may occur since we will have more control over the project.
+These dates have been selected according to the size of the project, skillset of the team and the clients requirements. Along with these dates, we will be following the agile method and having sprints every two weeks. By breaking down the project into smaller, achievable tasks, we will be able to increase modularity and the overall productivity of the team. Sprints will also allow us to accomodate any change requests that may occur because we will have more control over the project.
 
 
 ### 5.2 Budget and Procurement
@@ -404,7 +404,7 @@ Supercharged Cowrie Project has below listed Assumptions and dependancies
 
 ### 6.2 Acronyms and abbreviations
 
-Here is the list of Acronyms and abbreviations used in this document.
+The following list contains the acronyms and abbreviations used in this document.
 
 #### List of Acronyms
 
