@@ -175,17 +175,12 @@ Our client has stated that they will be conducting the tests on our project once
 ### 4.2.4 Prototyping
 Our fortnightly meetings with the client will give us the chance to make small developments on prototypes of functional features and will also allow us to constantly provide updates and present these developments. This will be done using walk-throughs and inspections (refer to sub-section 4.2.3 above).  Doing this will keep the client informed on what has been completed and what still needs to be done or needs further attention. Our client will then have an opportunity to clarify and voice any feedback or opinions they may have so that changes can be made on prototypes early on.
 
-...
 
 ### 4.3 Process
 
-The process view underlines the interactions that are being performed from a user's perspective. Revealing how the system operates according to a user's request and the process it performs when providing a response to the user's request. 
+The process view underlines the interactions that are being performed from a user's perspective. Revealing how the system operates according to a user's request and the process it performs when providing a response to the user's request. An attacker will try to access the environment through using an SSH connection (on port 22), and this project will create a honeypot to monitor the system and study the behaviour of attackers. It will provide a simulated environment, where an attacker assumes that he is accessing a computer or server within a network environment. 
 
-An attacker will try to access the environment through using an SSH connection (on port 22), and this project will create a honeypot to monitor the system and study the behaviour of attackers. It will provide a simulated environment, where an attacker assumes that he is accessing a computer or server within a network environment. Any un-authorised access to the server using SSH will be forwarded to the Cowrie honeypot running on port 2222 using iptables or firewall. As it is depicted in the below diagram.
-
-![](diagrams/process.png)
-
-There are two scenarios when attacker will access the honeypot.
+There are two scenarios when an attacker accesses the honeypot.
 
 **First Time Attack:**
 
