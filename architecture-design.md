@@ -174,6 +174,8 @@ Our fortnightly meetings with the client will give us the chance to make small d
 
 ### 4.3 Process
 
+The process view underlines the interactions that are being performed from a user's perspective. Revealing how the system operates according to a user's request and the process it performs when providing a response to the user's request. 
+
 Attacker will try to hack the environment using SSH (on port 22), and this project will create the honeypot for the attackers to protect the system and study the behaviour of the attacker. It will provide the simulated environment, where an attacker assumes that he is accessing the actual environment. Any un-authorised access to the server using SSH will be forwarded to the Cowrie honeypot running on port 2222 using iptables or firewall. As it is depicted in the below diagram.
 
 ![](diagrams/process.png)
