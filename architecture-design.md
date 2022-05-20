@@ -299,12 +299,6 @@ These dates have been selected according to the size of the project, skillset of
 
 The Supercharged Cowrie project is software based, therefore we do not require any physical equipment or resources outside of our reach to complete it. Therefore this project does not have a budget.
 
-#### 5.2.1 Budget
-
-
-#### 5.2.2 Procurement
-
-
 ### 5.3 Risks 
 
 Risks  done by Shruti 
