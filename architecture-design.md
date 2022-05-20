@@ -20,7 +20,7 @@ The purpose of this project is to extend the functionality of the Cowrie system.
 
 ### 1.2 Scope
 
-The scope of the Supercharged Cowrie project will be fairly elementary. The Client has stated they do not wish for a fully-fledged editor, with reliance on external libraries; but rather an editor that runs on basic script and can fulfill basic editing functionalities. These functionalities include typical commands taht come with simulating an operating system, for example: nano, pwd, mkdir, whoami etc.
+The scope of the Supercharged Cowrie project will be fairly elementary. The Client has stated they do not wish for a fully-fledged editor, with reliance on external libraries; but rather an editor that runs on basic script and can fulfill basic editing functionalities. These functionalities include typical commands that come with simulating an operating system, for example: nano, pwd, mkdir, whoami etc.
 
 ### 1.3 Changes to requirements
 
