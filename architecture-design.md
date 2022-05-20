@@ -29,7 +29,7 @@ The original project requirements state that we will be implementing the 'whoami
 - Text Editor that allows for saving and editing files within the Cowrie file system
 - Dynamic implementation for the 'locate' command
 
-The locate command is used to search for files and directories by their names. The locate command will print the absolute path of all files and directories that matches the search pattern and for which the user has read permissions.
+The locate command is used to search for files and directories by their names. The locate command will print the absolute path of all files and directories that matches the search pattern for which the user has read permissions.
 
 
 ## 2. References
@@ -68,11 +68,11 @@ The following tables contain information regarding the stakeholders for this pro
 
 **Physical Viewpoint:** Concerned with the topology of the systems components on the physical layer. <br>
 
-**Logical Viewpoint:** Concerned with the abstracted funcionality of the system to the end users <br>
+**Logical Viewpoint:** Concerned with the abstracted functionality of the system to the end-users. <br>
 
-**Development Viewpoint:** Concerned with the this is about the development of the system from the programmers point of view. <br>
+**Development Viewpoint:** Concerned with the development of the system from the programmers' point of view. <br>
 
-**Process Viewpoint:** Concerned with the run time processes of the system, and how these work together <br>
+**Process Viewpoint:** Concerned with the run time processes of the system, and how these work together. <br>
 
 **Scenarios:** Using use cases to describe interactions with processes and objects. Use cases are important to help ensure the system will work upon completion. <br>
 
@@ -85,18 +85,18 @@ The following tables contain information regarding the stakeholders for this pro
 
 To get a good understanding of our projects modular interactions, as well as how the user interacts with our program. A diagram, in this case, a state flow diagram will be used to show transitions between states. State flow diagrams consist of multiple states and transitions. States signify an event that occurs, sometimes, these events will contain internal activities that manipulate the data. These states are connected by transitions. Transitions are the "connection" between different states. These transitions will also have labels defining what conditions need to be met before the transition can occur. Figure 4.1.1.1 is a state flow diagram of our cowrie project.
 
-The lefthand side of the diagram represents the attacker's starting input. In the initial state our attacker starts in the attacker shell. From there, the attacker connects to our cowrie server. From there, everything they type within the console is logged. This continues until the attacker exits from their shell, at which point, the log files in cowrie are updated.
+The lefthand side of the diagram represents the attacker's starting input. In the initial state, our attacker starts in the attacker shell. From there, the attacker connects to our cowrie server. From there, everything they type within the console is logged. This continues until the attacker exits from their shell, at which point, the log files in cowrie are updated.
 
-The righthand side of the diragam represents the user's input. In the initial state the user starts in the cowrie shell. From there, the user initialises the cowrie server. This server continously runs until the exit command is given. The log files only ever update if there is an attacker present and they have connected, attempted any console commands, and then, disconnected from the cowrie server.
+The righthand side of the diagram represents the user's input. In the initial state, the user starts in the cowrie shell. From there, the user initialises the cowrie server. This server continuously runs until the exit command is given. The log files only ever update if there is an attacker present and they have connected, attempted any console commands, and then, disconnected from the cowrie server.
 
 ![](diagrams/State_Flow_Cowrie.png)
 *Figure 4.1.1.1: State flow diagram.
 
 ### 4.1.2 Class Interaction Model
 
-To further develop and understand the intricacies of the project, we will also use class interaction models. Similar to state flow diagrams, class interaction models delve deeper into class specific roles, this includes class specific methods, class attributes, and how each class interacts with its sub classes.
+To further develop and understand the intricacies of the project, we will also use class interaction models. Similar to state flow diagrams, class interaction models delve deeper into class-specific roles, this includes class-specific methods, class attributes, and how each class interacts with its sub-classes.
 
-In our project, we have decided to pursue an MVC architecture. This is shown by the named frames marked "model", "view", and "controller". We also have an additional package present "commands" which stores the commands we will simulate the use of in our project.
+In our project, we have decided to pursue an MVC architecture. This is shown by the named frames marked "model", "view", and "controller". We also have an additional package presenting "commands" which stores the commands we will simulate the use of in our project.
 
 ![](diagrams/class_interaction_model.png)
 
@@ -106,20 +106,20 @@ The model package will contain the "brains" of our program. This package holds t
 
 ### 4.1.2.2 Class Interaction View Package
 
-The view package consists of the Editor class. This will be our text based editor as required by the client in our minimum viable product. The editor class consists of attributes to "draw" the text editor. This involves converting a file's contents and displaying it on the generated window. Drawing the cursor and displaying text when required according to the console commands implemented. Since the Editor class is solely responsible for drawing the text editor, changes to the appearance of the editor is calculated inside the Text_editor_controller class inside the Controller package.
+The view package consists of the Editor class. This will be our text-based editor as required by the client in our minimum viable product. The editor class consists of attributes to "draw" the text editor. This involves converting a file's contents and displaying it on the generated window. Drawing the cursor and displaying text when required according to the console commands implemented. Since the Editor class is solely responsible for drawing the text editor, changes to the appearance of the editor is calculated inside the Text_editor_controller class inside the Controller package.
 
 ### 4.1.2.3 Class Controller View Package
 
-The controller package involves the Text_editor_controller class. This class invovlves calculating the changes to update our text editor. This is in comparison to the Editor class which is solely responsible for changing and drawing the text based editor. The controller package also is linked to the model package as access to number of files, file names current file, etc, are important when calculating changes in the text editor. 
+The controller package involves the Text_editor_controller class. This class involves calculating the changes to update our text editor. This is in comparison to the Editor class which is solely responsible for changing and drawing the text-based editor. The controller package also is linked to the model package as access to a number of files, file names current files, etc, are important when calculating changes in the text editor. 
 
 ### 4.1.2.4 Class Commands View Package
 
-The commands package contains all the additional commands that will appear within our cowrie system. The commands package will contain the "Locate" class. This class represents are implmentation of the locate console command which returns the file path.
+The commands package contains all the additional commands that will appear within our cowrie system. The commands package will contain the "Locate" class. This class represents are implementation of the locate console command which returns the file path.
 
 
 ### 4.2 Development
 
-The development view entails the system view from the programmers perspective. This represents the management revolving the software aspect of the Cowrie, and the reasoning behind these management decisions. This section consists of the following subsections
+The development view entails the system view from the programmer's perspective. This represents the management involving the software aspect of Cowrie, as well as the reasoning behind these management decisions. This section consists of the following subsections
 
 - Code Structure
 - Version Control
@@ -128,30 +128,30 @@ The development view entails the system view from the programmers perspective. T
 
 ### 4.2.1 Code Structure
 
-- Forward arrows illustrate a dependancy - eg. Package1 -> Package2 means Package1 depends on Package2.
+- Forward arrows illustrate a dependency - eg. Package1 -> Package2 means Package1 depends on Package2.
 - Dashed lines illustrate modules within the package/directory in question
 - Blue Rectangles illustrate directories/packages
 - Green rectangles illustrate python modules
 
 #### 4.2.1.1 Structure for Locate command
 
-Considering there is already a source code/python module providing the implementation of basic Linux commands located within cowrie/src/cowrie/commands, the implementation of the locate command will be placed within this folder. The current version of Cowrie has python modules dedicated for the implementation of a command, to maintain consistency with the pre existing file structure for the source code in Cowrie, we will produce a locate.py file containing the implementation of the 'locate' command. 
+Considering there is already a source code/python module providing the implementation of basic Linux commands located within cowrie/src/cowrie/commands, the implementation of the locate command will be placed within this folder. The current version of Cowrie has python modules dedicated to the implementation of a command, to maintain consistency with the pre-existing file structure for the source code in Cowrie. We will produce a locate.py file containing the implementation of the 'locate' command. 
 
 #### 4.2.1.2 Structure for Text Editor
 
-The source code for the text editor command will be located within the directory cowrie/src/cowrie/commands/TextEditor. We have been given approval to utilise the python library "curses" from the client/primary stakeholder, to provide further assistance on simulating a text-based terminal environment for the text editor.
+The source code for the text editor command will be located within the directory cowrie/src/cowrie/commands/TextEditor. We have been given approval to utilise the python library "curses" from the client/primary stakeholder, to provide further assistance in simulating a text-based terminal environment for the text editor.
 
-Considering the text based terminal environment would emulate a Graphical-User-Interface, the Model-View-Controller (MVC) design pattern has been used to structure the python modules and place them in their respective packages. 
+Considering the text-based terminal environment would emulate a Graphical-User-Interface, the Model-View-Controller (MVC) design pattern has been used to structure the python modules and place them in their respective packages. 
 
-The "View" package will be responsible for providing a text based terminal environment for the user, and will contain most of the visual logic within the editor.py module, such as location of cursor, size of window and visible buttons/widgets to display the shortcuts that can be used when in the environment.
+The "View" package will be responsible for providing a text based terminal environment for the user, and will contain most of the visual logic within the editor.py module, such as location of cursor, size of window, and visible buttons/widgets to display the shortcuts that can be used when in the environment.
 
-The "Controller" package is responsible for manipulating user input/commands and providing necessary input for the Model package (which will consist of all the editing logic/additional text editing functionalities). For example the "Controller" package is responsible for reading keyboard input from the user within the text environment to update the position of a cursor, along with reading keyboard shortcuts performed by the user to summon certain features with the editing environment eg. Save, Cut and Paste etc.  
+The "Controller" package is responsible for manipulating user input/commands and providing necessary input for the Model package (which will consist of all the editing logic/additional text editing functionalities). For example, the "Controller" package is responsible for reading keyboard input from the user within the text environment to update the position of a cursor, along with reading keyboard shortcuts performed by the user to summon certain features with the editing environment eg. Save, Cut and Paste etc.  
 
 The "Model" package is responsible for other additional functionalities for the text editor. Such as having modules to enable saving files, writing to files etc. 
 
-Each of these packages have been separated into two layers to further identify what package is dependant on another package. This has been implemented with the design rule that packages should only be dependant on other packages that are either within the same layer or in a layer below, to ensure there are some constraints to our structure. Hence Controller and Model have been placed in Layer 1, where it's responsibility revolves around both interpreting user input and the overall logic of the editor. 
+Each of these packages have been separated into two layers to further identify what package is dependent on another package. This has been implemented with the design rule that packages should only be dependent on other packages that are either within the same layer or in a layer below, to ensure there are some constraints to our structure. Hence Controller and Model have been placed in Layer 1, where its responsibility revolves around both interpreting user input and the overall logic of the editor. 
 
-Layer 2 will contain code/implementation of the Text Editing environment, and is dependant on the current state of the editing logic that is within the Model package. 
+Layer 2 will contain code/implementation of the Text Editing environment and is dependent on the current state of the editing logic that is within the Model package. 
 
 
 ![](diagrams/package_diagram_without_classes.png)
