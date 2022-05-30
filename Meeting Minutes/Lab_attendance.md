@@ -2,13 +2,26 @@
 | Lab date | Lab time (morning/afternoon) | Person | Arrive time | Departure time | Note |
 | -------- | :--------------------------: | -----: | ----------- | -------------- | :----: |
 | 21/03/21 | Afternoon - 1pm-5pm | Selby | 1:00pm | 04.00pm | |
-| 23/03/21 | Morning - 9am-12pm | Selby | 10:00am | 12.00pm | |
+| 23/03/21 | Morning - 9am-1pm | Selby | 10:00am | 01.00pm | |
 | 28/03/21 | Afternoon - 1pm-5pm | Selby | 1:00pm | 04.00pm | |
-| 30/03/21 | Morning - 9am-12pm | Selby | 10:00am | 12:00pm | |
-| 04/03/21 | Afternoon - 1pm-5pm | Selby | 1:00pm | 05.00pm | |
-| 06/03/21 | Morning - 9am-12pm | Selby | 10:00am | 12:00pm | |
-| 11/03/21 |Afternoon - 1pm-5pm | Selby | 1:00pm | 3:00pm | Attended on zoom |
-| 18/03/21 |Afternoon - 1pm-5pm | Selby | 1:00pm | 3:30pm | Attended on zoom |
+| 30/03/21 | Morning - 9am-1pm | Selby | 10:00am | 01.00pm | |
+| 04/04/21 | Afternoon - 1pm-5pm | Selby | 1:00pm | 05.00pm | |
+| 06/04/21 | Morning - 9am-1pm | Selby | 10:00am | 01.00pm | |
+| 11/04/21 |Afternoon - 1pm-5pm | Selby | 1:00pm | 3:00pm | Attended on zoom |
+| 18/04/21 |Afternoon - 1pm-5pm | Selby | 1:00pm | 3:30pm | Attended on zoom |
+| 20/04/21 | Morning - 9am-1pm | Selby | 10:00am | 01.00pm | Attended on zoom |
+| 27/04/21 | Morning - 9am-1pm | Selby | 10:00am | 01.00pm | |
+| 2/05/21 | Afternoon - 1pm-5pm | Selby | 1:00pm | 04.00pm | Attended on zoom |
+| 04/05/21 | Morning - 9am-1pm | Selby | 12:00pm | 01.00pm | Attended on zoom |
+| 9/05/21 | Afternoon - 1pm-5pm | Selby | 1:00pm | 04.00pm | |
+| 11/05/21 | Morning - 9am-1pm | Selby | 10:00am | 01.00pm | |
+| 16/05/21 | Afternoon - 1pm-5pm | Selby | 1:00pm | 04.00pm | |
+| 18/05/21 | Morning - 9am-1pm | Selby | 10:00am | 01.00pm | |
+| 23/05/21 | Afternoon - 1pm-5pm | Selby | 1:00pm | 04.00pm | |
+| 25/05/21 | Morning - 9am-1pm | Selby | 10:00am | 01.00pm | |
+| 30/05/21 | Afternoon - 1pm-5pm | Selby | 1:00pm | 04.00pm | |
+
+
 
 #### Group Lab Session Sridhar
 
