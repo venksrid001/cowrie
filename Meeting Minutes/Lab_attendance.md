@@ -20,8 +20,8 @@
 | 23/05/21 | Afternoon - 1pm-5pm | Selby | 1:00pm | 04.00pm | |
 | 25/05/21 | Morning - 9am-1pm | Selby | 10:00am | 01.00pm | |
 | 30/05/21 | Afternoon - 1pm-5pm | Selby | 1:00pm | 04.00pm | |
-
-
+| 01/06/21 | Morning - 9am-1pm | Selby | 10:00am | 01.00pm | |
+| 08/06/21 | Morning - 9am-1pm | Selby | 10:00am | 01.00pm | |
 
 #### Group Lab Session Sridhar
 
