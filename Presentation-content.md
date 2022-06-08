@@ -54,12 +54,12 @@ Timeline - Deepika
 
 POC - Sridhar
 
-- From the perspective of an attacker, I start with the attacker logged into Cowrie
+- From the perspective of an attacker
 - I then introduce the ability of the attacker to summon a text editing environment - by simply typing in Nano
 - This will open up a blank text environment as no file has been opened with it
 - I then will show the attacker putting in the command 'nano' but this time along with a filename
 - This will open up the text environment with the necessary content of the file the user chooses
-- Our POC is just simply demonstrating the ability to open a text editing environment within Cowrie.
+- Our POC is just simply demonstrating the ability to open a text editing environment
 
 
 
