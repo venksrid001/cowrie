@@ -1,13 +1,13 @@
 Introduction - Thomas
-- Introduce group members
-- Introduce what the project is (why do we need supercharged cowrie? What benefits does it provide etc)
-- Introduce what will be discussed in the presentation
-- Minimum Viable Product discussion (mentioning but not in depth about why we choose the commands)
 
+Good evening/good morning/ good afternoon, we are ENGR301 Group 3 and today we will be discussing our project, supercharged cowrie. 
+My group members, Selby, Shruti, Deepika, Srid, Lucy and I (Thomas) will be discussing to you about the scope of our project, the what, why and how of the project, the project timeline, sprint planning, proof of concept and a brief conclusion to wrap things up.
 
+So, Scope! Like any project, we must define a scope. Scope is extremely important, it helps us, as a team, plan out potential risks, design constraints, scheduling, budgeting, health, and safety and so on. Scope is also extremely helpful for you! Our client and stakeholder(s), this is because it helps provide clarity on what you expect us to create, this help prevents things such as feature creep, where we just add way too much, or a swing in the opposite direction, failure to meet your design due to a lack of features. One way to define scope is having a clear Minimum Viable Product.
 
+The process of creating a Minimum Viable Product starts with a set of specifications provided by you guys, our client and stakeholder(s). From there, after numerous meetings, we form a Minimum Viable Product based on those specifications. Based off the agreed Minimum Viable Product, we now have a shared scope in what we all want the final outcome to roughly resemble and prevent that feature creep and lack of features I discussed earlier. In the case of our project, our main two specifications for our Minimum Viable Product are implementing the text editor nano and implementing the locate command. 
 
-
+After defining the scope, of course comes the fun part! The details! After all the devil is in the detail. The next presenter Selby will be delving further in detail of the importance and justifications for each of these specifications, and why they are even needed in the first place.
 
 Importance - Selby (Draft presentation)
 
