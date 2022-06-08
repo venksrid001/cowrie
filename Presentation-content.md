@@ -27,14 +27,20 @@ Shruti will go into more technical details of how these will be implemented.
 
 
 How we'll implement - Shruti
- - Continue development on python
- - To implement our 2 commands, we’ll be breaking them down into smaller functions
- - Pair programming
- - Main focus is nano
- - Nano functions are: open, save, exit + cut, paste, replace, find
- - Locate functions: string search and output function that will print the file name and the absolute path to the file
- - Done in fortnightly sprints, to make small developments and consistent progress 
- - Client will have the opportunity to voice feedback and we can make changes early on
+How do we plan on actually doing the project? 
+The current implementation of cowrie is in python, therefore we will be continuing the development in python also.
+To implement our 2 commands, locate and nano, we will be breaking them down into smaller functions and then we will be splitting up the team into groups of 2 to cover each function. By working programming in pairs we can have one person writing the code and one person testing. 
+As stated previously by thomas, our main focus will be implementing nano on cowrie 
+This will involve opening up an editor when nano is typed. 
+ -This includes opening a blank file or opening an existing file.
+The attacker can then type anything into the editor.
+We will also be implementing the other usual features you would see in an editor. Such as cut, paste, replace, and find using keyboard shortcuts. This will make the honeypot more realistic and increase deception to the attacker.
+Another function we will include in the editor will be saving. When control o is pressed: the attacker can save a new file, save an existing file or rename the file (save as)
+And finally, to exit the editor, the attacker will be asked if they want to save their file before exiting and they will be returned back to the terminal when they press control x.
+The locate command will be a lot simpler than the editor.  The functions for this command will include a string search that goes through the file system and an output function that will print the file name and the absolute path to the file. 
+Each of these functions will be done in fortnightly sprints and which will give us the chance to make small developments on prototypes of functional features and will also allow us to constantly provide updates and present these developments to the you (client) and the rest of the team. Deepika will talk more in detail about our sprint plan.
+You will then have an opportunity to clarify and voice any feedback or opinions ypu may have so that changes can be made on prototypes early on to ensure we still meet our deadlines and deliver you the product you requested.
+
 
 
 
