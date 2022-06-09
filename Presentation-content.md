@@ -46,12 +46,12 @@ You will then have an opportunity to clarify and voice any feedback or opinions 
 Timeline - Deepika
 
 Hi everyone, I am Deepika. My team mates already explained about the technical part. Now, I am going to talk about delivery part, which is divided into Timeline, Sprint Planning and Task Division.
-Super Charge cowrie project is started in Trimter-1and it will be delivered in Trimer-2. Here is the agreed timeline with the client for the delivery in different phases.
+Super Charge cowrie project is started in Trimester-1and it will be delivered in Trimester-2. Here is the agreed timeline with the client for the delivery in different phases.
 
 Architectural Prototype will be delivered by 31st July 2022, followed by MVP on 19th August 2022 and Final release by 1st October 2022. At the end, final presentation will be presented on 10th Oct 2022.
 Now, I am going to walk through the sprint planning with their objectives. We have already completed Sprint 0 and Sprint 1 in this trimester and rest will be focused on next trimer which will start at 11th July 2022. In the next Trimester, we have planned for 5 sprints, from Sprint 2 to Sprint 6. However, each spring size is for 2 weeks, but we have tweaked couple of sprints due to mid term break and final exams.
 
-Sprint 2 is starting on 11th July and ends on 25th July 2022, in this sprint, we will get up and running Cowrie Project and get ready Architecture Protype for review. In the next sprint, we have delivery for the Architecture Protype on 31st July and we will start working on the MVP. Spring 4 is bit shorter dule to mid term break by 2 days and we will get deliver MVP by the end of this sprint. After the break in Sprint 5, we will start working on the features for locate command and nano text editor. In the last sprint 6, we will deliver final product.
+Sprint 2 is starting on 11th July and ends on 25th July 2022, in this sprint, we will get up and running Cowrie Project and get ready Architecture Prototype for review. In the next sprint, we have delivery for the Architecture Prototype on 31st July and we will start working on the MVP. Spring 4 is bit shorter dule to mid term break by 2 days and we will get deliver MVP by the end of this sprint. After the break in Sprint 5, we will start working on the features for locate command and nano text editor. In the last sprint 6, we will deliver final product.
 In the last sprint, we planned for the user stories to be delivered for the whole project. We have created these as issues in the GitLab as shown in the screenshot. Let’s have a closer look at the GitLab issues. We have created 2 Epics – one for nano editor and another one for locate command. We have six teammates in our project, and we have created 3 teams with 2 members in each team. We have labelled few users stories for these teams and agreed on who is going to work on which user story. 
 
 We have final delivery for project on 10th Oct 2022.
