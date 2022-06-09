@@ -11,19 +11,21 @@ After defining the scope, of course comes the fun part! The details! After all t
 
 Importance - Selby (Draft presentation)
 
-Why are these commands important?
-The short answer is:
-To increase Cowries level of interaction.
-The long answer is:
-Cowrie is designed around 3 ideas, to detect attackers in a network, Capture malware and malicious files for analysis and to research attacker habits.
-To do this successfully a honeypot must be enticing to an attacker and act in an expected manner.
-Cowrie is marketed as a medium to high interaction honeypot, however it is still missing a few unix-based commands. For Cowrie to be successful, it needs to have all the programs and tools that attackers expect to see and use.
-If a common command has an unexpected result or is missing all together, an attacker may get suspicious about the system they have infiltrated. If the commands work as expected attackers may believe they are on a legitimate system and stick around to try and exploit it further. 
-With all this in mind, we chose the Nano text editor and the locate command to increase the level of interaction within Cowrie. Nano is a common text editor that attackers like to use to read and write files within the environment. As Cowrie is missing a basic text editor this can be a big flag for attackers. 
-Locate is a common command that can be used to quickly find directories and files within a system. It is faster then the find command and can be useful when looking for a particular file that an attacker knows exists. 
- Both of these functions increase the level of interaction between the honeypot and the attacker. The more interaction an attacker has with Cowrie the more information can be gathered for future research. 
-Shruti will go into more technical details of how these will be implemented.
+As Thomas has touched on, we will be adding more functionality to Cowrie honeypots by adding a version of Nano and the locate command.
 
+Why are these commands important to Cowrie? 
+The short answer is to increase the level of interactions an attacker can have with it. 
+
+To build off this we needed to understand why the level of interaction within a honeypot is important. 
+Honeypots are built to trap attackers within their environment and to alert defenders when their network has been breached.  Honeypots can be extremely useful, for researches like yourself, to monitor and understand the way attackers operate. The more we can get an attacker to interact with Cowrie, the more data that you can gather.
+
+To be able to achieve their goals, honeypots must be enticing enough for attackers to go after, and behave like a common server.
+
+Cowrie itself is marketed as a medium to high interaction honeypot, however it is still missing some unix-based features an attacker could expect to be on a server. If a common command produces unexpected results, you could tip off an attacker that they might not be on a legitimate device.
+
+With all this in mind, we chose to implement the Nano text editor, it is a common text editor that can easily be installed on linix distros. An attacker will often attempt to view and edit files within a text editor like nano, so it is an important feature to have within Cowrie. We also chose to implement the locate command. This is a faster version of the find command and is useful when you need to find a known file, but don't know its location. With each function that is added to Cowrie we increase the interaction attackers can have, allowing you to gather more information around their habits. 
+
+I will now pass it over to Shruti who will go into more technical details of how we will be implementing these functions.
 
 
 How we'll implement - Shruti
