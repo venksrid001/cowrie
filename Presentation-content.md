@@ -54,12 +54,15 @@ Timeline - Deepika
 
 POC - Sridhar
 
-- From the perspective of an attacker
-- I then introduce the ability of the attacker to summon a text editing environment - by simply typing in Nano
-- This will open up a blank text environment as no file has been opened with it
-- I then will show the attacker putting in the command 'nano' but this time along with a filename
-- This will open up the text environment with the necessary content of the file the user chooses
-- Our POC is just simply demonstrating the ability to open a text editing environment
+From the perspective of an attacker logged into the Cowrie environment he/she will need some CLI text editor to edit their scripts, hence they insert a command named 'nano', along with a filename to open the environment.
+
+Since this file has not been created yet, this will open up a blank canvas, for the user to roam around and add their changes when necessary. Most likely we would like to customize the environment to properly emulate the environment that nano provides.
+
+When the user has completed or finished making their necessary changes to the file, they can press CTRL+X to save their progress in the file. 
+
+In our POC, we also allow users to open previously edited files such as in this case. Where an attacker can access their created script just by simply inserting the same command 'nano' along with the file of their choosing. As we see here the file opened with the original content that the attacker last saved it with. 
+
+Through our POC, we have demonstrated that our text editor, already has saving and opening file capabilities, the next step would be to place this code and have it properly working in the Cowrie environment. This a current indication of our progress thus far, and to summate what we have discussed in this presentation, I will hand it over to Lucy to conclude things. 
 
 
 
